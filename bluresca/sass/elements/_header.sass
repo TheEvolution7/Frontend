@@ -1,0 +1,190 @@
+.ham-btn
+	display: none
+	position: relative
+	// top: 100px
+	// left: 50px
+	z-index: 1000
+	width: 50px
+	height: 50px
+	cursor: pointer
+	// display: flex 
+	align-items: center
+	justify-content: center
+	transition: all .3s ease
+	border-radius: 5px
+	@media screen and ( max-width: 991.82px )
+		display: flex
+	@media screen and ( max-width: 575.82px )
+		width: 40px
+		height: 40px
+	.ham
+		position: relative
+		width: 30px
+		height: 2px
+		background-color: $color-2
+		border-radius: 2px
+		transition: all .3s ease
+		&::after
+			position: absolute
+			content: ''
+			width: 30px
+			height: 2px
+			background-color: $color-2
+			border-radius: 2px
+			top: -8px
+			right: -5px
+			transition: all .3s ease
+			transform-origin: left
+		&::before
+			position: absolute
+			content: ''
+			width: 30px
+			height: 2px
+			background-color: $color-2
+			border-radius: 2px
+			bottom: -8px
+			left: -5px
+			transition: all .3s ease
+			transform-origin: left
+	&:hover
+		.ham
+			&::after
+				right: 0
+			&::before               
+				left: 0
+	&.active
+		.ham
+			background-color: transparent
+			&::after
+				right: 0
+				top: -10.5px
+				transform: rotate(45deg)
+			&::before               
+				left: 0
+				bottom: -10.5px
+				transform: rotate(-45deg)
+
+.site-header
+	background-color: $color-1
+	position: fixed
+	z-index: 99999
+	top: 0
+	width: 100vw
+	box-shadow: 5px 5px 20px rgba($color-2, 0.3)
+	.logo
+		padding: 15px 0
+		max-width: 70px
+	.menu-header 
+		display: flex
+		@media screen and ( max-width: 991.82px )
+			position: absolute
+			flex-direction: row
+			width: 100%
+			top: 100%
+			left: 0
+			opacity: 0
+			visibility: hidden
+			transition: all .3s ease
+			&.show
+				visibility: visible
+				opacity: 1
+		ul 
+			display: flex
+			@media screen and ( max-width: 991.82px )
+				border-top: 1px solid $color-2
+				flex-direction: column
+				background-color: $color-1
+				width: 100%
+			li 
+				margin-left: 40px
+				position: relative
+				@media screen and ( max-width: 991.82px )
+					width: 100%
+					text-align: center
+					margin-left: 0
+					padding: 0
+					border-bottom: 1px solid $color-2
+					
+				svg
+					opacity: 0
+					visibility: hidden
+					fill: #FFA5BF
+					z-index: 1
+					position: absolute
+					top: 0%
+					width: 100%
+					height: 100%
+					left: 0
+					transition: all .6s ease
+					@media screen and ( max-width: 991.82px )
+						display: none
+				
+				&.active,&:hover
+					svg 
+						// stroke-dasharray: 120
+						// stroke-dashoffset: 0
+						opacity: 1
+						visibility: visible
+					a
+						-webkit-text-stroke-color: $color-2
+						@media screen and ( max-width: 991.82px )
+							background-color: $color-2
+							color: $color-1
+							-webkit-text-stroke-color: $color-1
+						&::after
+							transform: scaleX(1)
+							transform-origin: bottom left
+				a
+					padding: 10px 0px
+					position: relative
+					display: block
+					z-index: 2
+					color: $color-2
+					font-size: 1.1rem
+					-webkit-text-stroke-color: transparent
+					-webkit-text-stroke-width: 1px
+					transition: all .3s ease
+					// overflow: hidden
+					@media screen and ( max-width: 991.82px )
+						font-size: 1.3rem
+						display: block
+						padding: 25px
+						width: 100%
+						text-align: center
+					&::after
+						content: ''
+						position: absolute
+						width: 100%
+						height: 3px
+						bottom: 0
+						left: 0
+						background-color: $color-2
+						transform: scaleX(0)
+						transition: transform 0.3s
+						transform-origin: bottom right
+						@media screen and ( max-width: 991.82px )
+							display: none
+						
+						
+					
+						
+				
+	.login-menu
+		ul 
+			display: flex
+			li 
+				margin: 0 5px
+				a
+					display: block
+					padding: 10px 30px
+					color: $color-2
+					min-width: 150px
+					text-align: center
+					font-size: 1.1rem
+					border: 1px solid transparent
+					border-radius: 5px
+					&.show
+						border-color: $color-2
+					&:hover 
+						background-color: $color-2
+						color: $color-1

@@ -1,0 +1,178 @@
+@import 'components/fixedThumb'
+@import 'buttons/buttons'
+
+.x-close 
+	width: 20px
+	height: 20px
+	cursor: pointer
+	position: relative
+	&:before, &:after
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 100%
+		height: 1px
+		background: red
+		transform: translate(-50%, -50%) rotate(-45deg)
+	&:after
+		transform: translate(-50%, -50%) rotate(45deg)
+
+.play-btn
+	position: absolute
+	z-idex: 1
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 94px
+	height: 94px
+	border: 3px solid #fff
+	border-radius: 50%
+	transition: all .3s ease-in-out
+	cursor: pointer
+	&:before 
+		position: absolute
+		content: ''
+		border-top: 20px solid transparent
+		border-bottom: 20px solid transparent
+		border-left: 30px solid white
+		top: 50%
+		left: 50%
+		transform: translate(-37%, -50%)
+	&:hover
+		background: $primary-color
+		border-color: $primary-color
+		box-shadow: 0 3px 10px rgba(black, .3)
+
+.content
+	.title 
+		font-weight: 700
+		font-size: 3rem
+		margin-bottom: 30px
+		@media screen and ( max-width: 767.82px )
+			font-size: 2.7rem
+		@media screen and ( max-width: 575.82px )
+			font-size: 2.2rem
+			
+	.sub-title 
+		padding-left: 30px
+		position: relative
+		margin-bottom: 30px
+		font-weight: 300
+		line-height: 1.6
+		font-size: 1
+		font-size: 1.3rem
+		@media screen and ( max-width: 767.82px )
+			font-size: 1.2rem
+		@media screen and ( max-width: 575.82px )
+			font-size: 1.1rem
+		&::before
+			height: 100%
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background-color: $color-2
+			width: 5px
+	.btn-site 
+		margin-top: 30px
+.cursor 
+    position: fixed
+    background-color: #fff
+    width: 6px
+    height: 6px
+    border-radius: 100%
+    z-index: 1
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity
+    user-select: none
+    pointer-events: none
+    z-index: 1000000
+    transform: scale(1)
+    &.active 
+        opacity: 0.5
+        transform: scale(0)
+    &.hovered 
+        opacity: 0.08
+.cursor-follower 
+    position: fixed
+    width: 25px
+    height: 25px
+    border-radius: 100%
+    z-index: 1
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity
+    user-select: none
+    pointer-events: none
+    z-index: 1000000
+    transform: translate(5px, 5px)
+    &.active 
+        opacity: 0.7
+        transform: scale(2.5)
+    &.hovered 
+        opacity: 0.08
+.cursor-follower 
+	background-color: rgba(#fff, 0.5)
+.banner-subpage
+	min-height: 300px
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	.falling-leaves,.leaf
+		position: absolute
+		width: 100%
+		height: 100%
+		z-index: 1
+		.dot 
+			width: 12px
+			height: 12px
+			@media screen and ( max-width: 575.82px )
+				width: 8px
+				height: 8px
+	.bg
+		position: absolute
+		width: 100%
+		height: 100%
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+		&::after
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			content: ''
+			background: linear-gradient(to top, #ffba96 9% , #f4ab94 31% , #d7848f 74%,#c3698c 100%) 
+			opacity: 0.3
+	.container 
+		z-index: 2
+		position: relative
+	.content 
+		padding: 100px 0
+		text-align: center
+		.title 
+			font-size: 3rem
+			margin-bottom: 0
+.modal-contact
+	font-size: 16px
+	.modal-content
+		background-color: $color-1
+	.btn-close
+		color: $color-2
+	.form-control
+		background-color: transparent
+		border-color: $color-2
+		color: $color-2
+	.input-group-text
+		background-color: $color-2
+		color: $color-1
+	.btn-site.__dark
+		border: 1px solid $color-2
+	.invalid-feedback
+		color: rgba($color-2, 0.6)
+	.form-select
+		color: #353535
+		filter: invert(1) grayscale(100%) brightness(200%)
+		border-color: #353535
+    	

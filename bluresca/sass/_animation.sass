@@ -1,0 +1,97 @@
+.text-space
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	overflow: hidden
+	pointer-events: none
+	*
+		display: table
+	.text
+		font-size: 140px
+		color: #abb8cd
+		opacity: .07
+		font-weight: bold
+		font-family: "Montserrat"
+		line-height: 1
+		white-space: nowrap
+		position: absolute
+		> *
+			line-height: .8
+	._about
+		bottom: 10%
+		right: -5%
+	._vision
+		top: 15%
+		left: -5%
+	._mission
+		top: 15%
+		right: -5%
+	._film-1
+		top: 50%
+		left: -20%
+		transform: translateY(-50%)
+	._film-2
+		bottom: 5%
+		left: 50%
+	._invest-1
+		top: 10%
+		left: -20%
+	._invest-2
+		bottom: 40%
+	._invest-3
+		top: 40%
+		transform: translateY(-50%)
+	._invest-4
+		bottom: 10%
+		left: 20%
+	._yatch-1
+		top: 20%
+		left: -15%
+	._yatch-2 
+		top: 40%
+		left: 20%
+	._contact
+		bottom: 0
+		transform: translateY(30%)
+		left: 20%
+
+.reflex-wrap
+	position: absolute
+	top: 0
+	left: 0 
+	width: 100%
+	height: 100%
+	z-index: 2
+	overflow: hidden 
+	pointer-events: none
+.fx-reflection
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100% 
+	z-index: 2
+	pointer-events: none
+	.reflex
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 200px
+		height: 1000px
+		background: rgba(white, .3)
+		transform: translate(-50%, -50%) skewX(27deg);
+
+
+@media (max-width: 991.82px) 
+	.text-space .text
+		font-size: 180px
+
+@media (max-width: 575px) 
+	.text-space .text
+		font-size: 100px
+	._vision
+		top: 0%!important
+	._mission
+		top: 0%!important

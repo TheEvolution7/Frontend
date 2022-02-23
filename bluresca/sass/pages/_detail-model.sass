@@ -1,0 +1,90 @@
+.profile-section
+    background-color: $color-2
+    color: $color-1
+    .thumb-img
+        position: relative
+        img 
+            position: absolute
+            height: 100%
+            object-fit: cover
+        &.__img-model 
+            padding-bottom: 140%
+            transform: skew(-12deg)
+            overflow: hidden
+            left: 0
+            box-shadow: 2px 5px 15px rgba($color-1,0.3)
+            @media screen and ( max-width: 991.82px )
+                padding-bottom: 130%
+                
+            img 
+                transform: skew(12deg)
+                left: -15%
+                width: 130%
+                max-width: unset
+    .content
+        margin-top: 30px
+        padding: 40px 25px
+        @media screen and ( max-width: 575.82px )
+            padding: 30px 0 50px
+            
+        .social-model
+            display: flex
+            flex-wrap: wrap
+            margin: 25px -7px
+            li 
+                flex: 0 0 calc(25% - 14px)
+                margin: 0 7px
+                margin-bottom: 14px
+                @media screen and ( max-width: 767.82px )
+                    flex: 0 0 calc(50% - 14px)
+                a
+                    width: 100%
+                    color: $color-1
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    padding: 5px 15px
+                    border: 1px solid $color-1
+                    border-radius: 30px
+                    line-height: 20px
+                    transition: all .3s ease
+                    i ,svg 
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        margin-right: 8px
+                    &:hover 
+                        background-color: $color-1
+                        color: $color-2
+        .btn-nav-model
+            display: flex
+            justify-content: space-between
+            .btn-site 
+                @media screen and ( max-width: 575.82px)
+                    padding: 10px 18px
+                    
+                .fa-chevron-right
+                    margin-left: 10px
+                .fa-chevron-left
+                    margin-right: 10px
+    .more-info
+        background-color: $color-1
+        color: $color-2
+        padding: 25px
+        border-radius: 10px
+        max-width: 400px
+        h2
+            font-size: 1.5rem
+            margin-bottom: 20px
+        .field-row
+            display: flex
+            margin-bottom: 12px
+            .field-label
+                flex: 0 0 50%
+                min-width: 100px  
+                font-weight: 500   
+            .field-value
+                width: fit-content
+                margin: auto 0
+                position: relative
+                word-wrap: break-word

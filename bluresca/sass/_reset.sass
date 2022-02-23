@@ -1,0 +1,67 @@
+body 
+	font-family: $font-1
+	color: $color-2
+	font-weight: 300
+	overflow-x: hidden
+	width: 100vw
+	scroll-behavior: unset
+	&.on-load 
+		overflow: hidden
+::root 
+    scroll-behavior: unset
+html
+	scroll-behavior: unset
+section
+	width: 100vw
+	overflow: hidden
+ul 
+	padding-left: 0
+	margin-bottom: 0
+	list-style: none
+
+img 
+	max-width: 100%
+input:focus
+	outline: none
+textarea:focus
+	outline: 0
+a:focus, a:hover
+	text-decoration: none
+
+button:focus 
+	outline: 0
+
+form 
+	margin-bottom: 0
+
+.section
+	position: relative
+
+.swiper-slide, .swiper-wrapper
+	height: auto
+
+a 
+	text-decoration: none
+	transition: all .3s ease
+
+
+// ===== typo =====
+p 
+	font-size: 16px
+	line-height: 2
+h1, h2, h3, h4, h5, h6 
+	font-family: $font-1
+	line-height: 1.2
+h5 
+	font-size: 24.16px
+main 
+	padding-top: 111px
+	// @media screen and ( max-width: 991.82px )
+	// 	padding-top: 70px
+		
+.modal
+	z-index: 99999999
+.modal-backdrop
+	z-index: 9999999
+.wow
+	visibility: hidden
