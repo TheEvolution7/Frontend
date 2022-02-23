@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Culture';
+    src: url('CultureBold.woff2') format('woff2'),
+        url('CultureBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Culture';
+    src: url('CultureRegular.woff2') format('woff2'),
+        url('CultureRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

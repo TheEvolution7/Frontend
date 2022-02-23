@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Margareta';
+    src: url('Margareta.woff2') format('woff2'),
+        url('Margareta.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
