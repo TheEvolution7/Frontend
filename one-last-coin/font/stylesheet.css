@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Blaak Black PERSONAL USE';
+    src: url('BlaakBlackPERSONALUSE.woff2') format('woff2'),
+        url('BlaakBlackPERSONALUSE.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Black PERSONAL USE';
+    src: url('BlaakBlackPERSONALUSE-Italic.woff2') format('woff2'),
+        url('BlaakBlackPERSONALUSE-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Bold PERSONAL USE';
+    src: url('BlaakBoldPERSONALUSE-Italic.woff2') format('woff2'),
+        url('BlaakBoldPERSONALUSE-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Bold PERSONAL USE';
+    src: url('BlaakBoldPERSONALUSE.woff2') format('woff2'),
+        url('BlaakBoldPERSONALUSE.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak ExtraBold PERSONAL USE';
+    src: url('BlaakExtraBoldPERSONALUSE-Itali.woff2') format('woff2'),
+        url('BlaakExtraBoldPERSONALUSE-Itali.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak ExtraBold PERSONAL USE';
+    src: url('BlaakExtraBoldPERSONALUSE.woff2') format('woff2'),
+        url('BlaakExtraBoldPERSONALUSE.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Light PERSONAL USE';
+    src: url('BlaakLightPERSONALUSE-Italic.woff2') format('woff2'),
+        url('BlaakLightPERSONALUSE-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Light PERSONAL USE';
+    src: url('BlaakLightPERSONALUSE.woff2') format('woff2'),
+        url('BlaakLightPERSONALUSE.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Regular PERSONAL USE';
+    src: url('BlaakRegularPERSONALUSE.woff2') format('woff2'),
+        url('BlaakRegularPERSONALUSE.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Regular PERSONAL USE';
+    src: url('BlaakRegularPERSONALUSE-Italic.woff2') format('woff2'),
+        url('BlaakRegularPERSONALUSE-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Thin PERSONAL USE';
+    src: url('BlaakThinPERSONALUSE-Italic.woff2') format('woff2'),
+        url('BlaakThinPERSONALUSE-Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blaak Thin PERSONAL USE';
+    src: url('BlaakThinPERSONALUSE.woff2') format('woff2'),
+        url('BlaakThinPERSONALUSE.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

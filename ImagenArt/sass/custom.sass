@@ -1,0 +1,299 @@
+.player
+    &.item
+        padding-top: 0
+        padding-bottom: 0
+        .item__bg
+            margin-right: 0
+.button-circle-stroke
+    position: relative
+.header__nav 
+    .header__link
+        &:nth-child(n+3)
+            display: block
+.main__details
+    width: 500px
+    margin-left: 50px
+    @media only screen and (max-width: 1023px)
+        width: 100%
+    @media only screen and (max-width: 767px)
+        margin-left: 0
+.item__preview
+    padding-bottom: 125%
+    img 
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+[class^="section"]
+    padding: 60px 0
+    @media only screen and (max-width: 767px)
+        padding: 40px 0
+#canvas-1
+    position: fixed
+    z-index: -1
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    opacity: 0.4
+.section-bg
+    background: rgba(#F4F5F6,0.8)
+.button-stroke
+    background-color: rgba(#fff,0.8)
+body,html 
+    scroll-behavior: smooth
+
+body.dark 
+    .tippy-box
+        background-color: #F4F5F6
+        color: #333
+    .tippy-arrow
+        color: #F4F5F6
+    .theme_big .theme__box:before
+        left: unset
+        right: 4px
+    .button-stroke
+        background-color: rgba(#23262F,0.8)
+    .section-bg
+        background: rgba(#23262F,0.8)
+    #canvas-1
+        opacity: 0.8
+    .description__text,.description__stage,.popular__stage
+        color: #F4F5F6
+    .owl-style-1::before
+        border-color: rgba(#F4F5F6,0.3)
+    .header__nav 
+        .header__link
+            .sub-menu 
+                background-color: rgba(35,38,47,0.8)
+                @media screen and ( max-width: 767px )
+                    background-color: transparent
+                li 
+                    a
+                        color: #777E90
+                        @media screen and ( max-width: 767px )
+                            border-bottom: 0.5px solid #c4d3f3
+                        &:hover 
+                            background-color: #353945
+                            color: #3772FF
+                
+.main__wrap
+    background-color: rgba(#fff,0.8)
+.header__search
+    width: 200px
+    @media only screen and (max-width: 767px)
+        width: 100%
+.item__categories
+    z-index: 2
+.header__nav 
+    .header__link
+        font-size: 15px
+        &:hover,&.active 
+            &.has-submenu
+                > a 
+                    color: #3772FF
+        &.has-submenu
+            cursor: pointer
+            position: relative
+            > a 
+                color: #777E90
+            .sub-menu 
+                opacity: 0
+                visibility: hidden
+                min-width: 100px
+                position: absolute
+                top: 100%
+                background-color: #fff
+                padding: 0
+                border-radius: 5px
+                transform: translateY(10px)
+                transition: all .3s ease
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05)
+                overflow: hidden
+                @media only screen and (max-width: 767px)
+                    position: relative
+                    height: 0
+                    box-shadow: none
+                    background-color: transparent
+                li 
+                    a
+                        display: block
+                        padding: 12px 22px
+                        color: #777E90
+                        transition: all .3s ease
+                        line-height: 1.5
+                        @media screen and ( max-width: 767px )
+                            border-bottom: 0.5px solid #c4d3f3
+                            
+                        &:hover 
+                            background-color: #f2f2f2
+                            color: #3772FF
+            &:hover 
+                .sub-menu
+                    opacity: 1
+                    visibility: visible
+                    transform: translateY(0)
+                    @media only screen and (max-width: 767px)
+                        height: auto
+.header__theme
+    display: flex
+    margin-left: 12px
+    z-index: 2
+.header 
+    .button-small
+        font-size: 15px
+.header__logo
+    width: 150px
+    @media screen and ( max-width: 575.82px )
+        width: 120px
+        
+.header__burger
+    margin-left: 12px
+
+.slider-product
+    position: relative
+    // height: 710px
+    &::after
+        position: absolute
+        width: 100vw
+        height: 2px 
+        background: linear-gradient(to right, #ff951c, rgba(43, 205, 255, 1),#46B270) 
+        left: 50%
+        top: calc(50% - 36px)
+        transform: translate(-50% , -50%)
+        content: ''
+        z-index: -1
+    .item-nft
+        display: flex
+        position: relative
+        margin: 350px 0
+        height: 50px
+        margin-right: 0px
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px
+            top: 50%
+            left: 50%
+            transform: translate(-50% , -50%)
+            border: 1px solid #3772FF
+            border-radius: 50%
+        &::before
+            content: ''
+            position: absolute
+            width: 10px
+            height: 10px
+            top: 50%
+            left: 50%
+            transform: translate(-50% , -50%)
+            border-radius: 50%
+            background-color: #3772FF
+        &:nth-of-type(2n)
+            .logo-nft
+                top: 100%
+                bottom: unset
+                
+            .content-nft
+                top: unset 
+                bottom: 50px
+        .logo-nft
+            position: absolute
+            bottom: 50px
+            width: 80px
+            height: 80px
+            margin: auto
+            left: 50%
+            transform: translateX(-50%)
+            // background-color: #fff
+            border-radius: 50%
+            border: 2px solid #000
+            &.__nft-1
+                background-color: #ca5405
+                border-color: #ca5405
+            &.__nft-2
+                background-color: #4d006b
+                border-color: #4d006b
+            &.__nft-3
+                background-color: #0f4b00
+                border-color: #0f4b00
+            &.__nft-4
+                background-color: #188f00
+                border-color: #188f00
+            &.__nft-5
+                background-color: #474747
+                border-color: #474747
+            img 
+                padding: 20%
+                position: absolute
+                width: 100%
+                height: 100%
+                object-fit: contain
+        .content-nft
+            position: absolute
+            top: 100%
+            width: 100%
+            .thumb-img
+                display: block
+                position: relative
+                width: 100%
+                padding-bottom: 60%
+                &::before
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    border-radius: 16px
+                    top: 10px
+                    left: 10px
+                    content: ''
+                    background: linear-gradient(to right, #ff951c, #2bcdff, #46B270)
+                    box-shadow: 0px 0px 20px rgba(0,0,0,0.3)
+                    transition: all 1s ease
+                &:hover 
+                    &::before
+                        top: 0px
+                        left: 0px
+                    img 
+                        transform: translate(10px, 10px)
+                img 
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    transition: all 1s ease
+                    border-radius: 16px
+            .content
+                margin-top: 15px
+                font-size: 14px
+                line-height: 26px
+                font-weight: 400
+                padding: 8px 10px
+                a
+                    color: #23262F
+                    &:hover 
+                        color: #3772FF
+                h3
+                    margin-right: auto
+                    padding-top: 1px
+                    font-size: 18px
+                    line-height: 1.5
+                    font-weight: 500
+                ul 
+                    margin-top: 12px
+                    padding-top: 12px
+                    border-top: 1px solid #c4d3f3
+                    list-style: disc
+                    padding-left: 15px
+                    max-height: 120px
+                    overflow: auto
+.timeline-dot
+    cursor: pointer
+.timeline-dot 
+    @media screen and ( max-width: 575.82px )
+        width: 55px
+        height: 55px
+.tippy-content
+    ul 
+        list-style: disc
+        padding-left: 15px       
