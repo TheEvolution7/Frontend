@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NanoThings </title>
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+  <!-- Custom stylesheet -->
+</head>
+
+<body data-theme-mode-panel-active data-theme="light" style="font-family: 'Open Sans';">
+  <div class="site-wrapper overflow-hidden position-relative">
+    <!-- Site Header -->
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader.gif" alt="preloader">
+   </div>
+   </div>    -->
+    <!--Site Header Area -->
+    <header class="sub-page-header site-header site-header--menu-right landing-1-menu site-header--absolute site-header--sticky">
+      <div class="container-fluid">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="index.html">
+              <img src="image/logo/logo.svg" alt="" class="light-version-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Solutions<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="ntss-in-train.html">NTSS In-Transit</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="ntss-static.html">NTSS Static</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Technology<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="nanotag.html">NanoTag</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="ntss.html">NTSS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Pricing<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-3">
+                    <li class="sub-menu--item">
+                      <a href="nano-price.html">NanoTag </a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="intransit-price.html">NTSS In-Transit</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="static-price.html">NTSS Static</a>
+                    </li>
+                  </ul>
+                </li> 
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Company<i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-4">
+                    <li class="sub-menu--item">
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="team.html">Leadership Team</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="support.html">Support</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="faqs.html">FAQs</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="help.html">Help & Tutorials</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
+            <a target="_blank" class="btn btn log-in-btn btn-style-02 focus-reset" href="nano-price.html">
+              Get started
+            </a>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    
+    <div class="sub-page-title">
+        <canvas id="map"></canvas>
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
+              <div class="section-heading-14 text-center">
+                <div class="logo-title">
+                  <img src="image/ntss/logo-ntss.png" alt="">
+                </div>
+                <h1>Static Temperature Monitoring</h1>
+                <p>The world’s first standard for autonomous static temperature monitoring</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="clients-area-l8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-9">
+                  <div class="section__heading text-center pb-lg-5">
+                    <h4>NTSS for static temperature monitoring is a much simpler version of the NTSS standard, designed for use cases that don’t involve transportation</h3><br>
+                    <h4>See what you can do with NTSS for Static Monitoring below.</>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="container">
+          
+          <div class="row justify-content-center clients-l8-items">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+              <div class="client-l8-card">
+                <div class="image">
+                  <img src="image/ntss/1-2.svg" alt="image">
+                </div>
+                <div class="content">
+                  <h4>Inventory Monitoring</h4>
+                  <p>NTSS is designed to support high volume applications like inventory monitoring. NTSS automatically performs validation checks against all uplinks to check for missed data packets. If a packet was sent from the device but not received by the cloud, NTSS will automatically downlink to the device and request that specific packet again until it has been received. </p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+              <div class="client-l8-card">
+                <div class="image">
+                  <img src="image/ntss-static/4_1.png" alt="image">
+                </div>
+                <div class="content">
+                    <h4>Static Asset Monitoring</h4>
+                    <p>NTSS provides a simple and effective approach to static asset monitoring by leveraging geofencing capabilities to confirm that an asset is still at the expected location. If an asset moves outside of the geofence, NTSS will send an alert that the asset  moved. Although more complex and not recommended for indoor use, NTSS can also leverage time difference of arrival (triangulation) to approximate where an asset is within a defined area. </p>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10">
+              <div class="client-l8-card">
+                <div class="image">
+                  <img src="image/ntss/1111.svg" alt="image">
+                </div>
+                <div class="content">
+                    <h4>Facility Monitoring</h4>
+                    <p>NTSS enables remote configurability and reconfigurability of devices, supporting enterprises with the flexibility they need to support ever changing customer requirements.</p>
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+
+    <div class="content-area-l10-3 bg-blue">
+      <div class="content-area-l10-2-shape-1" style="background-color: #fff;">
+          <img src="image/l1/shape2.svg" alt="" class="w-100">
+        </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-10 col-md-12 pt-lg-5 mt-lg-4">
+              <div class="content section__heading text-center">
+                  <h2>Features</h2>
+              </div>
+          </div>
+          
+        </div>
+        <div class="row feature-l-11-items justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex ">
+              <div class="icon-box">
+                <img src="image/icon-6.svg" alt="">
+              </div>
+              <div class="content-body">
+                <h5>Data Loss Protection</h5>
+                <p>Automatic server side acknowledgments and requests for missing data packets.</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex ">
+              <div class="icon-box">
+                <img src="image/ntss-static/3.svg" alt="">
+              </div>
+              <div class="content-body">
+                <h5>Remote Configurability</h5>
+                <p>Devices are easily configured and reconfigured by remotely downlinking to the device.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex ">
+              <div class="icon-box">
+                <img src="image/check.svg" alt="">
+              </div>
+              <div class="content-body">
+                <h5>Health Messages</h5>
+                <p>Pre-activation daily health messages provide device health prior to use. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex ">
+              <div class="icon-box">
+                <img src="image/icon-3.svg" alt="">
+              </div>
+              <div class="content-body">
+                <h5>Battery Life Monitoring</h5>
+                <p>Battery voltage is sent with every uplink.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex ">
+              <div class="icon-box">
+                <img src="image/ntss-static/1.svg" alt="">
+              </div>
+              <div class="content-body">
+                <h5>Geofencing</h5>
+                <p>Location confirmation by geofencing around known gateways. Advanced geofencing can be used to approximate distance from gateway. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex ">
+              <div class="icon-box">
+                <img src="image/ntss-static/2.svg" alt="">
+                <!-- <i class="icon icon-pen-01"></i> -->
+              </div>
+              <div class="content-body">
+                <h5>Battery Drain Mode</h5>
+                <p>Devices can be remotely sent into high power mode to quickly drain remaining battery for safe disposal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+      <div class="price-l10-shape" style="background-color: #2aace3 ">
+          <img src="image/l1/price-black-shape.svg" alt="" class="w-100">
+        </div>
+  </div>
+    
+    <!-- Footer Area -->
+    <footer class="footer-area-l-12 position-relative">
+      <div class="container">
+        <div class="footer-l-12-top-border"></div>
+        <div class="row justify-content-center footer-l1-area-items">
+          <div class="col-xl-6 col-lg-4 col-md-12 col-xs-12 col-12 order-2 order-lg-0">
+            <div class="footer-content-l9 text-sm-center text-lg-start">
+              <a href="#" class="logo-footer">
+                <img src="image/logo/logo.svg" alt="image">
+              </a>
+              <p>1460 Broadway, Suite 14034
+                New York, NY 10036</p>
+              <a href="mailto:info@nanothingsinc.com">info@nanothingsinc.com</a>
+              
+              <ul class="list-unstyled footer-social-icon-l2">
+                <li><a href="https://www.facebook.com/NanoThingsInc/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/nanothingsinc"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/nanothingsinc"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-xs-4 col-6 order-2 order-lg-1">
+            <h3>Company</h3>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="team.html">Leadership Team</a></li>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="help.html">Help & Tutorials</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-4 col-xs-4 col-6 order-3 order-lg-2">
+            <h3>Technology</h3>
+            <ul class="list-unstyled">
+              <li><a href="nanotag.html">NanoTag</a></li>
+              <li><a href="ntss.html">NTSS</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-xs-4 col-12 order-4 order-lg-3">
+            <h3>Solutions</h3>
+            <ul class="list-unstyled ">
+              <li><a href="ntss-in-train.html">NTSS In-Transit</a></li>
+              <li><a href="ntss-static.html">NTSS Static</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-l-12-top-border __1"></div>
+        <div class="footer-copyright-wrapper">
+          <div class="footer-copyright-wrapper-col">
+            
+            <div class="paragraph small footer-chainlinkreg">
+              © 2021 NanoThings, Inc. NanoThings is a registered trademark of NanoThings, Inc.
+            </div>
+          </div>
+          <div class="footer-copyright-wrapper-col footer-privacyandterms"><a href="/privacy-policy"
+              class="paragraph small footer-copyright">Privacy Policy</a><a href="/terms"
+              class="paragraph small footer-copyright">Terms of Use</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal fade" id="modal-signup" tabindex="-1" aria-labelledby="modal-signupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-signupLabel">Sign up for the waitlist</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="bg-catskill subscribe-newsletter">
+            
+            <form action="#" class="d-sm-flex">
+              <input type="email" class="form-control" id="email-3" name="email" placeholder="Enter your email">
+              <button class="btn btn-style-02">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-style-02 __1" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="https://porjoton.netlify.app/mekanic/js/waypoints.min.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="plugins/isotope/packery.pkgd.min.js"></script>
+  <script src="plugins/isotope/image.loaded.js"></script>
+  <script src="plugins/menu/menu.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/fancybox.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script>
+    let countdown = "Sep 30, 2021 00:00:00"
+  </script>
+  <script src="js/countdown.js"></script>
+
+  <!-- NTSS-static -->
+  <script src="js/three.js"></script>
+  <script src="js/tween.js"></script>
+  <script src="js/globe-map.js"></script>
+
+  
+</body>
+
+</html>
