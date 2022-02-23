@@ -1,0 +1,87 @@
+/* ------------------------------------------------------
+@File: Default Styles
+@Author: TemplateMr.
+@Developed By: Emran Khan
+@Developer Email: fed.emran@gmail.com
+@Developer URL: http://emran-khan.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+------------------------------------------------------- */
+
+/* ======================================================
+@Template Name: Aoop 
+@Author: TemplateMr. 
+@Default Styles
+
+Table of Content: 
+01/ Variables
+02/ Prefix
+03/ Animat 
+04/ Header
+05/ Banner
+06/ Services
+07/ About
+08/ Agency
+08/ Testimonial
+09/ team
+10/ Pricing 
+11/ Blog 
+12/ Portfollio
+13/ Containt 
+14/ From
+15/ Footer
+16/ Responsive 
+===================================================== */ 
+
+/*----------------------------------------------------*/
+@import "variables";
+/*----------------------------------------------------*/  
+@import "prefix";
+/*----------------------------------------------------*/ 
+@import "animat";
+/*----------------------------------------------------*/ 
+@import "header";
+/*----------------------------------------------------*/
+@import "banner";
+/*----------------------------------------------------*/ 
+@import "services";
+/*----------------------------------------------------*/   
+@import "about";
+/*----------------------------------------------------*/ 
+@import "containt";
+/*----------------------------------------------------*/   
+@import "testimonial";
+/*----------------------------------------------------*/  
+@import "team";
+/*----------------------------------------------------*/   
+@import "pricing";
+/*----------------------------------------------------*/  
+@import "blog";
+/*----------------------------------------------------*/ 
+@import "portfollio";  
+/*----------------------------------------------------*/       
+@import "from";
+/*----------------------------------------------------*/      
+@import "extra";
+/*----------------------------------------------------*/       
+@import "footer"; 
+/*----------------------------------------------------*/ 
+@import "responsive"; 
+/*----------------------------------------------------*/     
+
+/*All CSS call*/
+@import "../css/bootstrap.min.css"; /* Bootstrap CSS */
+/* Icon CSS */
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css'); 
+@import "../css/font-awesome.min.css";   
+@import "../vendors/flat-icon/flaticon.css"; 
+/* Extra Plugins CSS */
+@import "../vendors/animate-css/animate.css"; 
+@import "../vendors/magnify-popup/magnific-popup.css";   
+@import "../vendors/owl-carousel/owl.carousel.min.css";    
+@import "../vendors/bootstrap-selector/nice-select.css";    
+@import "../vendors/jquery-ui/jquery-ui.min.css";     
+/* Font family link */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Poppins:400,500,600,700&display=swap');

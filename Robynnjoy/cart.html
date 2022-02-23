@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="">
+		<meta name="description" content="Robynnjoy">
+		<meta name="keywords" content="Robynnjoy">
+
+		<title>Robynnjoy</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- styles -->
+		<link href="assets/plugins.css" rel="stylesheet" type="text/css">
+		<link href="assets/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="preloader cursor-anim-enable">
+		<div class="preloader__out-overlay"></div>
+
+		<!-- preloader-loading start -->
+		<div class="preloader__loading in">
+			<div class="preloader__loading-anim" data-splitting>Loading...</div>
+		</div>
+		<div class="preloader__loading out">
+			<div class="preloader__loading-anim" data-splitting>Loading...</div>
+		</div><!-- preloader-loading end -->
+
+		<!-- pointer start -->
+		<div class="pointer js-pointer" id="js-pointer">
+			<div class="pointer__inner drag">drag</div>
+			<i class="pointer__inner fas fa-search"></i>
+		</div><!-- pointer end -->
+
+		<!-- header start -->
+		<header class="fixed-header">
+			<!-- logo start -->
+			<div class="header-logo">
+				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<img class="header-logo__img" src="assets/images/logo/logo.png" alt="logo">
+				</a>
+			</div><!-- logo end -->
+
+            <div class="icon-menu">
+                <a class="js-animsition-link js-pointer-large" href="sign-in.html"><i class="fas fa-user"></i></a>
+                <div class="search-icon js-pointer-large"><i class="fas fa-search"></i></div>
+                <div class="cart-icon js-pointer-large"><i class="fas fa-shopping-cart"></i><span>2</span></div>
+            </div>
+
+			<!-- menu-icon start -->
+			<div class="menu-icon js-menu-open-close js-pointer-large">
+				<div class="menu-icon__box">
+					<span class="menu-icon__inner"></span>
+					<span class="menu-icon__close"></span>
+				</div>
+			</div><!-- menu-icon end -->
+		</header><!-- header end -->
+        <div class="cart-container">
+            <div class="cart-list">
+                <h2>Cart (2)</h2>
+                <button type="button" class="close js-pointer-large"><i class="fas fa-times"></i></button>
+                <div class="cart-items">
+                    <div class="item">
+                        <a href="#" class="img js-pointer-large">
+                            <img src="assets/images/portfolio/project_02/lilman.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h5><a class=" js-pointer-large" href="#">Orange Blossom</a></h5>
+                            <p>Quantity: 1</p>
+                            <p>Price: $40.00</p>
+                        </div>
+                        <div class="remove">
+                            <a class=" js-pointer-large" href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="img js-pointer-large">
+                            <img src="assets/images/portfolio/project_02/lilman.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h5><a class=" js-pointer-large" href="#">Orange Blossom</a></h5>
+                            <p>Quantity: 1</p>
+                            <p>Price: $40.00</p>
+                        </div>
+                        <div class="remove">
+                            <a class=" js-pointer-large" href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="img js-pointer-large">
+                            <img src="assets/images/portfolio/project_02/lilman.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h5><a class=" js-pointer-large" href="#">Orange Blossom</a></h5>
+                            <p>Quantity: 1</p>
+                            <p>Price: $40.00</p>
+                        </div>
+                        <div class="remove">
+                            <a class=" js-pointer-large" href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="img js-pointer-large">
+                            <img src="assets/images/portfolio/project_02/lilman.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h5><a class=" js-pointer-large" href="#">Orange Blossom</a></h5>
+                            <p>Quantity: 1</p>
+                            <p>Price: $40.00</p>
+                        </div>
+                        <div class="remove">
+                            <a class=" js-pointer-large" href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="cart-button">
+                    <a class="btn js-pointer-large" href="#">View cart</a>
+                    <button class="btn js-pointer-large">Check out</button>
+                </div>
+            </div>
+        </div>
+		<div class="search-container">
+			<div class="container">
+				
+				<h3>Search</h3>
+				<button class="close-s js-pointer-large" type="button"><i class="fas fa-times"></i></button>
+				<form action="">
+					<input placeholder="Type product name" type="text" name="" id="" class="form-input js-pointer-small">
+					<button type="submit" class="hidden"></button>
+				</form>
+			</div>
+			
+		</div>
+		<!-- navigation overlay -->
+		<div class="nav-overlay"></div>
+		<!-- navigation start -->
+		<nav class="nav-container js-dropdown-active-box">
+			<!-- nav-box start -->
+			<div class="container small nav-box">
+				<!-- dropdown close btn start -->
+				<div class="dropdown-close">
+					<div class="dropdown-close__inner">
+						<span class="dropdown-close__arrow"></span>
+					</div>
+					<div class="js-dropdown-close js-pointer-large"></div>
+					<div class="js-dropdown-close-2lvl js-pointer-large"></div>
+				</div><!-- dropdown close btn end -->
+
+				<!-- menu-box start -->
+				<ul class="menu-box nav-bg-overlay-box">
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change js-nav-bg-active js-dropdown-open">
+						<a class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Home">Home</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/bonnet-casual-close-up-2802601.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="about.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Our Story">Our Story</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/pexels-marlene-1019771.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="collections.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Collections">Collections</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/two-vases-on-table-842950.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="ingredients.html" class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Ingredients">Ingredients</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/goashape-RvyJGaoaWrs-unsplash.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="blog.html" class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Blog">Blog</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/face-facial-hair-fashionable-2555100.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="contact.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Contact">Contact</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/architectural-design-architecture-building-exterior-1707823.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+				</ul><!-- menu-box end -->
+			</div><!-- nav-box end -->
+		</nav><!-- navigation end -->
+
+		<!-- scroll-content start -->
+		<div id="js-scroll-content">
+			<!-- js-animsition-overlay start -->
+			<div class="js-animsition-overlay" data-animsition-overlay="true">
+				<!-- main start -->
+				<main class="main-content">
+					<!-- page head start -->
+					<section id="up" class="section-bg-dark pos-rel" data-scroll-section>
+						<div class="bg-parallax" style="background-image:url('assets/images/backgrounds/watcharlie-gGtRPDcW5kE-unsplash.jpg')" data-scroll data-scroll-speed="-1.5"></div>
+						<div class="bg-overlay-black bg-overlay-black_black"></div>
+						<div class="page-head-footer-overlay-fix" data-scroll data-scroll-repeat>
+							<!-- padding-top-bottom-150 start -->
+							<div class="padding-top-150 padding-bottom-50">
+								<!-- title start -->
+								<div class="container small">
+									<h1 class="headline-m headline-uppercase after-preloader-anim">
+										<span class="d-block">
+											<span class="anim-chars-fadein" data-splitting>Cart</span>
+										</span>
+									</h1>
+								</div><!-- title end -->
+							</div><!-- padding-top-bottom-150 end -->
+							<div class="container small user-section padding-bottom-70 after-preloader-anim">
+								<div class="flex-container">
+									<div class="twelve-columns">
+										<div class="order-section scrollanim-activate line-scrollanim-activate" data-scroll data-scroll-offset="30%">
+											<table class="table table-mobile anim-fade-to-top">
+												<thead>
+													<tr>
+														<th class="product-thumbnail">Image</th>
+														<th class="cart-product-name">Product</th>
+														<th class="product-price">Price</th>
+														<th class="product-quantity">Quantity</th>
+														<th class="product-subtotal">Total</th>
+														<th class="product-remove">Remove</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td data-label="Image" class="product-thumbnail"><a class=" js-pointer-large" href="#"><img src="assets/images/blog/single-post/1.jpg" alt=""></a></td>
+														<td data-label="Product" class="product-name">Product's name</td>
+														<td data-label="Price" class="product-price"><span class="amount">$100</span></td>
+														<td data-label="Quantity" class="product-subtotal">
+                                                            <div class="quantity">
+                                                                
+                                                                <div class="qty-input" style="margin: auto;">
+                                                                    <button class="qty-count qty-count--minus js-pointer-large" data-action="minus" type="button">-</button>
+                                                                    <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                                                                    <button class="qty-count qty-count--add js-pointer-large" data-action="add" type="button">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+														<td data-label="Total" class="product-status">$100.00</td>
+														<td data-label="Remove" class="product-od-view"><a class=" js-pointer-large" href="#"><i class="fa fa-times"></i></a></td>
+													</tr>
+													<tr>
+														<td data-label="Image" class="product-thumbnail"><a class=" js-pointer-large" href="#"><img src="assets/images/blog/single-post/1.jpg" alt=""></a></td>
+														<td data-label="Product" class="product-name">Product's name</td>
+														<td data-label="Price" class="product-price"><span class="amount">$100</span></td>
+														<td data-label="Quantity" class="product-subtotal">
+                                                            <div class="quantity">
+                                                                
+                                                                <div class="qty-input" style="margin: auto;">
+                                                                    <button class="qty-count qty-count--minus js-pointer-large" data-action="minus" type="button">-</button>
+                                                                    <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                                                                    <button class="qty-count qty-count--add js-pointer-large" data-action="add" type="button">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+														<td data-label="Total" class="product-status">$100.00</td>
+														<td data-label="Remove" class="product-od-view"><a class=" js-pointer-large" href="#"><i class="fa fa-times"></i></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+                                        <div class="box-btn">
+                                            <a href="products-list.html" class="border-btn js-pointer-large anim-fade-to-top tr-delay-06">
+                                                <span class="border-btn__inner">Back to shop</span>
+                                                <span class="btn-wait">Wait</span>
+                                                <span class="border-btn__lines-1"></span>
+                                                <span class="border-btn__lines-2"></span>
+                                            </a>
+                                            <button class="border-btn js-pointer-large anim-fade-to-top tr-delay-06">
+                                                <span class="border-btn__inner">Update Cart</span>
+                                                <span class="btn-wait">Wait</span>
+                                                <span class="border-btn__lines-1"></span>
+                                                <span class="border-btn__lines-2"></span>
+                                            </button>
+                                        </div>
+                                        
+									</div>
+                                    <div class="twelve-columns">
+                                        <div class="cart-page-total">
+                                            <h2>Cart totals</h2>
+                                            <ul class="mb-20">
+                                                <li>Subtotal <span>$250.00</span></li>
+                                                <li>Total <span>$250.00</span></li>
+                                            </ul>
+                                            <button class="os-btn">Proceed to checkout</button>
+                                        </div>
+                                        <div class="d-flex flex-justify-between">
+                                            
+                                            <button class="border-btn js-pointer-large anim-fade-to-top tr-delay-06">
+                                                <span class="border-btn__inner">Check Out</span>
+                                                <span class="btn-wait">Wait</span>
+                                                <span class="border-btn__lines-1"></span>
+                                                <span class="border-btn__lines-2"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</section><!-- page head end -->
+
+					
+
+				</main><!-- main end -->
+
+				<!-- footer start -->
+				<footer class="section-bg-dark" data-scroll-section>
+					<!-- container start -->
+					<div class="container padding-top-bottom-30" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
+						<!-- flex-container start -->
+						<div class="flex-container flex-align-center">
+							<!-- column start -->
+							<div class="eight-columns padding-top-90">
+								<h4 class="column-l-r-margin-10 headline-s headline-uppercase">
+									Tattoo Aftercare<Br>Made Easy.
+								</h4>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-90">
+								<ul class="column-l-r-margin-10 list">
+									<li class="list__item">
+										<a href="index.html" class="footer-nav-btn js-pointer-small js-animsition-link">Home</a>
+									</li>
+									<li class="list__item">
+										<a href="about.html" class="footer-nav-btn js-pointer-small js-animsition-link">Our Story</a>
+									</li>
+									<li class="list__item">
+										<a href="collections.html" class="footer-nav-btn js-pointer-small js-animsition-link">Collections</a>
+									</li>
+									<li class="list__item">
+										<a href="ingredients.html" class="footer-nav-btn js-pointer-small js-animsition-link">Ingredients</a>
+									</li>
+									<li class="list__item">
+										<a href="blog.html" class="footer-nav-btn js-pointer-small js-animsition-link">Blog</a>
+									</li>
+									<li class="list__item">
+										<a href="contact.html" class="footer-nav-btn js-pointer-small js-animsition-link">Contact</a>
+									</li>
+								</ul>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+
+						<!-- flex-container start -->
+						<div class="flex-container padding-top-30">
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Email:</div>
+									<div class="margin-top-20">
+										<div class="margin-top-5">
+											<a href="#" class="line-btn js-pointer-small">info@robynnjoy.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Phone:</div>
+									<div class="margin-top-20">
+										<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+1 (626)566-8400</a>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Address:</div>
+									<div class="margin-top-20">
+										<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">
+											P.O. Box 10488<Br>
+                                            Palm Desert, CA 92255
+										</a>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="twelve-columns padding-top-90">
+								<div class="column-l-r-margin-10 padding-top-30 pos-rel">
+									<div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
+									<!-- footer-social start -->
+									<ul class="list list_row list_margin-30px">
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Youtube</a>
+										</li>
+									</ul><!-- footer-social end -->
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="twelve-columns padding-top-120">
+								<div class="column-l-r-margin-10 pos-rel">
+									<p class="copyright margin-right-30">
+										&copy; Copyright 2021 Robynnjoy.
+									</p>
+									<!-- to top btn start -->
+									<a href="#up" class="scroll-to-btn js-pointer-large" data-scroll data-scroll-repeat data-scroll-to>
+										<span class="scroll-to-btn__arrow"></span>
+									</a><!-- to top btn end -->
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+					</div><!-- container end -->
+				</footer><!-- footer end -->
+			</div><!-- js-animsition-overlay end -->
+		</div><!-- scroll-content end -->
+
+		<!-- scripts -->
+		<script src="assets/plugins.js"></script>
+		<script src="assets/main.js"></script>
+	</body>
+</html>

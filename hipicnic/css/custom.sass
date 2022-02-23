@@ -1,0 +1,1283 @@
+#pwe-main-menu
+  max-height: calc(100% - 232px)
+  overflow: scroll
+@media screen and ( max-width: 575.82px )
+  .btn-contact a, button.btn-contact
+    padding: 10px 15px
+    font-size: 11px
+.order-detail
+  .table
+    th
+      border: unset
+      border-left: 1px solid #dee2e6
+      border-top: 1px solid #dee2e6
+      border: 1px solid #dee2e6
+      font-weight: 900
+      font-family: 'Nunito Sans', sans-serif
+      text-align: left
+      @media screen and ( max-width: 575.82px )
+        display: none
+
+        td
+          text-align: left
+          @media screen and ( max-width: 575.82px )
+            font-size: 14px
+            span
+              color: #a2783a
+              font-weight: 900
+              font-size: 24px
+              @media screen and ( max-width: 575.82px )
+                font-size: 20px
+    .table-mobile
+      tr
+        @media screen and ( max-width: 767px )
+          padding: unset
+          padding-bottom: 0px
+          margin-bottom: 0px
+          display: table
+          width: 100%
+          border: unset
+          border-bottom: 0px solid #dee2e6
+        td,th
+          @media screen and ( max-width: 767px )
+            padding-left: 35%!important
+.item-box
+  margin-bottom: 20px
+
+.box-button
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 20px
+
+.package
+  .btn-contact
+    a
+      padding: 20px 30px
+
+.detail-package-section
+  .custom-file
+    height: auto
+    label
+      font-size: 17px
+      font-weight: 400
+      height: auto
+      padding: 7px 15px
+      line-height: 1.75em
+      border-radius: unset
+      border-color: #ececec
+      &::after
+        display: none
+        
+
+
+.table td, .table th
+  vertical-align: middle
+
+.style-quare
+  list-style-type: square
+  padding-left: 15px
+  margin-bottom: unset
+
+.checkout-section
+  .billing_details
+    margin-bottom: 30px
+    .your_order
+      margin-bottom: 30px
+      .order_table_box
+        position: relative
+        width: 100%
+        .order_table_detail
+          width: 100%
+          border: unset
+          tr, th, td
+            border: unset
+            thead
+              position: relative
+              width: 100%
+              border-bottom: 1px solid #ececec
+              border-top: 1px solid #ececec
+
+              tbody
+                td.pro__price
+                  text-align: right
+                  color: #a2783a
+                  font-size: 24px
+                  font-weight: 900
+
+    .payments_part
+      padding: 40px 35px
+      box-shadow: 0 0 10px rgba(0,0,0,0.1)
+      .payments_part_text
+        padding-left: 15px
+
+        .paypal_card
+          position: relative
+          float: right
+          padding-left: 15px
+          img
+            display: inline-block
+            width: 100%
+            height: auto
+
+    .place_order_btn
+      margin-top: 50px
+      float: right
+
+
+
+.user-section
+  .statistic
+    .statistic-item
+      display: flex
+      padding: 30px 20px
+      box-shadow: 0 0 10px rgba(0,0,0,0.1)
+      align-items: center
+      justify-content: space-between
+      
+      .box-content
+        h2
+          font-weight: 700
+          color: #666
+        p
+          margin: 0
+      .box-icon
+        font-size: 35px
+
+      &:hover
+        .box-content
+          h2
+            color: #000
+        .box-icon
+          color: #000
+
+
+
+.nav-pills 
+  .nav-item
+    flex-grow: 1
+    text-align: center
+    .nav-link
+      width: 100%
+      border-radius: unset
+      color: #000
+      font-weight: 700
+      &.active, 
+      .show>.nav-link
+        color: #000
+        background-color: unset
+        border-bottom: 1px solid #a2783a
+
+.tab-content
+  .tab-pane
+    form
+      .bank
+        padding: 6px 10px
+        width: 100%
+        color: #777
+        outline: none
+        font-size: 16px
+    .agile_pay
+      .box-button
+        p
+          margin-bottom: unset
+          
+
+.datetime-section
+  .card
+    border: unset
+
+    .fc-clear
+      clear: both
+
+    .fc-bg, .fc-bgevent-skeleton, .fc-highlight-skeleton, .fc-helper-skeleton
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+
+    .fc-bg
+      bottom: 0
+
+      table
+        height: 100%
+
+    
+    .fc
+      table
+        width: 100%
+        box-sizing: border-box
+        table-layout: fixed
+        border-collapse: collapse
+        border-spacing: 0
+        font-size: 12px
+      tr
+        border: unset
+      th
+        text-align: center
+        border-style: solid
+        border-width: 1px 1px 0 1px !important
+        padding: 0
+        border-color: #ececec
+        vertical-align: top
+
+      td
+        border-style: solid
+        border-width: 1px 1px 0 1px !important
+        padding: 0
+        border-color: #ececec
+        vertical-align: top
+
+    
+    .fc .fc-row
+      border-style: solid
+      border-width: 0
+
+    .fc-row
+      position: relative
+      background: #ffffff
+      table
+        border-left: 0 hidden transparent
+        border-right: 0 hidden transparent
+        border-bottom: 0 hidden transparent
+
+      &:first-child table
+        border-top: 0 hidden transparent
+
+      .fc-bg
+        z-index: 1
+
+      .fc-bgevent-skeleton, 
+      .fc-highlight-skeleton
+        bottom: 0
+
+      
+      .fc-bgevent-skeleton
+        td
+          border-color: transparent
+
+        z-index: 2
+
+      .fc-highlight-skeleton
+        z-index: 3
+
+      .fc-content-skeleton
+        position: relative
+        z-index: 4
+        padding-bottom: 2px
+
+      .fc-helper-skeleton
+        z-index: 5
+
+    .fc .fc-row
+      .fc-content-skeleton
+        table, td
+          background: none
+          border-color: transparent
+          padding: .5rem .5rem
+
+      .fc-helper-skeleton td
+        background: none
+        border-color: transparent
+        padding: .5rem .5rem
+
+    .fc-row
+      .fc-content-skeleton td, .fc-helper-skeleton td
+        border-bottom: 0
+
+      .fc-content-skeleton tbody td, .fc-helper-skeleton tbody td
+        border-top: 0
+
+    
+    .fc-scroller
+      -webkit-overflow-scrolling: touch
+
+      >
+        .fc-day-grid, .fc-time-grid
+          position: relative
+          width: 100%
+
+    .fc-event
+      position: relative
+      display: block
+      font-size: 12px
+      line-height: 1.3
+      letter-spacing: 0.02em
+      border-radius: 3px
+      font-weight: 500
+      border: 1px solid #ddd
+      -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
+      -moz-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
+      box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
+      background-color: #ffffff
+      position: relative
+
+
+    .fc-event-dot
+      background-color: #ffffff
+      color: #a2783a
+      position: relative
+
+
+    .fc-event:before, .fc-event-dot:before
+      content: ""
+      position: absolute
+      left: 0
+      bottom: -2px
+      width: 50px
+      height: 100%
+      border-left: 3px solid #a2783a
+      border-bottom: 3px solid #a2783a
+      -webkit-border-radius: 3px 0px 0px 3px
+      -moz-border-radius: 3px 0px 0px 3px
+      border-radius: 3px 0px 0px 3px
+
+    .fc-event
+      color: #fff
+      text-decoration: none
+      .fc-title
+        font-weight: 500
+
+      i
+        color: #a2783a
+        font-size: 15px
+        margin-right: 10px
+        vertical-align: middle
+
+      &:hover
+        color: #fff
+        text-decoration: none
+
+      &[href], &.fc-draggable
+        cursor: pointer
+
+    .fc-not-allowed
+      
+      cursor: not-allowed
+
+      .fc-event
+        
+        cursor: not-allowed
+
+    .fc-event
+      .fc-bg
+        
+        z-index: 1
+        background: #fff
+        opacity: .25
+
+      .fc-content
+        color: #1c1c1c
+        position: relative
+        z-index: 2
+        padding: 8px
+        font-family: 'Nunito Sans', sans-serif
+
+
+      .fc-resizer
+        position: absolute
+        z-index: 4
+        display: none
+
+      &.fc-allow-mouse-resize .fc-resizer
+        display: block
+
+      &.fc-selected
+        z-index: 9999 !important
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+        .fc-resizer
+          display: block
+
+          &:before
+            content: ""
+            position: absolute
+            z-index: 9999
+            top: 50%
+            left: 50%
+            width: 40px
+            height: 40px
+            margin-left: -20px
+            margin-top: -20px
+
+        
+
+        &.fc-dragging
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3)
+
+    .fc-h-event.fc-selected:before
+      content: ""
+      position: absolute
+      z-index: 3
+      top: -10px
+      bottom: -10px
+      left: 0
+      right: 0
+
+    .fc-ltr .fc-h-event.fc-not-start, .fc-rtl .fc-h-event.fc-not-end
+      margin-left: 0
+      border-left-width: 0
+      padding-left: 1px
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+
+    .fc-ltr .fc-h-event.fc-not-end, .fc-rtl .fc-h-event.fc-not-start
+      margin-right: 0
+      border-right-width: 0
+      padding-right: 1px
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+
+    .fc-ltr .fc-h-event .fc-start-resizer, .fc-rtl .fc-h-event .fc-end-resizer
+      cursor: w-resize
+      left: -1px
+
+    .fc-ltr .fc-h-event .fc-end-resizer, .fc-rtl .fc-h-event .fc-start-resizer
+      cursor: e-resize
+      right: -1px
+
+    .fc-h-event
+      &.fc-allow-mouse-resize .fc-resizer
+        width: 7px
+        top: -1px
+        bottom: -1px
+
+        
+      &.fc-selected .fc-resizer
+        border-radius: 4px
+        border-width: 1px
+        width: 6px
+        height: 6px
+        border-style: solid
+        border-color: inherit
+        background: #fff
+        top: 50%
+        margin-top: -4px
+
+    .fc-ltr .fc-h-event.fc-selected .fc-start-resizer, .fc-rtl .fc-h-event.fc-selected .fc-end-resizer
+      margin-left: -4px
+
+    .fc-ltr .fc-h-event.fc-selected .fc-end-resizer, .fc-rtl .fc-h-event.fc-selected .fc-start-resizer
+      margin-right: -4px
+    
+    .fc-day-grid-event
+      margin: 1px 2px 0
+      padding: 0
+
+    tr:first-child > td > .fc-day-grid-event
+      margin-top: 2px
+
+    .fc-day-grid-event
+      &.fc-selected:after
+        content: ""
+        position: absolute
+        z-index: 1
+        top: -1px
+        right: -1px
+        bottom: -1px
+        left: -1px
+        background: #000
+        opacity: .25
+
+      .fc-content
+        white-space: nowrap
+        overflow: hidden
+
+      .fc-time
+        font-weight: bold
+
+    .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer, .fc-rtl .fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer
+      margin-left: -2px
+
+    .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer, .fc-rtl .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer
+      margin-right: -2px
+    
+
+    a.fc-more
+      margin: 1px 3px
+      font-size: .85em
+      cursor: pointer
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+    .fc-limited
+      display: none
+
+
+    .fc-day-grid .fc-row
+      z-index: 1
+
+    .fc-more-popover
+      z-index: 2
+      width: 220px
+
+      .fc-event-container
+        padding: 10px
+
+    .fc-now-indicator
+      position: absolute
+      border: 0 solid red
+
+    .fc-unselectable
+      -webkit-user-select: none
+      -khtml-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      -webkit-touch-callout: none
+      -webkit-tap-highlight-color: transparent
+
+    
+    .fc-unthemed
+      th, td, thead, tbody, .fc-divider, .fc-row, .fc-content, .fc-popover, .fc-list-view, .fc-list-heading td
+        border-color: #ddd
+
+      .fc-popover
+        background-color: #fff
+
+      .fc-divider, .fc-popover .fc-header, .fc-list-heading td
+        background: #eee
+
+      .fc-popover .fc-header .fc-close
+        color: #666
+
+      td.fc-today
+        background: #fcf8e3
+
+      .fc-disabled-day
+        background: #d7d7d7
+        opacity: .3
+
+    .fc-icon
+      display: inline-block
+      height: 1em
+      line-height: 1em
+      font-size: 1em
+      text-align: center
+      overflow: hidden
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+      -khtml-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+
+      &:after
+        position: relative
+
+    .fc-icon-left-single-arrow:after
+      content: "\2039"
+      font-weight: bold
+      font-size: 200%
+      top: -7%
+
+    .fc-icon-right-single-arrow:after
+      content: "\203A"
+      font-weight: bold
+      font-size: 200%
+      top: -7%
+
+    .fc-icon-left-double-arrow:after
+      content: "\AB"
+      font-size: 160%
+      top: -7%
+
+    .fc-icon-right-double-arrow:after
+      content: "\BB"
+      font-size: 160%
+      top: -7%
+
+    .fc-icon-left-triangle:after
+      content: "\25C4"
+      font-size: 125%
+      top: 3%
+
+    .fc-icon-right-triangle:after
+      content: "\25BA"
+      font-size: 125%
+      top: 3%
+
+    .fc-icon-down-triangle:after
+      content: "\25BC"
+      font-size: 125%
+      top: 2%
+
+    .fc-icon-x:after
+      content: "\D7"
+      font-size: 200%
+      top: 6%
+
+    .fc-unthemed
+      .fc-popover
+        border-width: 1px
+        border-style: solid
+
+        .fc-header .fc-close
+          font-size: .9em
+          margin-top: 2px
+
+      .fc-list-item:hover td
+        background-color: #f5f5f5
+
+
+    .ui-widget .fc-disabled-day
+      background-image: none
+
+    .fc-popover > .ui-widget-header + .ui-widget-content
+      border-top: 0
+
+    .ui-widget
+      .fc-event
+        color: #fff
+        text-decoration: none
+        font-weight: normal
+
+      td.fc-axis
+        font-weight: normal
+
+    .fc-time-grid .fc-slats .ui-widget-content
+      background: none
+
+      
+
+    .fc.fc-bootstrap3 a
+      text-decoration: none
+
+      &[data-goto]:hover
+        text-decoration: underline
+
+    .fc-bootstrap3
+      hr.fc-divider
+        border-color: inherit
+
+      .fc-today.alert
+        border-radius: 0
+
+      .fc-popover 
+        .panel-body
+        padding: 0
+
+      .fc-time-grid 
+        .fc-slats 
+          table
+            background: none
+
+    .fc.fc-bootstrap4 a
+      text-decoration: none
+
+      &[data-goto]:hover
+        text-decoration: underline
+
+    .fc-bootstrap4
+      hr.fc-divider
+        border-color: inherit
+
+      .fc-today.alert
+        border-radius: 0
+
+      a.fc-event:not([href]):not([tabindex])
+        color: #a2783a
+
+      .fc-popover
+        &.card
+          position: absolute
+
+        .card-body
+          padding: 0
+
+      .fc-time-grid .fc-slats table
+        
+        background: none
+
+
+    .fc-toolbar
+      text-align: center
+      display: block
+
+      &.fc-header-toolbar
+        margin-bottom: 1em
+
+      &.fc-footer-toolbar
+        margin-top: 1em
+
+      .fc-left
+        float: left
+
+      .fc-right
+        float: right
+        .btn-group
+          margin-left: 10px
+
+      .fc-center
+        display: inline-block
+
+    .fc
+      button
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+        margin: 0
+        height: auto
+        padding: 0 1rem
+        font-size: 1rem
+        white-space: nowrap
+        cursor: pointer
+
+      .fc-toolbar > 
+        float: left
+        margin-left: .75em
+
+        \:first-child
+          margin-left: 0
+
+    
+    .fc-toolbar
+      h2
+        margin: 0
+        font-size: 15px
+        font-weight: 700
+        font-family: 'Nunito Sans', sans-serif
+
+      button
+        position: relative
+
+      .fc-state-hover, .ui-state-hover
+        z-index: 2
+
+      .fc-state-down
+        z-index: 3
+
+      .fc-state-active, .ui-state-active
+        z-index: 4
+
+      button:focus
+        z-index: 5
+
+    .fc-view-container 
+      -webkit-box-sizing: content-box
+      -moz-box-sizing: content-box
+      box-sizing: content-box
+
+      &:before, &:after
+        -webkit-box-sizing: content-box
+        -moz-box-sizing: content-box
+        box-sizing: content-box
+
+    .fc-view
+      
+      position: relative
+      z-index: 1
+
+      > table
+        
+        position: relative
+        z-index: 1
+
+    .fc-basicWeek-view .fc-content-skeleton, .fc-basicDay-view .fc-content-skeleton
+      padding-bottom: 1em
+
+    .fc-basic-view .fc-body .fc-row
+      min-height: 4em
+
+    .fc-row.fc-rigid
+      overflow: hidden
+
+      .fc-content-skeleton
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+
+    .fc-day-top.fc-other-month
+      opacity: 0.3
+
+    .fc-basic-view
+      .fc-week-number, .fc-day-number
+        padding: 2px
+        color: rgba(52, 40, 104, 0.8)
+        font-size: 15px
+        font-weight: 400
+
+      th
+        &.fc-week-number, &.fc-day-number
+          padding: 0 2px
+
+          
+
+    .fc-ltr .fc-basic-view .fc-day-top .fc-day-number
+      float: right
+
+    .fc-rtl .fc-basic-view .fc-day-top .fc-day-number
+      float: left
+
+    .fc-ltr .fc-basic-view .fc-day-top .fc-week-number
+      float: left
+      border-radius: 0 0 3px 0
+
+    .fc-rtl .fc-basic-view .fc-day-top .fc-week-number
+      float: right
+      border-radius: 0 0 0 3px
+
+    .fc-basic-view
+      .fc-day-top .fc-week-number
+        min-width: 1.5em
+        text-align: center
+        background-color: #f2f2f2
+        color: #808080
+
+      td.fc-week-number
+        text-align: center
+        > 
+          display: inline-block
+          min-width: 1.25em
+
+
+    .fc-agenda-view .fc-day-grid
+      position: relative
+      z-index: 2
+
+      .fc-row
+        min-height: 3em
+
+        .fc-content-skeleton
+          padding-bottom: 1em
+
+          
+    .fc .fc-axis    
+      vertical-align: middle
+      padding: 0 4px
+      white-space: nowrap
+
+    .fc-ltr .fc-axis
+      text-align: right
+
+    .fc-rtl .fc-axis
+      text-align: left
+
+    .fc-time-grid-container
+      
+      position: relative
+      z-index: 1
+
+    .fc-time-grid
+      
+      position: relative
+      z-index: 1
+      min-height: 100%
+
+      table
+        
+        border: 0 hidden transparent
+
+      > .fc-bg
+        z-index: 1
+        background: #fff
+
+      .fc-slats, > hr
+        
+        position: relative
+        z-index: 2
+        margin-top: 20px
+
+      .fc-content-col
+        position: relative
+
+      .fc-content-skeleton
+        position: absolute
+        z-index: 3
+        top: 0
+        left: 0
+        right: 0
+
+      .fc-business-container
+        position: relative
+        z-index: 1
+
+      .fc-bgevent-container
+        position: relative
+        z-index: 2
+
+      .fc-highlight-container
+        position: relative
+        z-index: 3
+
+      .fc-event-container
+        position: relative
+        z-index: 4
+
+      .fc-now-indicator-line
+        z-index: 5
+
+      .fc-helper-container
+        
+        position: relative
+        z-index: 6
+
+      .fc-slats td
+        height: 1.5em
+        border-bottom: 0
+        padding: 10px
+
+    .fc-agendaDay-view .fc-time-grid .fc-slats td
+      background: #ffffff
+
+    .fc-time-grid
+      .fc-slats .fc-minor td
+        border-top-style: dotted
+
+      .fc-highlight-container
+        position: relative
+
+      .fc-highlight
+        position: absolute
+        left: 0
+        right: 0
+
+    .fc-ltr .fc-time-grid .fc-event-container
+      
+      margin: 0 2.5% 0 2px
+
+    .fc-rtl .fc-time-grid .fc-event-container
+      
+      margin: 0 2px 0 2.5%
+
+    .fc-time-grid
+      .fc-event
+        position: absolute
+        z-index: 1
+
+      .fc-bgevent
+        position: absolute
+        z-index: 1
+        left: 0
+        right: 0
+
+    
+    .fc-v-event
+      &.fc-not-start
+        border-top-width: 0
+        padding-top: 1px
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+
+      &.fc-not-end
+        border-bottom-width: 0
+        padding-bottom: 1px
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+
+    .fc-time-grid-event
+      overflow: hidden
+
+      &.fc-selected
+        overflow: visible
+
+        .fc-bg
+          display: none
+
+      .fc-content
+        overflow: hidden
+
+        
+      .fc-time, 
+      .fc-title
+        padding: 0 1px
+
+      .fc-time
+        font-size: .85em
+        white-space: nowrap
+
+      &.fc-short
+        .fc-content
+          
+          white-space: nowrap
+
+        .fc-time, 
+        .fc-title
+          display: inline-block
+          vertical-align: top
+
+        .fc-time
+          span
+            display: none
+
+          &:before
+            content: attr(data-start)
+
+          &:after
+            content: "\A0-\A0"
+
+        .fc-title
+          font-size: .85em
+          padding: 0
+
+      &.fc-allow-mouse-resize .fc-resizer
+        left: 0
+        right: 0
+        bottom: 0
+        height: 8px
+        overflow: hidden
+        line-height: 8px
+        font-size: 11px
+        font-family: monospace
+        text-align: center
+        cursor: s-resize
+
+        &:after
+          content: "="
+
+      &.fc-selected .fc-resizer
+        border-radius: 5px
+        border-width: 1px
+        width: 8px
+        height: 8px
+        border-style: solid
+        border-color: inherit
+        background: #fff
+        left: 50%
+        margin-left: -5px
+        bottom: -5px
+
+    .fc-time-grid
+      .fc-now-indicator-line
+        border-top-width: 1px
+        left: 0
+        right: 0
+
+      .fc-now-indicator-arrow
+        margin-top: -5px
+
+    .fc-ltr .fc-time-grid .fc-now-indicator-arrow
+      left: 0
+      border-width: 5px 0 5px 6px
+      border-top-color: transparent
+      border-bottom-color: transparent
+
+    .fc-rtl .fc-time-grid .fc-now-indicator-arrow
+      right: 0
+      border-width: 5px 6px 5px 0
+      border-top-color: transparent
+      border-bottom-color: transparent
+
+    .fc-event-dot
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-radius: 5px
+
+    .fc-rtl .fc-list-view
+      direction: rtl
+
+    .fc-list-view
+      border-width: 1px
+      border-style: solid
+
+    .fc .fc-list-table
+      table-layout: auto
+
+    .fc-list-table
+      td
+        border-width: 1px 0 0
+        padding: 8px 14px
+
+      tr:first-child td
+        border-top-width: 0
+
+    .fc-list-heading
+      border-bottom-width: 1px
+
+      td
+        font-weight: bold
+
+    .fc-ltr
+      .fc-list-heading-main
+        float: left
+
+      .fc-list-heading-alt
+        float: right
+
+    .fc-rtl
+      .fc-list-heading-main
+        float: right
+
+      .fc-list-heading-alt
+        float: left
+
+    .fc-list-item.fc-has-url
+      cursor: pointer
+
+    .fc-list-item-marker, .fc-list-item-time
+      white-space: nowrap
+      width: 1px
+
+    .fc-ltr .fc-list-item-marker
+      padding-right: 0
+
+    .fc-rtl .fc-list-item-marker
+      padding-left: 0
+
+    .fc-list-item-title a
+      
+      text-decoration: none
+      color: inherit
+
+      &[href]:hover
+        
+        text-decoration: underline
+
+    .fc-list-empty-wrap2
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+
+    .fc-list-empty-wrap1
+      width: 100%
+      height: 100%
+      display: table
+
+    .fc-list-empty
+      display: table-cell
+      vertical-align: middle
+      text-align: center
+
+    .fc-unthemed .fc-list-empty
+      
+      background-color: #eee
+
+    .fc th.fc-day-header
+      padding: 11px 7px
+      font-size: 16px
+      font-weight: 400
+
+    .fc-day
+      &.fc-today, &.alert-info
+        background: rgba(52, 40, 104, 0.03)
+
+    .datepicker
+      z-index: 123456
+
+    .card
+      border: 0
+      background: transparent
+
+    h2
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 22px
+      text-align: center
+      letter-spacing: 1px
+      font-family: 'Montserrat', sans-serif
+      color: #002147
+      margin-bottom: 20px
+
+    .btn
+      font-size: 15px !important
+      text-transform: uppercase
+      font-weight: 700
+      letter-spacing: 2.5px
+      font-family: 'Nunito', sans-serif
+      box-shadow: none !important
+      border: 0
+      padding: 10px 20px !important
+
+      &:focus
+        box-shadow: none
+
+      &.btn-primary
+        background: #a2783a
+        color: #ffffff
+        &.active
+          opacity: .6
+
+    .form-group label
+      font-weight: 600
+      letter-spacing: 0.010em
+      font-size: 18px
+      margin-bottom: 5px
+
+    .modal-body
+      background: #F3F5F9
+      border-radius: 10px
+
+      h4
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 18px
+        letter-spacing: 1px
+        font-family: 'Montserrat', sans-serif
+        color: #002147
+        margin-bottom: 20px
+
+      .form-control
+        box-shadow: none
+        height: 50px
+
+    .related-product
+      padding: 80px 0
+
+      .container
+        max-width: 1200px
+        width: 100%
+        margin: 0 auto
+
+      ul
+        padding: 0
+        margin: 0
+
+        li
+          margin-bottom: 30px
+          list-style-type: none
+
+          h3
+            font-weight: 700
+            font-size: 24px
+            padding: 20px 0
+
+          a
+            font-weight: 600
+            color: #3b484a
+            text-align: center
+
+            img
+              max-width: 100%
+              display: block
+
+    .related-box
+      max-width: 400px
+      margin: 0 auto
+
+    .download-btn
+      padding: 15px
+      display: inline-flex
+      align-items: center
+
+      .fa
+        font-size: 40px
+        margin-right: 10px
+.datepickers-container
+  z-index: 100000
+
+.event-icon
+  margin-right: 10px
+.calendar-modal
+  .modal-title
+    margin-bottom: 20px
+    color: #a2783a
+    .event-title
+      font-family: 'Nunito Sans', sans-serif
+      
+  .modal-content 
+    h4 
+      color: #a2783a
+
+.default-bg
+  background-color: #fff
+.blue-bg 
+  background-color: blue
+.red-bg 
+  background-color: red
+.green-bg 
+  background-color: green

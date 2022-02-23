@@ -1,0 +1,59 @@
+#controlKit {
+    display: none;
+}
+.section-team-work {
+  margin-top: 50px
+}
+
+.section-team-work #iframe {
+  width: 100%;
+  min-height: 800px;
+  /* transform: translateX(-25%); */
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .section-team-work #iframe {
+    min-height: 500px;
+  }
+}
+@media (max-width: 767.82px) {
+  .section-team-work #iframe {
+    min-height: 400px;
+    margin-bottom: 20px
+  }
+}
+
+  /* button {
+    font-size: 30px;
+    padding: 0 20px;
+  } */
+  .text-wrapper h2 {
+    /* font-size: 100px; */
+    margin-bottom: 30px;
+  }
+  .text-wrapper p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    min-height: 140px
+  }
+  @media (max-width: 575.82px) {
+    .text-wrapper p {
+      font-size: 14px;
+    }
+  }
+  .text-wrapper .text-index {
+    display: none;
+  }
+  .text-wrapper .text-index.active {
+    display: block;
+  }
+      .text-wrapper {
+          
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          pointer-events: none;
+      }
+  .button-wrapper .main-btn{
+    margin-right: 20px;
+  }

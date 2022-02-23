@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ask Santa - Home</title>
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/plyr.css" />
+    <link rel="stylesheet" href="assets/all.min.css">
+</head>
+<body>
+    <div class="coming-section">
+        <div class="icon-logo">
+            <img src="assets/logo-w.png" alt="">
+        </div>
+        <div class="form-index">
+            <h1>Santa is in his workshop right now and he can't wait to talk to you soon</h1>
+            <button type="button" class="btn" data-toggle="modal" data-target="#modal-form">
+                Enter your email to subscribe
+            </button>
+              
+        </div>
+        <div class="bg-1">
+            <img src="assets/banner-bg.png" alt="">
+            <img class="lap-11" src="assets/11inch.png" alt="">
+        </div>
+        <!-- <div class="bg-footer">
+            <img src="assets/footer.png" alt="">
+        </div> -->
+    </div>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake el-1">
+            <img src="assets/banner-ele-1.svg" alt="">
+        </div>
+        <div class="snowflake">
+            <img src="assets/banner-ele-1.svg" alt="">
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+            <img src="assets/banner-el-3.svg" alt="">
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+            <img src="assets/banner-ele-1.svg" alt="">
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+            <img src="assets/banner-ele-1.svg" alt="">
+        </div>
+    </div>
+    <div class="video-section" >
+        <div class="top-bg">
+            <img src="assets/banner-bg-1.png" alt="">
+        </div>
+        <div class="animation-el">
+            <div class="star-el __1"><img src="assets/bn-el-1.png" alt=""></div>
+            <div class="star-el __2"><img src="assets/bn-el-2.png" alt=""></div>
+            <div class="star-el __3"><img src="assets/bn-el-3.png" alt=""></div>
+            <div class="star-el __4"><img src="assets/bn-el-1.png" alt=""></div>
+            <div class="star-el __5"><img src="assets/bn-el-2.png" alt=""></div>
+            <div class="star-el __6"><img src="assets/bn-el-3.png" alt=""></div>
+            <div class="star-el __7"><img src="assets/bn-el-2.png" alt=""></div>
+            <div class="star-el __8"><img src="assets/bn-el-1.png" alt=""></div>
+            <div class="item-el __1"><img src="assets/bn-el-4.png" alt=""></div>
+            <div class="item-el __2"><img src="assets/bn-el-5.png" alt=""></div>
+            <div class="item-el __3"><img src="assets/bn-el-6.png" alt=""></div>
+            <div class="item-el __4"><img src="assets/bn-el-7.png" alt=""></div>
+            <div class="item-el __5"><img src="assets/bn-el-8.png" alt=""></div>
+
+        </div>
+        <div class="container">
+            
+            <div class="row justify-content-center">
+                
+                <div class="col-lg-8">
+                    
+                    <div class="box-content">
+                        <style>
+                            video {
+                                margin: 30px 0;
+                                width: 100%;
+                            }
+                        </style>
+                        <h2 class="title">It’s the most wonderful time of the year!</h2>
+                        <video muted id="player" allowfullscreen  controls autoplay="autoplay" loop="true" muted data-poster="assets/banner-bg-video.jpg">ư
+                            <source src="assets/video.mp4" type="video/mp4">
+                        </video>
+                        <!-- <div class="thumb-video">
+                            <img src="assets/banner-bg-video.jpg" alt="">
+                            
+                            <a class="btn-play" data-fancybox="video" href="assets/video.mp4"></a>
+                         
+                            <div class="el-vd-1">
+                                <img src="assets/banner-vd-el-1.png" alt="">
+                            </div>
+                        </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer" style="background-image: url(assets/banner-footer.png);">
+        <a href="index.html">
+            <img src="assets/logo-w.png" alt="">
+        </a>
+        <ul class="link-policy">
+            <li><a href="#">For Parent's Only</a></li>
+            <li><a href="policy.html">Policies</a></li>
+        </ul>
+        <ul class="link-social">
+            <li><a target="_blank" href="https://twitter.com/AskSantaToday" style="-webkit-mask-image: url(assets/twitter.png);"></a></li>
+            <li><a target="_blank" href=" https://www.linkedin.com/company/storyfile/" style="-webkit-mask-image: url(assets/linkedin.png);"></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Ask-Santa-103420564898246" style="-webkit-mask-image: url(assets/facebook-logo.png);"></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/asksantatoday/" style="-webkit-mask-image: url(assets/instagram.png);"></a></li>
+        </ul>
+    </footer>
+    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-formTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Subscribe!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p>Stay up to date and join our newsletter to receive the lastest updates</p>
+                <form action="" class="form-modal-index">
+                    <input type="email" placeholder="Enter your email ...">
+                    <button type="submit">Submit</button>
+                </form>
+                
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="assets/jquery-3.5.1.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/jquery.fancybox.min.js"></script>
+    <script>
+        setInterval(function () {
+            $('video').each(function () {
+                var videoElement = $(this)[0]; 
+                var eTop = $(this).offset().top;
+                var elementOffestY = (eTop - $(window).scrollTop());
+                var videoOffset = [elementOffestY, elementOffestY+$(this).height()];
+                if ((videoOffset[0] < 100) && (videoOffset[1] > 350)) {
+                    console.log('play');
+                    if (!videoElement.playing) {
+                        videoElement.play();
+                    }
+                } else {
+                    if (videoElement.playing) {
+                        videoElement.pause();
+                    }
+                }
+            });
+        },300);
+    </script>
+</body>
+</html>

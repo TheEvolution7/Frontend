@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Jinna Gik">
+		<meta name="description" content="Robynnjoy Template is a uniquely HTML5 template develop in HTML with a modern look.">
+		<meta name="keywords" content="creative, modern, clean, html5, css3, portfolio, blog, agency, templates, minimal">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="assets/images/favicon.png">
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+		<title>Robynnjoy</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- styles -->
+		<link href="assets/plugins.css" rel="stylesheet" type="text/css">
+		<link href="assets/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="preloader cursor-anim-enable">
+		<div class="preloader__out-overlay"></div>
+
+		<!-- preloader-loading start -->
+		<div class="preloader__loading in">
+			<div class="preloader__loading-anim" data-splitting>Loading...</div>
+		</div>
+		<div class="preloader__loading out">
+			<div class="preloader__loading-anim" data-splitting>Loading...</div>
+		</div><!-- preloader-loading end -->
+
+		<!-- pointer start -->
+		<div class="pointer js-pointer" id="js-pointer">
+			<div class="pointer__inner drag">drag</div>
+			<i class="pointer__inner fas fa-search"></i>
+		</div><!-- pointer end -->
+
+		<!-- header start -->
+		<header class="fixed-header">
+			<!-- logo start -->
+			<div class="header-logo">
+				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<img class="header-logo__img" src="assets/images/logo/logo.png" alt="logo">
+				</a>
+			</div><!-- logo end -->
+
+            <div class="icon-menu">
+                <a class="js-animsition-link js-pointer-large" href="sign-in.html"><i class="fas fa-user"></i></a>
+                <div class="search-icon js-pointer-large"><i class="fas fa-search"></i></div>
+                <div class="cart-icon js-pointer-large"><i class="fas fa-shopping-cart"></i><span>2</span></div>
+            </div>
+
+			<!-- menu-icon start -->
+			<div class="menu-icon js-menu-open-close js-pointer-large">
+				<div class="menu-icon__box">
+					<span class="menu-icon__inner"></span>
+					<span class="menu-icon__close"></span>
+				</div>
+			</div><!-- menu-icon end -->
+		</header><!-- header end -->
+        <div class="cart-container">
+            <div class="cart-list">
+                <h2>Cart (2)</h2>
+                <button type="button" class="close js-pointer-large"><i class="fas fa-times"></i></button>
+                <div class="cart-items">
+                    <div class="item">
+                        <a href="#" class="img js-pointer-large">
+                            <img src="assets/images/portfolio/project_02/lilman.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h5><a class=" js-pointer-large" href="#">Orange Blossom</a></h5>
+                            <p>Quantity: 1</p>
+                            <p>Price: $40.00</p>
+                        </div>
+                        <div class="remove">
+                            <a class=" js-pointer-large" href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="img js-pointer-large">
+                            <img src="assets/images/portfolio/project_02/lilman.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h5><a class=" js-pointer-large" href="#">Orange Blossom</a></h5>
+                            <p>Quantity: 1</p>
+                            <p>Price: $40.00</p>
+                        </div>
+                        <div class="remove">
+                            <a class=" js-pointer-large" href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="img js-pointer-large">
+                            <img src="assets/images/portfolio/project_02/lilman.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h5><a class=" js-pointer-large" href="#">Orange Blossom</a></h5>
+                            <p>Quantity: 1</p>
+                            <p>Price: $40.00</p>
+                        </div>
+                        <div class="remove">
+                            <a class=" js-pointer-large" href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="img js-pointer-large">
+                            <img src="assets/images/portfolio/project_02/lilman.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h5><a class=" js-pointer-large" href="#">Orange Blossom</a></h5>
+                            <p>Quantity: 1</p>
+                            <p>Price: $40.00</p>
+                        </div>
+                        <div class="remove">
+                            <a class=" js-pointer-large" href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="cart-button">
+                    <a class="btn js-pointer-large" href="#">View cart</a>
+                    <button class="btn js-pointer-large">Check out</button>
+                </div>
+            </div>
+        </div>
+		<div class="search-container">
+			<div class="container">
+				
+				<h3>Search</h3>
+				<button class="close-s js-pointer-large" type="button"><i class="fas fa-times"></i></button>
+				<form action="">
+					<input placeholder="Type product name" type="text" name="" id="" class="form-input js-pointer-small">
+					<button type="submit" class="hidden"></button>
+				</form>
+			</div>
+			
+		</div>
+		<!-- navigation overlay -->
+		<div class="nav-overlay"></div>
+		<!-- navigation start -->
+		<nav class="nav-container js-dropdown-active-box">
+			<!-- nav-box start -->
+			<div class="container small nav-box">
+				<!-- dropdown close btn start -->
+				<div class="dropdown-close">
+					<div class="dropdown-close__inner">
+						<span class="dropdown-close__arrow"></span>
+					</div>
+					<div class="js-dropdown-close js-pointer-large"></div>
+					<div class="js-dropdown-close-2lvl js-pointer-large"></div>
+				</div><!-- dropdown close btn end -->
+
+				<!-- menu-box start -->
+				<ul class="menu-box nav-bg-overlay-box">
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change js-nav-bg-active js-dropdown-open">
+						<a class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Home">Home</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/bonnet-casual-close-up-2802601.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="about.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Our Story">Our Story</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/pexels-marlene-1019771.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="collections.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Collections">Collections</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/two-vases-on-table-842950.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="ingredients.html" class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Ingredients">Ingredients</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/goashape-RvyJGaoaWrs-unsplash.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="blog.html" class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Blog">Blog</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/face-facial-hair-fashionable-2555100.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="contact.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Contact">Contact</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url('assets/images/menu/architectural-design-architecture-building-exterior-1707823.jpg');"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+				</ul><!-- menu-box end -->
+			</div><!-- nav-box end -->
+		</nav><!-- navigation end -->
+
+		<!-- scroll-content start -->
+		<div id="js-scroll-content">
+			<!-- js-animsition-overlay start -->
+			<div class="js-animsition-overlay" data-animsition-overlay="true">
+				<!-- main start -->
+				<main class="main-content">
+					<!-- page head start -->
+					<section id="up" class="section-bg-dark" data-scroll-section>
+						<div class="page-head-footer-overlay-fix" data-scroll data-scroll-repeat>
+							<!-- padding-top-bottom-150 start -->
+							<div class="padding-top-bottom-150">
+								<!-- title start -->
+								<div class="container small">
+									<h2 class="headline-xxxl headline-uppercase after-preloader-anim">
+										<span class="d-block">
+											<span class="anim-chars-fadein" data-splitting>The Robynn Joy</span>
+										</span>
+										<span class="d-block" data-scroll data-scroll-speed="-0.4" data-scroll-position="top">
+											<span class="anim-chars-fadein" data-splitting>Company 's Story</span>
+										</span>
+										<span class="d-block" data-scroll data-scroll-speed="-0.8" data-scroll-position="top">
+											<span class="anim-chars-fadein" data-splitting></span>
+										</span>
+									</h2>
+								</div><!-- title end -->
+							</div><!-- padding-top-bottom-150 end -->
+
+							<!-- background start -->
+							<div class="pos-rel hidden-box height-100vh">
+								<!-- bg-parallax -->
+								<div class="bg-parallax" style="background-image:url('assets/images/backgrounds/ian-dooley-10ca-K3e6Ko-unsplash.jpg')" data-scroll data-scroll-speed="-1.5"></div>
+								<a href="https://www.youtube.com/watch?v=zuxjc_c5lXA" class="play-button js-popup-youtube js-pointer-large">
+									<span class="play-button__inner"></span>
+								</a>
+							</div><!-- background end -->
+						</div>
+					</section><!-- page head end -->
+
+					<!-- about us start -->
+					<section class="section-bg-light" data-scroll-section>
+						<!-- container start -->
+						<div class="container padding-top-60 padding-bottom-150">
+							<!-- flex-container start -->
+							<div class="flex-container flex-align-center padding-top-60">
+								<!-- column start -->
+								<div class="five-columns padding-top-30">
+									<div class="hidden-box">
+										<div data-scroll data-scroll-speed="-1.2">
+											<div class="anim-img-reveal" data-scroll data-scroll-offset="10%" style="background-image:url('assets/images/about/ian-dooley-1yl3jzKoKXg-unsplash.jpg')">
+												<img src="assets/images/about/ian-dooley-1yl3jzKoKXg-unsplash.jpg" alt="About us">
+											</div>
+										</div>
+									</div>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div class="seven-columns padding-top-30 text-color-mix-blend" data-scroll data-scroll-speed="1">
+									<div class="d-inline-block">
+										<div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
+											<div class="hidden-box text-left-offset">
+												<h2 class="headline-xl anim-text-slide">Our Story</h2>
+											</div>
+										</div>
+									</div>
+									<div class="column-l-margin-40 margin-top-20">
+										<p class="body-text-m max-width-400 d-inline-block anim-split-lines" data-scroll data-scroll-offset="20%">
+                                            The Robynn Joy Company was founded during a personal quest for tangible healing.  Life’s journey, many times, requires a process of healing. What started as creative therapy quickly became a pursuit of being “present” in the now and remembering the simple things for which to be grateful; things often taken for granted.
+                                        </p>
+                                        <br><br><br>
+                                        <a href="contact.html" class="border-btn js-pointer-large">
+                                            <span class="border-btn__inner">Contact Us</span>
+                                            <span class="border-btn__lines-1"></span>
+                                            <span class="border-btn__lines-2"></span>
+                                        </a>
+									</div>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+
+							<!-- flex-container start -->
+							<div class="flex-container flex-align-center reverse padding-top-60">
+								<!-- column start -->
+								<div class="seven-columns padding-top-30 text-color-mix-blend text-right z-index-2" data-scroll data-scroll-speed="1">
+									<div class="d-inline-block">
+										<div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
+											<div class="text-right-offset">
+												<h3 class="headline-xl">
+													<span class="hidden-box d-block">
+														<span class="anim-text-slide">Our</span>
+													</span>
+													<span class="hidden-box d-block">
+														<span class="anim-text-slide tr-delay-02">Skin Health</span>
+													</span>
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="column-r-margin-40 margin-top-20">
+										<p class="body-text-m max-width-400 d-inline-block anim-split-lines" data-scroll data-scroll-offset="20%">
+                                            Our skin health is something that a lot of us take for granted. Our skin is our largest organ and our body’s first line of defense and therefore is exposed to many irritants and chemicals. The Robynn Joy Company has just what you need to love and nourish your skin.
+                                        </p>
+                                        <br><br><br>
+                                        <a href="collections.html" class="border-btn js-pointer-large">
+                                            <span class="border-btn__inner">View Collections</span>
+                                            <span class="border-btn__lines-1"></span>
+                                            <span class="border-btn__lines-2"></span>
+                                        </a>
+									</div>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div class="five-columns padding-top-30">
+									<div class="hidden-box">
+										<div data-scroll data-scroll-speed="-1.2">
+											<div class="anim-img-reveal" data-scroll data-scroll-offset="10%" style="background-image:url('assets/images/about/ian-dooley-RTr1c-ZLe0c-unsplash.jpg')">
+												<img src="assets/images/about/ian-dooley-RTr1c-ZLe0c-unsplash.jpg" alt="About us">
+											</div>
+										</div>
+									</div>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+
+                            <!-- flex-container start -->
+							<div class="flex-container flex-align-center padding-top-60">
+								<!-- column start -->
+								<div class="five-columns padding-top-30">
+									<div class="hidden-box">
+										<div data-scroll data-scroll-speed="-1.2">
+											<div class="anim-img-reveal" data-scroll data-scroll-offset="10%" style="background-image:url('assets/images/about/architectural-design-architecture-building-exterior-1707823.jpg')">
+												<img src="assets/images/about/architectural-design-architecture-building-exterior-1707823.jpg" alt="About us">
+											</div>
+										</div>
+									</div>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div class="seven-columns padding-top-30 text-color-mix-blend" data-scroll data-scroll-speed="1">
+									<div class="d-inline-block">
+										<div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
+											<div class="hidden-box text-left-offset">
+												
+                                                <h3 class="headline-xl">
+													<span class="hidden-box d-block">
+														<span class="anim-text-slide">Our</span>
+													</span>
+													<span class="hidden-box d-block">
+														<span class="anim-text-slide tr-delay-02">Hand Made</span>
+													</span>
+                                                    <span class="hidden-box d-block">
+														<span class="anim-text-slide tr-delay-02">Products</span>
+													</span>
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="column-l-margin-40 margin-top-20">
+										<p class="body-text-m max-width-400 d-inline-block anim-split-lines" data-scroll data-scroll-offset="20%">
+                                            Our hand made products are richly infused with premium all-natural ingredients that help soothe and nourish the skin. They may also help to calm the frustrating attacks of eczema, psoriasis, and other skin conditions. Our artisan blends cleanse, exfoliate and moisturize, leaving a soft glow that can only come from healthy skin.
+                                        </p>
+                                        <br><br><br>
+                                        <a href="collections.html" class="border-btn js-pointer-large">
+                                            <span class="border-btn__inner">View Collections</span>
+                                            <span class="border-btn__lines-1"></span>
+                                            <span class="border-btn__lines-2"></span>
+                                        </a>
+									</div>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- container end -->
+					</section><!-- about us end -->
+
+					<!-- section-bg-dark start -->
+					<div class="section-bg-dark" data-scroll-section>
+						<!-- padding-top-bottom-30 start -->
+						<div class="padding-top-bottom-30">
+							<!-- clients start -->
+							<section class="padding-top-bottom-120 container small">
+								<h2 class="headline-m anim-split-lines max-width-400" data-scroll data-scroll-offset="20%">Our Partner</h2>
+
+								<!-- flex-container start -->
+								<div class="flex-container padding-top-30">
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/balancha.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/chayhana.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/chimkirikter.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/dongolok.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/eptep-septep.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/guldoyjan.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/jorgo.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/judoboy.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/kizil-jindi.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/meyman.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/olchobay.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+
+									<!-- column start -->
+									<div class="three-columns padding-top-60">
+										<div class="text-center">
+											<img class="client-logo" src="assets/images/clients/tamaktan.png" alt="clients logo">
+										</div>
+									</div><!-- column end -->
+								</div><!-- flex-container end -->
+							</section><!-- clients end -->
+
+							<!-- marquee start -->
+							<section class="padding-top-bottom-30">
+								<div class="padding-top-bottom-90 pos-rel">
+									<div class="line-top"></div>
+									<!-- marquee start -->
+									<h3 class="marquee headline-xxxxl text-color-white headline-uppercase hidden-box" data-duration="20000" data-gap="20">
+										/ Robynnjoy  
+										<span class="text-stroke-white">Rabbit</span>
+										& Difference
+										<span class="text-stroke-white">Real</span>
+										/ Tattoos
+										<span class="text-stroke-white">Real</span>
+										& novation
+										<span class="text-stroke-white">Results</span>
+									</h3><!-- marquee end -->
+									<div class="line-bottom"></div>
+								</div>
+							</section><!-- marquee end -->
+
+							<!-- testimonials start -->
+							<section class="padding-top-bottom-120 container small">
+								<h2 class="headline-m anim-split-lines" data-scroll data-scroll-offset="20%">Testimonial</h2>
+
+								<!-- pos-rel start -->
+								<div class="pos-rel padding-top-90 padding-bottom-90">
+									<!-- js-1-view-slider start -->
+									<div class="js-1-view-slider hidden-box">
+										<!-- swiper-wrapper start -->
+										<div class="swiper-wrapper slider-scrollanim-activate" data-scroll>
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<!-- anim-img-scale start -->
+												<div class="anim-scale testimonials-author border-radius-50perc">
+													<img class="anim-scale__inner" src="assets/images/testimonials/ivana-cajina-_7LbC5J-jw4-unsplash.jpg" alt="author">
+												</div><!-- anim-img-scale end -->
+												<p class="quote margin-top-60 body-text-m anim-fade-to-left">I just wanted to tell you, I absolutely love the product.  I put the Orange Blossom on today and it's still fragrant. Usually when I use moisturizers, the fragrance doesn't last, but you've got an AWESOME product.</p>
+												<div class="text-right margin-top-20">
+													<div class="headline-xxxs anim-chars-blur" data-splitting>T. Leigh</div>
+													<div class="subhead-xs margin-top-5 anim-chars-blur" data-splitting>Health educator</div>
+												</div>
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<!-- anim-img-scale start -->
+												<div class="anim-scale testimonials-author border-radius-50perc">
+													<img class="anim-scale__inner" src="assets/images/testimonials/radu-florin-G8hUrwJZqGs-unsplash.jpg" alt="author">
+												</div><!-- anim-img-scale end -->
+												<p class="quote margin-top-60 body-text-m anim-fade-to-left">Just wanted you to know that I received my products.  THANK YOU!!  I am impressed and in love with the butter!  This morning I used the Orange Blossom and it smells great!  Love the consistency of it.  My skin is pretty golden brown and soft.  Good job!!!</p>
+												<div class="text-right margin-top-20">
+													<div class="headline-xxxs anim-chars-blur" data-splitting>Tiff</div>
+													<div class="subhead-xs margin-top-5 anim-chars-blur" data-splitting>Fashion designer</div>
+												</div>
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<!-- anim-img-scale start -->
+												<div class="anim-scale testimonials-author border-radius-50perc">
+													<img class="anim-scale__inner" src="assets/images/testimonials/oliver-ragfelt-khV4fTy6-D8-unsplash.jpg" alt="author">
+												</div><!-- anim-img-scale end -->
+												<p class="quote margin-top-60 body-text-m anim-fade-to-left">I need to tell you how I am cherishing this product.  The fragrances are wonderful.  The feel of the butter is luxurious, yet light.  My skin is left glowing.  I am in love.  Thank you, Thank you, Thank you!!!!</p>
+												<div class="text-right margin-top-20">
+													<div class="headline-xxxs anim-chars-blur" data-splitting>Tasha W.</div>
+													<div class="subhead-xs margin-top-5 anim-chars-blur" data-splitting>Investor</div>
+												</div>
+											</div><!-- swiper-slide end -->
+
+										</div><!-- swiper-wrapper end -->
+
+										<!-- swiper-button-prev start -->
+										<div class="swiper-button-prev-box">
+											<div class="swiper-button-prev"></div>
+										</div><!-- swiper-button-prev end -->
+										<!-- swiper-button-next start -->
+										<div class="swiper-button-next-box">
+											<div class="swiper-button-next"></div>
+										</div><!-- swiper-button-next end -->
+
+										<!-- swiper-pagination start -->
+										<div class="pagination-box">
+											<div class="swiper-pagination"></div>
+										</div><!-- swiper-pagination end -->
+									</div><!-- js-1-view-slider end -->
+								</div><!-- pos-rel end -->
+							</section><!-- testimonials end -->
+						</div><!-- padding-top-bottom-30 end -->
+					</div><!-- section-bg-dark end -->
+
+				</main><!-- main end -->
+
+				<!-- footer start -->
+				<footer class="section-bg-dark" data-scroll-section>
+					<!-- container start -->
+					<div class="container padding-top-bottom-30" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
+						<!-- flex-container start -->
+						<div class="flex-container flex-align-center">
+							<!-- column start -->
+							<div class="eight-columns padding-top-90">
+								<h4 class="column-l-r-margin-10 headline-s headline-uppercase">
+									Tattoo Aftercare<Br>Made Easy.
+								</h4>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-90">
+								<ul class="column-l-r-margin-10 list">
+									<li class="list__item">
+										<a href="index.html" class="footer-nav-btn js-pointer-small js-animsition-link">Home</a>
+									</li>
+									<li class="list__item">
+										<a href="about.html" class="footer-nav-btn js-pointer-small js-animsition-link">Our Story</a>
+									</li>
+									<li class="list__item">
+										<a href="collections.html" class="footer-nav-btn js-pointer-small js-animsition-link">Collections</a>
+									</li>
+									<li class="list__item">
+										<a href="ingredients.html" class="footer-nav-btn js-pointer-small js-animsition-link">Ingredients</a>
+									</li>
+									<li class="list__item">
+										<a href="blog.html" class="footer-nav-btn js-pointer-small js-animsition-link">Blog</a>
+									</li>
+									<li class="list__item">
+										<a href="contact.html" class="footer-nav-btn js-pointer-small js-animsition-link">Contact</a>
+									</li>
+								</ul>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+
+						<!-- flex-container start -->
+						<div class="flex-container padding-top-30">
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Email:</div>
+									<div class="margin-top-20">
+										<div class="margin-top-5">
+											<a href="#" class="line-btn js-pointer-small">info@robynnjoy.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Phone:</div>
+									<div class="margin-top-20">
+										<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+1 (626)566-8400</a>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Address:</div>
+									<div class="margin-top-20">
+										<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">
+											P.O. Box 10488<Br>
+                                            Palm Desert, CA 92255
+										</a>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="twelve-columns padding-top-90">
+								<div class="column-l-r-margin-10 padding-top-30 pos-rel">
+									<div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
+									<!-- footer-social start -->
+									<ul class="list list_row list_margin-30px">
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Youtube</a>
+										</li>
+									</ul><!-- footer-social end -->
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="twelve-columns padding-top-120">
+								<div class="column-l-r-margin-10 pos-rel">
+									<p class="copyright margin-right-30">
+										&copy; Copyright 2021 Robynnjoy.
+									</p>
+									<!-- to top btn start -->
+									<a href="#up" class="scroll-to-btn js-pointer-large" data-scroll data-scroll-repeat data-scroll-to>
+										<span class="scroll-to-btn__arrow"></span>
+									</a><!-- to top btn end -->
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+					</div><!-- container end -->
+				</footer><!-- footer end -->
+			</div><!-- js-animsition-overlay end -->
+		</div><!-- scroll-content end -->
+
+		<!-- scripts -->
+		<script src="assets/plugins.js"></script>
+		<script src="assets/main.js"></script>
+	</body>
+</html>

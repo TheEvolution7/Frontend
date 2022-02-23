@@ -1,0 +1,1028 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport">
+
+    <title>
+        Loddie Doddie
+    </title>
+
+    <link rel="stylesheet" href="assets/jquery.fancybox.min.css">
+    <link href="assets/main.css" rel="stylesheet">
+    <link href="assets/main-1.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+
+
+</head>
+
+<body>
+    <header id="header" class="show-me">
+        <div class="wrapper">
+            <a href="index.html" class="logo enter-y-r">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+            <div class="header-middel">
+                <ul>
+                    <li class="enter-y-r delay-1"><a class="active" href="#">Home</a></li>
+                    <li class="enter-y-r delay-2 has-submenu">
+                        <a href="#">Chalkboards</a><i class="fal fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="#">Rustic Frame</a></li>
+                            <li><a href="#">Farmhouse Frame</a></li>
+                            <li><a href="#">Real Wood Frame</a></li>
+                        </ul>
+                    </li>
+                    <li class="enter-y-r delay-3 has-submenu">
+                        <a href="#">Dry Erase Boards</a><i class="fal fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="#">Rustic Frame</a></li>
+                            <li><a href="#">Farmhouse Frame</a></li>
+                            <li><a href="#">Real Wood Frame</a></li>
+                        </ul>
+                    </li>
+                    <li class="enter-y-r delay-4 has-submenu">
+                        <a href="#">Children</a><i class="fal fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sidewalk chalk</a></li>
+                            <li><a href="#">Dry erase lap boards</a></li>
+                            <li><a href="#">Foldable lap desks</a></li>
+                        </ul>
+                    </li>
+                    <li class="enter-y-r delay-5"><a href="#">Gallery</a></li>
+                    <li class="enter-y-r delay-6"><a href="#">Lettering sheets</a></li>
+                    <li class="enter-y-r delay-7"><a href="#">Wholesale</a></li>
+                    <li class="enter-y-r delay-8"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <a class="icon-cart enter-y-r delay-9" href="cart.html" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-shopping-cart"></i>
+                    <span>1</span>
+                </a>
+                <!-- <div class="enter-y-r delay-1 lang-picker">
+                    <a class="lang link" data-router-disabled>EN</a>
+                </div> -->
+                <div class="toggle-nav enter-y-r delay-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main-menu">
+        <div class="main-menu-inner wrapper">
+            <a href="products.html?c=chalkmaker" class="menu-item enter-x delay-4" data-menu-id="1">
+                <span>Chalkmaker</span>
+            </a>
+            
+            <a href="products.html?c=chalkboard" class="menu-item enter-x delay-6" data-menu-id="2">
+                <span>Chalkboards</span>
+            </a>
+            <a href="products.html?c=children" class="menu-item enter-x delay-7" data-menu-id="3">
+                <span>Children</span>
+            </a>
+            <a href="sale.html" class="menu-item enter-x delay-8 lab-menu-button" data-menu-id="wholesale">
+                <span>Wholesale</span>
+            </a>
+            
+            <a href="contact.html" class="menu-item enter-x delay-11" data-menu-id="contact">
+                <span>Contact</span>
+            </a>
+            <a href="news.html" class="menu-item enter-x delay-12" data-menu-id="new">
+                <span>News</span>
+            </a>
+
+        </div>
+
+        <div class="main-social wrapper">
+            <div class="inner menu-redes-fix">
+                <div class="enter-y delay-9">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i> @loddiedoddie_
+                    </a>
+                </div>
+                <!-- <div class="circle black enter-y delay-9">
+                    <div class="dot"></div>
+                </div> -->
+                <div class="enter-y delay-10">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i> /loddiedoddie
+                    </a>
+                </div>
+                
+                <div class="enter-y delay-11">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-tiktok"></i> @loddiedoddie_
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="page-transition">
+        <div class="wrapper">
+            <div class="logo-loader">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div id="pt-1"></div>
+    </div>
+
+    <div id="terms">
+        <div class="bg"></div>
+        <p>This website employs <a href="#privacy-policy">cookies</a> to improve the browsing experience.</p>
+        <button class="link-dot black">Accept</button>
+    </div>
+
+
+    <div id="popup-subscribe" class="d-none">
+        <div class="overlay"></div>
+
+        <div class="ps-content">
+            <div class="toggle-nav active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="ps-text">
+                <h6>Hi!</h6>
+                <p>Do you want to receive our latest news and releases?</p>
+                <form>
+                    <div class="input-wrap">
+                        <div class="input">
+                            <label for="ps-name">Name </label>
+                            <input type="text" id="ps-name" name="name" required="">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input">
+                            <label for="ps-email">E-mail</label>
+                            <input type="text" id="ps-email" name="email" required="">
+                        </div>
+                    </div>
+                    
+                    <div class="form-error-message"></div>
+
+                    <div class="input-wrap">
+                        <div class="delay-8">
+                            <button type="submit" class="button">
+                                <span>subscribe</span>
+                                <span>subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="ty-newsletter">
+                    <div class="ty-inner">
+                        <i class="fal fa-check-circle"></i>
+                        <h6>Successfully subscribed.<br>Thank you!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<main id="js-scroll" class="main-home">
+
+        <div data-router-wrapper>
+
+            <div data-router-view="home">
+                <section id="hero" data-scroll data-scroll-call="showHero">
+                    
+
+                    <div class="hero-video-wrap" data-scroll data-scroll-speed="-3.5">
+                        <video src="assets/chalk_markers_842.mp4" loop muted autoplay playsinline> </video>
+                    </div>
+
+                    <div class="wrapper wrap-bottom">
+                        <div class="mouse">
+                            <div class="mouse-icon">
+                                <span class="mouse-wheel"></span>
+                            </div>
+                        </div>
+
+                        <div class="sound-toggle muted">
+                            <i class="fal fa-volume-mute" id="volume-off"></i>
+                            <i class="fal fa-volume" id="volume-on"></i>
+                        </div>
+                    </div>
+                </section>
+        
+                <section id="masters" data-scroll>
+                    <div class="enter-y">
+                        <div class="bg-word bg-word-en"><span data-scroll data-scroll-speed="4">Loddie Doddie</span></div>
+                    </div>
+                    <div class="wrapper">
+                        <h2 data-scroll data-scroll-speed="2" class="desktop">
+                            <span class="ss enter-y delay-1">Welcome to</span>
+                            <div class="row">
+                                <strong class="enter-y delay-3">Loddie Doddie</strong>
+                            </div>
+                        </h2>
+                        
+                    </div>
+                    <div class="image-text-button enter-y delay-3">
+                        <div class="wrapper">
+                            <div class="image-wrap">
+                                <p>
+                                    ​We are so happy you came to visit and <em>we cannot wait</em>  to share with you our creatively designed products in the world of 
+                                    <strong>Chalk! </strong>We are dedicated to every detail in developing quality and function friendly products with the 
+                                    <strong>chalk enthusiast</strong> in mind. We hope you enjoy this journey with us by using our products for your next creative project. Thanks for stopping by, now go get your 
+                                    <em><strong><font color="#76cae9">CREATIVE</font></strong></em> on!
+                                    <br>
+                                    ​-Amber & Matt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="featured-products">
+                    <div class="wrapper" data-scroll data-scroll-offset="100">
+                        <h2>
+                            <span class="ss enter-y delay-1">Check</span>
+                            <span class="ss enter-y delay-2">out our</span>
+                            <strong class="enter-y delay-3">Products</strong>
+                        </h2>
+                        <div class="products-slide-title first-title">
+                            <h5 class="enter-x delay-1">
+                                <div class="line delay-3"></div>
+                                <span><a href="#">REAL WOOD FRAMES</a></span>
+                            </h5>
+                        </div>
+                    </div>
+        
+                    <div class="posr" id="featured-icecreams">
+                        <div class="featured-arrows d-none">
+                            <div class="button white arrow featured-arrow-left">
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#2C2C2C"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="button white arrow featured-arrow-right">
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#2C2C2C"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div data-scroll data-scroll-offset="100" data-scroll-speed="2" data-scroll-direction="horizontal" class="products-slide-wrap first-wrap">
+                            <div class="products-slide enter-x delay-1">
+                                <div class="swiper-wrapper">
+                                    
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb no-animation-hover">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description" style="background-color: #be8671;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>
+                                                        $99.99
+                                                    </strong>
+                                                    <p> 
+                                                        LARGE 34.5" x 46" Rustic Wood Framed Magnetic Chalkboard
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb no-animation-hover">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description" style="background-color: #dda491;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>
+                                                        $39.99
+                                                    </strong>
+                                                    <p> 
+                                                        20 x 30 Magnetic Chalkboard with Real Wood Frame- Rustic
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb no-animation-hover">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-3.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description" style="background-color: #ffd099;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>
+                                                        $39.99
+                                                    </strong>
+                                                    <p> 
+                                                        20 x 30 Magnetic Chalkboard with Real Wood Frame- White Washed
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb no-animation-hover">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-4.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description" style="background-color: #fdddc7;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>$39.99</strong>
+                                                    <p> 
+                                                        20 x 30 Magnetic Chalkboard with Real Wood Frame- Gray
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="wrapper" data-scroll data-scroll-offset="100">
+                        <div class="products-slide-title">
+                            <h5 class="enter-x delay-2">
+                                <div class="line delay-4"></div>
+                                <a href="#"><span>RUSTIC CHALKBOARDS</span></a>
+                            </h5>
+                        </div>
+                    </div>
+        
+                    <div class="products-slide-wrap" id="featured-icepops">
+                        <div class="featured-arrows d-none">
+                            <div class="button white arrow featured-arrow-left">
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#2C2C2C"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="button white arrow featured-arrow-right">
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#2C2C2C"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div data-scroll data-scroll-offset="100" data-scroll-speed="-2" data-scroll-direction="horizontal">
+                            <div class="products-slide enter-x-r delay-3">
+                                <div class="swiper-wrapper">
+                                    
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-8.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description" style="background-color: #ffbe85;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>$39.99</strong>
+                                                    <p> 
+                                                        18x24 Rustic Framed Chalkboard Calendar and Cork Board Combo
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-9.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description" style="background-color: #fabb67;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>$24.99</strong>
+                                                    <p> 
+                                                        My First Day Chalkboard w 4 Chalk Markers
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-10.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description big" style="background-color: #f6dfb5;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>$24,99</strong>
+                                                    <p> 
+                                                        Days 'Til Christmas Countdown - Magnetic Chalkboard
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-11.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description big" style="background-color: #f1d9b2;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>$49,99</strong>
+                                                    <p> 
+                                                        Sleeps 'Til Christmas Countdown Chalkboard - Magnetic Chalkboard
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper" data-scroll data-scroll-offset="100">
+                        <div class="products-slide-title">
+                            <h5 class="enter-x delay-2">
+                                <div class="line delay-4"></div>
+                                <a href="#"><span>FARMHOUSE CHALKBOARDS</span></a>
+                            </h5>
+                        </div>
+                    </div>
+        
+                    <div class="products-slide-wrap" id="featured-icepops-1">
+                        <div class="featured-arrows d-none">
+                            <div class="button white arrow featured-arrow-left">
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#2C2C2C"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="button white arrow featured-arrow-right">
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#2C2C2C"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div data-scroll data-scroll-offset="100" data-scroll-speed="2" data-scroll-direction="horizontal">
+                            <div class="products-slide enter-x-r delay-3">
+                                <div class="swiper-wrapper">
+                                    
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-12.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description big" style="background-color: #ffbe85;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>
+                                                        $19,99
+                                                    </strong>
+                                                    <p> 
+                                                        11" x 14"Farmhouse Magnetic Chalkboard
+                                                    </p>
+                                                    <div  class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-13.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description" style="background-color: #fabb67;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>
+                                                        $34,99
+                                                    </strong>
+                                                    <p> 
+                                                        18" x 22" White Framed Magnetic Chalk Board
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-14.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description small" style="background-color: #f6dfb5;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>
+                                                        $59,99
+                                                    </strong>
+                                                    <p> 
+                                                        24" x 36" White Framed Magnetic Chalk Board
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                
+                                    <a href="detail-product.html?c=description" class="swiper-slide product-thumb">
+                                        <div class="img">
+                                            <div class="img-wrap">
+                                                <img src="assets/img/products/c-15.png" alt="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-description big" style="background-color: #f1d9b2;">
+                                            <div class="product-inner">
+                                                <div class="product-inner-abs">
+                                                    <strong>$39,99</strong>
+                                                    <p> 
+                                                        18x24 Farmhouse Framed Chalkboard Calendar and Cork Board Combo
+                                                    </p>
+                                                    <div class="plus">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="button-all-wrap" data-scroll>
+                        <div class="enter-y delay-4">
+                            <a href="products.html?c=all" class="button">
+                                <span>See all</span>
+                                <span>See all</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </section>
+        
+                <section id="new-store" data-scroll>
+                    <div class="new-store-left">
+                        <h2 class="enter-y">
+                            <span class="ss">Gallery</span>
+                        </h2>
+                        <div class="line"><div class="circle white"><div class="dot"></div></div></div>
+                    </div>
+        
+                    <div class="new-store-main-bg">
+                        <div class="bg parallax" data-scroll data-scroll-speed="1.5" style="background-image: url(assets/img/home/back-school-background-with-school-supplies-chalkboard.jpg)"></div>
+                    </div>
+        
+                    
+        
+                    <div class="new-store-slide" data-scroll data-scroll-speed="3">
+                        <div class="swiper-container swiper-fade" id="new-store-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="bg" style="background-image:url(assets/img/home/g-1.jpg)"></div></div>
+                                <div class="swiper-slide"><div class="bg" style="background-image:url(assets/img/home/g-2.jpg)"></div></div>
+                                <div class="swiper-slide"><div class="bg" style="background-image:url(assets/img/home/g-3.jpg)"></div></div>
+                                <div class="swiper-slide"><div class="bg" style="background-image:url(assets/img/home/g-4.jpg)"></div></div>
+                            </div>
+                            <div class="swiper-button-next swiper-button-white button white">
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#2C2C2C"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Home-" transform="translate(-1250.000000, -3923.000000)" stroke="#fff"
+                                                stroke-width="1.5">
+                                                <g id="Group-3-Copy-8" transform="translate(1216.000000, 3894.000000)">
+                                                    <g id="Group-10" transform="translate(0.500000, 0.000000)">
+                                                        <polyline id="Stroke-1-Copy-4"
+                                                            transform="translate(39.646018, 39.855856) rotate(-90.000000) translate(-39.646018, -39.855856) "
+                                                            points="49.6099817 34.9001036 39.6460177 44.8116081 29.6820537 34.9001036">
+                                                        </polyline>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="circle white"><div class="dot"></div></div>
+                        
+                        <div class="pagination" id="new-store-pagination">
+                            <div class="current">
+                                <span data-slide-id="0" class="active">1</span>
+                                <span data-slide-id="1">2</span>
+                                <span data-slide-id="2">3</span>
+                                <span data-slide-id="3">4</span>
+                            </div>
+                            <div class="total">
+                                <span>4</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+            </div>
+
+        </div>
+        
+        <footer>
+            <div class="top">
+                <div class="wrapper">
+                    <a href="#" class="logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <div class="lines">
+                        <div class="circle white">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div class="left">
+                            <div class="column">
+                                <a href="##" class="link-dot">Chalkmarkers</a>
+                                <a href="##" class="link-dot">Chalkboard</a>
+                                <a href="##" class="link-dot">Children</a>
+                            </div>
+                            <div class="column">
+                                <a href="##" class="link-dot">Gallery</a>
+                                <a href="##" class="link-dot">Lettering Sheets</a>
+                                <a href="##" class="link-dot">Wholesale</a>
+                            </div>
+                            <div class="column">
+                                <a href="#" class="link-dot">Contact</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a href="##">
+                                <p class="big">Learn more about our products</p>
+                                <h2>Loddie Doddie</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="wrapper">
+                    <form class="newsletter-form">
+                        <div class="newsletter-message nm-success"><span><i class="fal fa-check-circle"></i> Successfully subscribed. Thank you!</span></div>
+                        <div class="newsletter-message nm-error"><span><i class="fal fa-exclamation-circle"></i> Something went wrong. Please try again.</span></div>
+                        <p class="big">Subscribe to our newsletter</p>
+                        <div class="input">
+                            <label for="news-name">Name</label>
+                            <input type="text" id="news-name" required="">
+                        </div>
+                        <div class="input">
+                            <label for="news-email">Email</label>
+                            <input type="email" id="news-email" required="">
+                        </div>
+                        <button type="submit" class="button white">
+                            <span>Subscribe</span>
+                            <span>Subscribe</span>
+                        </button>
+                    </form>
+                    <div class="social">
+                        <div class="inner">
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i> @loddiledoddie_
+                            </a>
+                            <div class="circle white">
+                                <div class="dot"></div>
+                            </div>
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i> /loddiledoddie
+                            </a>
+                            <div class="circle white">
+                                <div class="dot"></div>
+                            </div>
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-tiktok"></i> @loddiledoddie_
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="copy">
+                        <p>© 2021 Loddie Doddie. All rights reserved. <a href="#">Terms and conditions.</a> <a href="#">Privacy Policy.</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="assets/swiper.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/custom.js"></script>
+	
+</body>
+</html>
+

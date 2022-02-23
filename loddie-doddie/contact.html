@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport">
+
+    <title>
+        Loddie Doddie
+    </title>
+
+    <link rel="stylesheet" href="assets/jquery.fancybox.min.css">
+    <link href="assets/main.css" rel="stylesheet">
+    <link href="assets/main-1.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+
+
+</head>
+
+<body>
+    <header id="header" class="show-me">
+        <div class="wrapper">
+            <a href="index.html" class="logo enter-y-r">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+            <div class="header-right">
+                <a href="cart.html" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-shopping-cart"></i>
+                </a>
+                <div class="enter-y-r delay-1 lang-picker">
+                    <a class="lang link" data-router-disabled>EN</a>
+                </div>
+                <div class="toggle-nav enter-y-r delay-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main-menu">
+        <div class="main-menu-inner wrapper">
+            <a href="products.html?c=chalkmaker" class="menu-item enter-x delay-4" data-menu-id="4">
+                <span>Chalkmaker</span>
+            </a>
+            
+            <a href="products.html?c=chalkboard" class="menu-item enter-x delay-5" data-menu-id="2">
+                <span>Chalkboards</span>
+            </a>
+            <a href="products.html?c=children" class="menu-item enter-x delay-6" data-menu-id="1">
+                <span>Children</span>
+            </a>
+            <a href="gallery.html" class="menu-item enter-x delay-7 " data-menu-id="6">
+                <span>Gallery</span>
+            </a>
+            <a href="lettering.html" class="menu-item enter-x delay-8 " data-menu-id="5">
+                <span>Lettering sheets</span>
+            </a>
+            <a href="wholesale.html" class="menu-item enter-x delay-9 lab-menu-button" data-menu-id="8">
+                <span>Wholesale</span>
+            </a>
+            
+            <a href="contact.html" class="menu-item enter-x delay-10" data-menu-id="7">
+                <span>Contact</span>
+            </a>
+
+        </div>
+
+        <div class="main-social wrapper">
+            <div class="inner menu-redes-fix">
+                <div class="enter-y delay-9">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i> @loddiedoddie_
+                    </a>
+                </div>
+                <!-- <div class="circle black enter-y delay-9">
+                    <div class="dot"></div>
+                </div> -->
+                <div class="enter-y delay-10">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i> /loddiedoddie
+                    </a>
+                </div>
+                
+                <div class="enter-y delay-11">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-tiktok"></i> @loddiedoddie_
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu-images">
+            <div class="menu-images-wrapper" data-menu-id="1">
+                <div class="menu-images-column" id="column-1-1">
+                    <img src="assets/img/products/1.png" alt="" class="fly">
+                    <img src="assets/img/products/2.png" alt="" class="fly">
+                    <img src="assets/img/products/6.png" alt="" class="fly">
+                    <img src="assets/img/products/7.png" alt="" class="fly">
+                    <img src="assets/img/products/8.png" alt="" class="fly">
+                </div>
+                
+            </div>
+            <div class="menu-images-wrapper" data-menu-id="2">
+                <div class="menu-images-column" id="column-2-1">
+                    <img src="assets/img/products/c-5.png" alt="" class="fly">
+                    <img src="assets/img/products/c-6.png" alt="" class="fly">
+                    <img src="assets/img/products/c-7.png" alt="" class="fly">
+                    <img src="assets/img/products/c-8.png" alt="" class="fly">
+                    <img src="assets/img/products/c-10.png" alt="" class="fly">
+                    <img src="assets/img/products/c-11.png" alt="" class="fly">
+                </div>
+                
+            </div>
+            <div class="menu-images-wrapper m-franquicias m-franq-eng" data-menu-id="6">
+                <div class="menu-images-column" id="column-6-1">
+                    <div class="fly"><img src="assets/img/gallery/1.jpg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/2.jpg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/3.jpeg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/5.jpg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/15.jpg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/21.jpg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/10.jpg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/18.jpg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/8.jpg" alt=""></div>
+                    <div class="fly"><img src="assets/img/gallery/13.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="menu-images-wrapper" data-menu-id="5">
+                <div class="menu-images-column" id="column-5-1">
+                    <img src="assets/img/gallery/l-1.jpeg" alt="" class="fly">
+                    <img src="assets/img/gallery/l-2.jpg" alt="" class="fly">
+                    <img src="assets/img/gallery/l-3.jpg" alt="" class="fly">
+                    <img src="assets/img/gallery/l-4.jpg" alt="" class="fly">
+                </div>
+            </div>
+            <div class="menu-images-wrapper" data-menu-id="4">
+                <div class="menu-images-column" id="column-4-1">
+                    <img src="assets/img/products/c-12.png" alt="" class="fly">
+                    <img src="assets/img/products/c-13.png" alt="" class="fly">
+                    <img src="assets/img/products/c-14.png" alt="" class="fly">
+                    <img src="assets/img/products/c-15.png" alt="" class="fly">
+                </div>
+            </div>
+            
+            <div class="menu-images-wrapper lab-menu" data-menu-id="8">
+                <div class="menu-images-column" id="column-8-1">
+                    <video id="lab-video" width="100%" height="100%" loop muted="muted">
+                        <source src="assets/img/loddie_doddie_sv_ads_video_573.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+            <div class="menu-images-wrapper" data-menu-id="7">
+                <div class="m-contacto" id="column-7-1">
+                    <img src="assets/img/home/g-3.jpg" alt="" class="fly">
+                    <img src="assets/img/home/c-3.jpg" alt="" class="fly">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-transition">
+        <div class="wrapper">
+            <div class="logo-loader">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div id="pt-1"></div>
+    </div>
+
+    <div id="terms">
+        <div class="bg"></div>
+        <p>This website employs <a href="#privacy-policy">cookies</a> to improve the browsing experience.</p>
+        <button class="link-dot black">Accept</button>
+    </div>
+
+
+    <div id="popup-subscribe" class="d-none">
+        <div class="overlay"></div>
+
+        <div class="ps-content">
+            <img src="../assets/img/enzo.png" alt="Icepop" id="ps-enzo">
+            <img src="../assets/img/ps-minion.png" alt="Icepop" id="ps-minion">
+
+            <div class="toggle-nav active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="ps-text">
+                <h6>Hi!</h6>
+                <p>Do you want to receive our latest news and releases?</p>
+                <form>
+                    <div class="input-wrap">
+                        <div class="input">
+                            <label for="ps-name">Name </label>
+                            <input type="text" id="ps-name" name="name" required="">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input">
+                            <label for="ps-email">E-mail</label>
+                            <input type="text" id="ps-email" name="email" required="">
+                        </div>
+                    </div>
+                    
+                    <div class="form-error-message"></div>
+
+                    <div class="input-wrap">
+                        <div class="delay-8">
+                            <button type="submit" class="button">
+                                <span>subscribe</span>
+                                <span>subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="ty-newsletter">
+                    <div class="ty-inner">
+                        <i class="fal fa-check-circle"></i>
+                        <h6>Successfully subscribed.<br>Thank you!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<main id="js-scroll" class="main-contact">
+
+        <div data-router-wrapper>
+            
+            <div data-router-view="contact">  
+ 
+                <!-- <div class="h-tag" data-scroll><p class="enter-y-r delay-5">#theicecreammasters</p></div> -->
+                <section id="contact-title" class="section-title" data-scroll>
+                    <div class="bg-word-wrap enter-x">
+                        <div class="bg-word"><span data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">Say hello</span></div>
+                    </div>
+                    <div class="wrapper">
+                        <h1>
+                            <div class="row f-title">
+                                <span class="ss enter-y">Contact Us </span>
+                            </div>
+                            <div class="row">
+                                <strong class="enter-y delay-1" style="margin-right: 10px;">How</strong>
+                                <strong class="enter-y delay-2" style="margin-right: 10px;">can</strong>
+                                <strong class="enter-y delay-3" style="margin-right: 10px;">we</strong>
+                                <strong class="enter-y delay-4">help</strong>
+                                <strong class="enter-y delay-4">you?</strong>
+                            </div>
+                        </h1>
+                        <p class="enter-y delay-5 big">Select your query, answer the form and we will get in touch with you shortly</p>
+                        <div class="line-circle">
+                            <div class="circle enter-y delay-7"><div class="dot"></div></div>
+                            <div class="line enter-y delay-6"></div>
+                            
+                        </div>
+                       
+                    </div>
+                </section>
+
+                <section id="form-types" data-scroll>
+                    <div class="wrapper">
+                        <div class="form-type-wrap">
+                            <div class="form-type" id="trigger-contact-form">
+                                <div class="enter-y delay-3">
+                                    <h5 class="little">
+                                        <div class="line delay-6"></div>
+                                        <span>Contact us</span>
+                                    </h5>
+                                </div>
+                                <div class="enter-y delay-4">
+                                    <h2>
+                                        <div class="row">
+                                            <strong>Do</strong>
+                                            <strong>you</strong>
+                                            <strong>have</strong>
+                                        </div>
+                                        <div class="row">
+                                            <strong>something</strong>
+                                            <strong>to</strong>
+                                            <strong>tell</strong>
+                                            <strong>us?</strong>
+                                        </div>
+                                    </h2>
+                                </div>
+                                <div class="enter-y delay-5">
+                                    <p>Leave your message and we will get in touch with you soon.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="form-type-wrap">
+                            <div class="form-type"  id="trigger-team-form">
+                                <div class="enter-y delay-6">
+                                    <h5 class="little">
+                                        <div class="line delay-6"></div>
+                                        <span>Join our family</span>
+                                    </h5>
+                                </div>  
+                                <div class="enter-y delay-7">
+                                    <h2>
+                                        <div class="row">
+                                            <strong>Work</strong>
+                                        </div>
+                                        <div class="row">
+                                            <strong>with</strong>
+                                            <strong>us</strong>
+                                        </div>
+                                    </h2>
+                                </div>  
+                                <div class="enter-y delay-8">
+                                    <p>We are looking for passionate, creative people who love what they do. If you are so and want to work with us, fill out our form and we will get in touch.</p>
+                                </div>  
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="service-form contact-forms">
+                    <div class="wrapper">
+                        <form class="s-form" id="contact-form">
+                            <div class="input-wrap">
+                                <div class="input">
+                                    <label for="contact-form-name">Name and Surname</label>
+                                    <input type="text" id="contact-form-name" name="name">
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input delay-2">
+                                    <label for="contact-form-email">E-mail</label>
+                                    <input type="text" id="contact-form-email" data-validation="email" name="email">
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input delay-4">
+                                    <label for="contact-form-tel">Phone</label>
+                                    <input type="text" id="contact-form-tel" name="tel" data-validation="tel">
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input delay-6">
+                                    <label for="contact-form-message">Message</label>
+                                    <input type="text" id="contact-form-message" name="message">
+                                </div>
+                            </div>
+                            
+                            <div class="form-error-message"></div>
+                            
+                            <div class="input-wrap">
+                                <div class="delay-8">
+                                    <button type="submit" class="button">
+                                        <span>Send query</span>
+                                        <span>Send query</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="s-form" id="team-form">
+                            <div class="input-wrap">
+                                <div class="input">
+                                    <label for="contact-form-name">Name and Surname</label>
+                                    <input type="text" id="contact-form-name" name="name">
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input delay-2">
+                                    <label for="contact-form-email">E-mail</label>
+                                    <input type="text" id="contact-form-email" name="email" data-validation="email">
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input delay-4">
+                                    <label for="contact-form-tel">Phone</label>
+                                    <input type="text" id="contact-form-tel" name="tel" data-validation="tel">
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input delay-6">
+                                    <label for="contact-form-message">Message</label>
+                                    <input type="text" id="contact-form-message" name="message">
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="input delay-6 input-file">
+                                    <label for="contact-form-cv-file">Attach CV</label>
+                                    <input type="text" tabindex="-1" id="contact-form-cv" style="pointer-events: none;">
+                                    <input type="file" tabindex="-1" id="contact-form-cv-file" name="file">
+                                </div>
+                            </div>
+                            
+                            <div class="form-error-message"></div>
+                            
+                            <div class="input-wrap">
+                                <div class="delay-8">
+                                    <button type="submit" class="button">
+                                        <span>Apply</span>
+                                        <span>Apply</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                
+                <section id="contact-info" data-scroll data-scroll-offset="300">
+                    <div class="line-circle">
+                        <div class="line enter-y"></div>
+                        <div class="circle enter-y delay-1"><div class="dot"></div></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="c-info">
+                            <h5 class="little enter-y">
+                                <div class="line delay-3"></div>
+                                <span>Headquarters</span>
+                            </h5>
+                            <h5>
+                                
+                                <div class="enter-y delay-1">
+                                    <a href="#" target="_blank">42006 Remington Ave., Ste. 108
+                                    <br>
+                                    ​Temecula, CA 92590
+                                </a>
+                                </div>
+                                <div class="enter-y delay-2">
+                                    <a href="tel:(951) 363-3003‬">Phone: (951) 363-3003‬</a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div class="c-info">
+                            <h5 class="little enter-y delay-3">
+                                <div class="line delay-6"></div>
+                                <span>Contact us</span>
+                            </h5>
+                            <h5>
+                                <div class="enter-y delay-4">
+                                    <a href="mailto:info@luccianos.com.ar">info@loddiedoddie.com</a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div class="c-info">
+                            <h5 class="little enter-y delay-4">
+                                <div class="line delay-7"></div>
+                                <span>Follow us</span>
+                            </h5>
+                            <h5>
+                                <div class="enter-y delay-5">
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-instagram"></i> @loddiedoddie_
+                                    </a>
+                                </div>
+                                <div class="enter-y delay-6">
+                                    <a href="https://www.facebook.com/luccianos" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-facebook-f"></i> /loddiedoddie
+                                    </a>
+                                </div>
+                                <div class="enter-y delay-7">
+                                    <a href="https://www.tiktok.com/@luccianos_" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-tiktok"></i> @loddiedoddie_
+                                    </a>
+                                </div>
+                            </h5>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>  
+
+        </div>
+
+        <footer>
+            <div class="top">
+                <div class="wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <div class="lines">
+                        <div class="circle white">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div class="left">
+                            <div class="column">
+                                <a href="products.html?c=chalkmaker" class="link-dot">Chalkmarkers</a>
+                                <a href="products.html?c=chalkboard" class="link-dot">Chalkboard</a>
+                                <a href="products.html?c=children" class="link-dot">Children</a>
+                            </div>
+                            <div class="column">
+                                <a href="gallery.html" class="link-dot">Gallery</a>
+                                <a href="lettering.html" class="link-dot">Lettering Sheets</a>
+                                <a href="wholesale.html" class="link-dot">Wholesale</a>
+                            </div>
+                            <div class="column">
+                                <a href="cart.html" class="link-dot">Contact</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a href="##">
+                                <p class="big">Learn more about our products</p>
+                                <h2>Loddie Doddie</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="wrapper">
+                    <form class="newsletter-form">
+                        <div class="newsletter-message nm-success"><span><i class="fal fa-check-circle"></i> Successfully subscribed. Thank you!</span></div>
+                        <div class="newsletter-message nm-error"><span><i class="fal fa-exclamation-circle"></i> Something went wrong. Please try again.</span></div>
+                        <p class="big">Subscribe to our newsletter</p>
+                        <div class="input">
+                            <label for="news-name">Name</label>
+                            <input type="text" id="news-name" required="">
+                        </div>
+                        <div class="input">
+                            <label for="news-email">Email</label>
+                            <input type="email" id="news-email" required="">
+                        </div>
+                        <button type="submit" class="button white">
+                            <span>Subscribe</span>
+                            <span>Subscribe</span>
+                        </button>
+                    </form>
+                    <div class="social">
+                        <div class="inner">
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i> @loddiledoddie_
+                            </a>
+                            <div class="circle white">
+                                <div class="dot"></div>
+                            </div>
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i> /loddiledoddie
+                            </a>
+                            <div class="circle white">
+                                <div class="dot"></div>
+                            </div>
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-tiktok"></i> @loddiledoddie_
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="copy">
+                        <p>© 2021 Loddie Doddie. All rights reserved. <a href="#">Terms and conditions.</a> <a href="#">Privacy Policy.</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="assets/swiper.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/custom.js"></script>
+    
+	
+</body>
+</html>

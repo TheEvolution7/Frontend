@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport">
+
+    <title>
+        Loddie Doddie
+    </title>
+
+    <link rel="stylesheet" href="assets/jquery.fancybox.min.css">
+    <link href="assets/main.css" rel="stylesheet">
+    <link href="assets/main-1.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+
+
+</head>
+
+<body>
+    <header id="header" class="show-me">
+        <div class="wrapper">
+            <a href="index.html" class="logo enter-y-r">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+            <div class="header-right">
+                <div class="enter-y-r delay-1 lang-picker">
+                    <a class="lang link" data-router-disabled>EN</a>
+                </div>
+                <div class="toggle-nav enter-y-r delay-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main-menu">
+        <div class="main-menu-inner wrapper">
+            <a href="products.html?c=chalkmaker" class="menu-item enter-x delay-4" data-menu-id="4">
+                <span>Chalkmaker</span>
+            </a>
+            
+            <a href="products.html?c=chalkboard" class="menu-item enter-x delay-6" data-menu-id="2">
+                <span>Chalkboards</span>
+            </a>
+            <a href="products.html?c=children" class="menu-item enter-x delay-7" data-menu-id="1">
+                <span>Children</span>
+            </a>
+            <a href="sale.html" class="menu-item enter-x delay-8 lab-menu-button" data-menu-id="8">
+                <span>Wholesale</span>
+            </a>
+            
+            <a href="contact.html" class="menu-item enter-x delay-11" data-menu-id="7">
+                <span>Contact</span>
+            </a>
+            <a href="news.html" class="menu-item enter-x delay-12" data-menu-id="10">
+                <span>News</span>
+            </a>
+
+        </div>
+
+        <div class="main-social wrapper">
+            <div class="inner menu-redes-fix">
+                <div class="enter-y delay-9">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i> @loddiedoddie_
+                    </a>
+                </div>
+                <!-- <div class="circle black enter-y delay-9">
+                    <div class="dot"></div>
+                </div> -->
+                <div class="enter-y delay-10">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i> /loddiedoddie
+                    </a>
+                </div>
+                
+                <div class="enter-y delay-11">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-tiktok"></i> @loddiedoddie_
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu-images">
+            <div class="menu-images-wrapper" data-menu-id="1">
+                <div class="menu-images-column" id="column-1-2">
+                    <img src="assets/img/products/1.png" alt="" class="fly">
+                    <img src="assets/img/products/2.png" alt="" class="fly">
+                    <img src="assets/img/products/6.png" alt="" class="fly">
+                    <img src="assets/img/products/7.png" alt="" class="fly">
+                    <img src="assets/img/products/8.png" alt="" class="fly">
+                </div>
+                
+            </div>
+            <div class="menu-images-wrapper" data-menu-id="2">
+                <div class="menu-images-column" id="column-2-1">
+                    <img src="assets/img/products/c-5.png" alt="" class="fly">
+                    <img src="assets/img/products/c-6.png" alt="" class="fly">
+                    <img src="assets/img/products/c-7.png" alt="" class="fly">
+                    <img src="assets/img/products/c-8.png" alt="" class="fly">
+                    <img src="assets/img/products/c-10.png" alt="" class="fly">
+                    <img src="assets/img/products/c-11.png" alt="" class="fly">
+                </div>
+                
+            </div>
+            <div class="menu-images-wrapper" data-menu-id="4">
+                <div class="menu-images-column" id="column-4-1">
+                    <img src="assets/img/products/c-12.png" alt="" class="fly">
+                    <img src="assets/img/products/c-13.png" alt="" class="fly">
+                    <img src="assets/img/products/c-14.png" alt="" class="fly">
+                    <img src="assets/img/products/c-15.png" alt="" class="fly">
+                </div>
+            </div>
+            <div class="menu-images-wrapper" data-menu-id="10">
+                <div class="menu-images-column menu-news" id="column-10-1">
+                    <div class="fly"><span class="menu-text">NEWS!</span></div>
+                    <div class="fly"><strong class="menu-text">NEWS!</strong></div>
+                    <div class="fly"><span class="menu-text">NEWS!</span></div>
+                    <div class="fly"><strong class="menu-text">NEWS!</strong></div>
+                    <div class="fly"><span class="menu-text">NEWS!</span></div>
+                    <div class="fly"><strong class="menu-text">NEWS!</strong></div>
+                </div>
+            </div>
+            <div class="menu-images-wrapper lab-menu" data-menu-id="8">
+                <div class="menu-images-column" id="column-8-1">
+                    <video id="lab-video" width="100%" height="100%" loop muted="muted">
+                        <source src="assets/img/loddie_doddie_sv_ads_video_573.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+            <div class="menu-images-wrapper" data-menu-id="7">
+                <div class="m-contacto" id="column-7-1">
+                    <img src="assets/img/home/g-3.jpg" alt="" class="fly">
+                    <img src="assets/img/home/c-3.jpg" alt="" class="fly">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-transition">
+        <div class="wrapper">
+            <div class="logo-loader">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div id="pt-1"></div>
+    </div>
+
+    <div id="terms">
+        <div class="bg"></div>
+        <p>This website employs <a href="#privacy-policy">cookies</a> to improve the browsing experience.</p>
+        <button class="link-dot black">Accept</button>
+    </div>
+
+
+    <div id="popup-subscribe" class="d-none">
+        <div class="overlay"></div>
+
+        <div class="ps-content">
+            <img src="../assets/img/enzo.png" alt="Icepop" id="ps-enzo">
+            <img src="../assets/img/ps-minion.png" alt="Icepop" id="ps-minion">
+
+            <div class="toggle-nav active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="ps-text">
+                <h6>Hi!</h6>
+                <p>Do you want to receive our latest news and releases?</p>
+                <form>
+                    <div class="input-wrap">
+                        <div class="input">
+                            <label for="ps-name">Name </label>
+                            <input type="text" id="ps-name" name="name" required="">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input">
+                            <label for="ps-email">E-mail</label>
+                            <input type="text" id="ps-email" name="email" required="">
+                        </div>
+                    </div>
+                    
+                    <div class="form-error-message"></div>
+
+                    <div class="input-wrap">
+                        <div class="delay-8">
+                            <button type="submit" class="button">
+                                <span>subscribe</span>
+                                <span>subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="ty-newsletter">
+                    <div class="ty-inner">
+                        <i class="fal fa-check-circle"></i>
+                        <h6>Successfully subscribed.<br>Thank you!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<main id="js-scroll" class="main-productos">
+
+        <div data-router-wrapper>
+            <div data-router-view="products">
+                <section id="products-overview" data-scroll class="section-title">
+                    <div class="bg-word-wrap enter-x">
+                        <div class="bg-word"><span data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">Detail</span></div>
+                    </div>
+                    <div data-scroll>
+                        <div class="detail-container">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-7">
+                                        <div class="enter-y delay-1">
+                                            <div class="swiper-container slide-product">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/1.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/2.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/3.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/4.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/5.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/6.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/7.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                        </div>
+                                        <div class="enter-y delay-2">
+                                            <div class="swiper-container slide-product-thumb">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/1.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/2.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/3.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/4.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/5.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/6.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="thumb-img">
+                                                            <img src="assets/img/products/dt/7.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-lg-6 col-xl-5">
+                                        <div class="content-detail">
+                                            <div class="enter-y delay-1">
+                                                <h1 class="title-pro" data-scroll>
+                                                    LARGE 34.5" x 46" Rustic Wood Framed Magnetic Chalkboard
+                                                </h1>
+                                            </div>
+                                            
+                                            <div data-scroll>
+                                                <div class="enter-y delay-2">
+                                                    <div class="price">
+                                                        <div class="price-t">
+                                                            Price: <span>$99.99</span>
+                                                        </div>
+                                                        <div class="sku">
+                                                            SKU: 58008
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div data-scroll>
+                                                <div class="enter-y delay-3">
+                                                    <div class="quantity">
+                                                        <label for="">QTY: </label>
+                                                        <input type="button" class="minus" value="-">
+                                                        <input type="text" readonly name="quantity" step="1" value="1" min="1" title="Qty" class="input-text qty text">
+                                                        <input type="button" class="plus" value="+">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="button-all-wrap" data-scroll>
+                                                <div class="enter-y delay-4">
+                                                    <a href="#" class="button">
+                                                        <span>Add to cart</span>
+                                                        <span>Add to cart</span>
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                            <div data-scroll>
+                                                <div class="enter-y delay-5">
+                                                    <div class="text-ship">
+                                                        Available for shipping
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-scroll>
+                                                <div class="enter-y delay-5">
+                                                    <div class="share-icon">
+                                                        <label for="">Share:</label>
+                                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="products-categories">
+                                    <div class="category-button active" data-category-id="description">
+                                        <h5 class="enter-y delay-4">
+                                            <div class="line delay-8"></div>
+                                            <span>description</span>
+                                        </h5>
+                                    </div>
+                                    <div class="category-button" data-category-id="review">
+                                        <h5 class="enter-y delay-6">
+                                            <div class="line delay-10"></div>
+                                            <span>review</span>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="tab-container">
+                                    <div class="product-thumb" data-subcategory-id data-subcategory-id-eng="f" data-category-id="description">
+                                        <div class="descript">
+                                            <div class="paragraph"><p>Here is How You Can Add A Touch Of Chalkboard Magic To Your Home Decor!</p><p><br></p><p>Looking for a larger framed magnetic chalkboard for your wall?</p><p><br></p><p>Need a durable and easy-to-erase blackboard for your messages?</p><p><br></p><p>Introducing The Ultimate LARGE Framed Magnetic Chalkboard For Wall By Loddie Doddie!</p><p><br></p><p>Now you don’t have to settle for all those cheaply-made blackboards or flimsy magnetic chalkboards anymore.</p><p><br></p><p>The Loddie Doddie premium rustic magnetic chalkboard is here to add a touch of vintage farmhouse décor to your home and help you never miss your upcoming doctor’s appointment.</p><p><br></p><p>How? Top 5 Ways Our Chalkboard Is Going To Help You &amp; Your Loved Ones:</p><p><br></p><p>✅ Impress Your Significant Other &amp; Kids: write the most heart-warming messages, create the most adorable doodles, and wish your loved ones “Happy Anniversary” or “Happy Birthday” in style.</p><p><br></p><p>✅ Never Miss Another Meeting: ideal for writing down doctor’s appointments, important deadlines, dates or business meetings, our magnet chalkboard will make your life easier.</p><p><br></p><p>✅ Hang Your Holiday Pictures: remember that weekend at the beach or that trip to Europe? Use the magnetic surface to hang your favorite family photos or souvenirs.</p><p><br></p><p>✅ Unleash Your Inner Talent: want to get more creative? Our blackboard surface is ideal for use with liquid chalk markers, so you can add some flair to your memos or meal plans.</p><p><br></p><p>✅ Unmatched Versatility – Sky Is The Limit: our decorative chalkboard is ideal for your living room, kitchen, bedroom, kid’s room, office, café, restaurant, bar or classroom. You name it.</p><p><br></p><p>Need More Reasons?</p><p><br></p><p>36.5” x 48” Size – Larger Than Other Small &amp; Impractical Chalkboards</p><p><br></p><p>Decorative Rustic wood Frame</p><p><br></p><p>Hanging Hardware &amp; Instructions Included</p><p><br></p><p>100% Satisfaction Guarantee</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-thumb" data-subcategory-id data-subcategory-id-eng="f" data-category-id="review">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    
+                </section>
+            </div>  
+
+        </div>
+
+        <footer>
+            <div class="top">
+                <div class="wrapper">
+                    <a href="#" class="logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <div class="lines">
+                        <div class="circle white">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div class="left">
+                            <div class="column">
+                                <a href="##" class="link-dot">Chalkmarkers</a>
+                                <a href="##" class="link-dot">Chalkboard</a>
+                                <a href="##" class="link-dot">Children</a>
+                            </div>
+                            <div class="column">
+                                <a href="##" class="link-dot">Gallery</a>
+                                <a href="##" class="link-dot">Lettering Sheets</a>
+                                <a href="##" class="link-dot">Wholesale</a>
+                            </div>
+                            <div class="column">
+                                <a href="#" class="link-dot">Contact</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a href="##">
+                                <p class="big">Learn more about our products</p>
+                                <h2>Loddie Doddie</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="wrapper">
+                    <form class="newsletter-form">
+                        <div class="newsletter-message nm-success"><span><i class="fal fa-check-circle"></i> Successfully subscribed. Thank you!</span></div>
+                        <div class="newsletter-message nm-error"><span><i class="fal fa-exclamation-circle"></i> Something went wrong. Please try again.</span></div>
+                        <p class="big">Subscribe to our newsletter</p>
+                        <div class="input">
+                            <label for="news-name">Name</label>
+                            <input type="text" id="news-name" required="">
+                        </div>
+                        <div class="input">
+                            <label for="news-email">Email</label>
+                            <input type="email" id="news-email" required="">
+                        </div>
+                        <button type="submit" class="button white">
+                            <span>Subscribe</span>
+                            <span>Subscribe</span>
+                        </button>
+                    </form>
+                    <div class="social">
+                        <div class="inner">
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i> @loddiledoddie_
+                            </a>
+                            <div class="circle white">
+                                <div class="dot"></div>
+                            </div>
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i> /loddiledoddie
+                            </a>
+                            <div class="circle white">
+                                <div class="dot"></div>
+                            </div>
+                            <a href="##" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-tiktok"></i> @loddiledoddie_
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="copy">
+                        <p>© 2021 Loddie Doddie. All rights reserved. <a href="#">Terms and conditions.</a> <a href="#">Privacy Policy.</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="assets/swiper.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/custom.js"></script>
+	
+</body>
+</html>

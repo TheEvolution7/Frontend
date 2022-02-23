@@ -1,0 +1,11 @@
+#chartdiv{
+    color: #fff
+}
+#chartdiv g polyline  {
+    stroke: #fff;
+}
+#chartdiv tspan{
+    fill: #fff;
+    stroke: #fff;
+}
+#chartdiv rect {}

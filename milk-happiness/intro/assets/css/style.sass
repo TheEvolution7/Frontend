@@ -1,0 +1,169 @@
+// galaxy screen
+#gallaxy
+  position: relative
+  z-index: 1
+  video
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    object-fit: cover
+    z-index: 2
+    transition: all ease 1s
+    &.zoom
+      transform: scale(1.2)
+  
+// galaxy form
+#input-message-wrap
+  // position: fixed
+  // bottom: 50px
+  // left: 50%
+  // transform: translateX(-50%)
+  // border-bottom: 2px solid #fff
+  z-index: 3
+  overflow: hidden
+  text-align: center
+
+#message
+  border: none
+  outline: none
+  background: transparent
+  color: #fff
+  font-size: 25px
+  padding: 10px 0
+  width: 300px
+  text-align: center
+  &.submited
+    transform: translateY(-100%)
+    opacity: 0
+    transition: all ease 0.2s
+
+#galaxy-praying
+  position: absolute
+  top: 40%
+  left: 50%
+  width: 100%
+  max-width: 500px
+  transform: translate3d(-50%, -50%, 0) scale(0.8)
+  background: rgba(0,0,0,0.5)
+  color: #ffffff
+  z-index: 4
+  text-align: center
+  font-size: 18px
+  padding: 20px 20px
+  opacity: 0
+  pointer-events: none
+  > span
+    display: inline-block
+    overflow: hidden
+  &.has-text
+    opacity: 1
+    transform: translate3d(-50%, -50%, 0)
+    transition: all ease 0.2s
+  &.boom
+    transition: all ease 0.5s
+    background: transparent
+
+// galaxy loading
+#galaxy-loading
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  z-index: 9
+  background: #000
+  iframe
+    border: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+.box-on-top
+  padding: 20px
+  box-sizing: border-box
+  position: fixed
+  width: 100vw
+  height: 100vh 
+  overflow: hidden
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  @media screen and ( max-width: 575.82px )
+    padding: 10px
+  .logo 
+    max-width: 200px
+    margin-bottom: 50px
+  h1 
+    font-size: 50px
+    font-weight: 600
+    margin: 0
+    margin-bottom: 15px
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.5)
+    @media screen and ( max-width: 767.82px )
+      font-size: 40px
+    @media screen and ( max-width: 575.82px )
+      font-size: 28px
+  h3
+    margin: 0
+    margin-bottom: 15px
+    font-size: 28px
+    font-weight: 400
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.5)
+    @media screen and ( max-width: 767.82px )
+      font-size: 20px
+    @media screen and ( max-width: 575.82px )
+      font-size: 18px
+  #galaxy-form
+    // margin: 10% 0
+    width: 100%
+  .box-form
+    margin-bottom: 15px
+    position: relative
+    width: 100%
+    height: 200px
+    display: flex
+    justify-content: center
+    align-items: center
+    #message
+      padding: 15px
+      margin: auto
+      width: 100%
+      max-width: 500px
+      background: rgba(17, 59, 83,0.5)
+      border-bottom: 1px solid #cccccc
+      @media screen and ( max-width: 767.82px )
+        font-size: 20px
+      @media screen and ( max-width: 575.82px )
+        font-size: 16px
+        padding: 12px
+      &::placeholder 
+        color: rgb(214, 189, 148)
+  .btn-intro
+    font-family: 'Roboto', 'Arial'
+    color: #303030
+    font-size: 87.5%
+    text-shadow: none
+    line-height: 1.5
+    font-weight: 700
+    font-style: normal
+    text-decoration: none
+    text-align: center
+    letter-spacing: normal
+    word-spacing: normal
+    text-transform: uppercase
+    font-weight: 700
+    border-radius: 10px
+    box-shadow: 0 2px 4.8px 0.3px rgba(0,0,0,0.3)
+    transition: all 0.3s ease-out
+    background: rgba(255, 255, 255,0.9)
+    opacity: 1
+    padding: 19px 50px 19px 50px
+    &:hover
+      background: rgba(17, 59, 83,0.9)
+      color: #d6bd94

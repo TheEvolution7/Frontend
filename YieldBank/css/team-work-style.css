@@ -1,0 +1,37 @@
+#controlKit {
+    display: none;
+}
+iframe {
+    width: 100%;
+    min-height: 700px;
+    /* transform: translateX(-25%); */
+  }
+  button {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+  .text-wrapper h2 {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+  .text-wrapper p {
+    font-size: 20px;
+  }
+  .text-wrapper .text-index {
+    display: none;
+  }
+  .text-wrapper .text-index.active {
+    display: block;
+  }
+      .text-wrapper {
+          
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          pointer-events: none;
+      }
+  .button-wrapper {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }

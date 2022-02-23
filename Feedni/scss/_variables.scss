@@ -1,0 +1,122 @@
+/*font Variables*/  
+$font: 'Poppins', sans-serif;
+$font2: 'Josefin Sans', sans-serif;
+
+/*Color Variables*/ 
+$bc: #ff584e;
+$hover: #9a64f8; 
+$heding: #1D2B48;  
+$pfont: rgba(36, 36, 37, 0.702);
+$pfont2: rgba(40, 35, 49, 0.8);
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}  
+
+/* Button Style */
+.theme_btn{ 
+    color: #fff;  
+    text-align: center; 
+    font: 500 18px/60px $font;
+    display: inline-block; 
+    padding: 0 20px;    
+	background-image: linear-gradient(to right, #ff3b69 0%, #ff787f 51%, #ff3b69 100%);
+    background-size: 200% auto;
+	z-index: 1; 
+	border-radius: 0; 
+	text-transform: uppercase; 
+	min-width: 199px; 
+    &:hover, &:focus{ 
+		color: #fff;  
+		background-position: right center;
+    }
+}
+
+/* tittle */
+.tittle{
+	display: block;
+	overflow: hidden; 
+	text-align: center;
+	span{
+		border-radius: 10px;
+		background-image: -moz-linear-gradient( -135deg, rgb(191,255,233) 0%, rgb(28,247,198) 100%);
+		background-image: -webkit-linear-gradient( -135deg, rgb(191,255,233) 0%, rgb(28,247,198) 100%);
+		background-image: -ms-linear-gradient( -135deg, rgb(191,255,233) 0%, rgb(28,247,198) 100%);
+		box-shadow: 0px 20px 12px 0px rgba(150, 247, 215, 0.35); 
+		width: 65px;
+		height: 65px; 
+		line-height: 65px;
+		display: block;
+		margin: 0 auto;
+		color: #fff;
+		font-size: 26px;
+		font-weight: 900;
+		font-family: "Font Awesome 5 Free";
+		text-align: center;
+	}
+	h6{
+		font: 500 20px/1 $font;
+		color: #1D2B48;
+		padding-top: 30px; 
+	} 
+	h2{
+		font: 600 42px/52px $font2;
+		color: $heding;  
+		padding-top: 35px;
+		display: block;
+	} 
+}
+/* tittle */ 
+
+/* Scroll Top */ 
+.scroll-top{
+    position: fixed;
+    right: 30px;
+    bottom: 15px; 
+    height: 50px;
+    width: 50px; 
+    cursor: pointer;
+    background: $hover;
+    border: 0;
+    box-shadow: none;
+    z-index: 999;
+    color: #fff;
+    &:hover, &:focus{
+        background: $bc;
+    }  
+}
+/* Preloader */ 
+.preloader{
+    position:fixed;
+    left:0px; 
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:999999;
+    background-color:#ffffff;
+    background-position:center center;
+    background-repeat:no-repeat; 
+    background-image:url("../images/logo.png"); 
+	animation: heartbeat 0.5s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+}
+
+/* Alimation */  
+.lfa{ 
+	animation: float-bob-x2 infinite 15s linear;
+}
+.lfar{ 
+	animation: float-bob-x3 infinite 15s linear;
+}
+.lfup{ 
+	animation: float-bob-y infinite 2s linear;
+}
+/* Alimation */ 
