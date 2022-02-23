@@ -1,0 +1,818 @@
+$color-1: #cfa470
+body
+    background-image: url(bg.jpg)
+    background-size: 100% 100% 
+.main-content
+    background-color: transparent
+.btn-theme
+    padding: 10px 20px
+    line-height: 30px
+    > span 
+        font-family: 'Monument Extended'
+        overflow: unset
+        line-height: 30px
+        white-space: nowrap
+        background-color: transparent
+        font-weight: 400
+        font-size: 18px
+        @media screen and ( max-width: 575.82px )
+            font-size: 14px
+            line-height: 30px
+            
+    &:hover 
+        color: $color-1
+        span 
+            
+            color: $color-1
+        &::before 
+            border-color: $color-1
+.shopify-payment-button__button
+    padding: 10px 20px
+    line-height: 30px
+    border: none
+    background-color: transparent
+    cursor: pointer
+    border-radius: 0
+    color: #fff
+    display: inline-block
+    font-size: 15px
+    font-weight: 400
+    line-height: 25px
+    position: relative
+    transition: all .3s ease
+    &::before
+        content: ""
+        position: absolute
+        width: 50px
+        height: 50px
+        border: 1px #306cde solid
+        border-radius: 30px
+        top: 0
+        left: 0px
+        transition: all .3s ease
+    &:hover 
+        color: #cfa470
+        &::before
+            width: 100%
+            border-color: #cfa470
+.btn-login
+    padding: 10px 20px
+    line-height: 30px
+    border: none
+    background-color: transparent
+    cursor: pointer
+    border-radius: 0
+    position: relative
+    font-size: 15px
+    font-weight: 400
+    > span 
+        height: auto
+    &::before
+        top: 0
+        left: 0
+        transition: all .3s ease
+        border-radius: 30px
+    &:hover 
+        color: $color-1
+        span 
+            color: $color-1
+        &::before 
+            width: 100%
+            border-color: $color-1
+.category-items-style12 
+    .category-item 
+        .content 
+            .btn-theme
+                &::before
+                    display: none
+                &:hover 
+.header-area
+    &.header-default
+        &.header-style2 
+            .header-navigation-area 
+                .main-menu 
+                    > li
+                        &.active 
+                            > a 
+                                color: $color-1
+                                &::after
+                                    color: $color-1
+                        > a 
+                            &:hover 
+                                color: #306cde
+                            &::after
+                                color: #1b1b1b
+                    .has-submenu
+                        &:hover 
+                            > a
+                                color: #306cde
+                                &::after
+                                    color: #306cde
+p
+    color: #313131
+.category-area
+    .category-style8-area 
+        .section-title 
+            .title
+                &::before
+.section-bottom 
+    h2
+        @media screen and ( max-width: 1199px )
+            font-size: 32px
+    h3
+        @media screen and ( max-width: 1199px )
+            font-size: 26px
+.instagram 
+    h2.title 
+        font-weight: normal          
+        @media screen and ( max-width: 1199px )
+            font-size: 32px
+.divider-content 
+    > h2
+        @media screen and ( max-width: 1199px )
+            font-size: 32px
+.divider-packing-area
+    @media screen and ( max-width: 767.82px )
+        margin-top: 0px
+.product-item 
+    &:hover 
+        .product-thumb
+            img 
+                opacity: 0
+    .product-info
+        padding: 0 15px
+
+    .product-info-action
+        display: flex
+        width: fit-content
+        @media screen and ( max-width: 767.82px )
+            flex-direction: column 
+            
+    .product-thumb
+        position: relative
+        padding-bottom: 100%
+        img 
+            transition: opacity 0.2s ease
+            position: absolute
+            width: 100%
+            height: 100%
+            object-fit: contain
+            top: 0
+            left: 0
+            padding: 15px
+            @media screen and ( max-width: 575.82px )
+                padding: 0
+                
+        .bg-thumb
+            position: absolute
+            object-fit: contain
+            margin: 15px
+            top: 0
+            width: auto
+            height: auto
+            bottom: 0
+            right: 0
+            left: 0
+            padding: 15px
+            background-size: contain
+            @media screen and ( max-width: 575.82px )
+                margin: 0
+                padding: 0
+        .thumb-overlay
+            display: none
+.category-items-style12 
+    .category-item 
+        .content 
+            .btn-theme
+                &:hover 
+                    background-color: #cfa470
+.block-right
+    @media screen and ( max-width: 767.82px )
+        transform: translateX(-30px)
+        margin: auto        
+    &::after
+        animation: e1 6s infinite
+        animation-timing-function: linear
+    &::before
+        animation: e1 10s infinite
+        animation-timing-function: linear
+    .butter-bottom
+        z-index: 2
+        animation: e2 6s infinite
+        animation-timing-function: linear
+@keyframes e1
+  0%
+    transform: rotateY(-45deg) rotateX(50deg) translateZ(-1px) rotateZ(0deg)
+  100%
+    transform: rotateY(-45deg) rotateX(50deg) translateZ(-1px) rotateZ(360deg)
+@keyframes e2
+  0%
+    transform: rotateY(0)
+  100%
+    transform: rotateY(360deg)
+.layer1
+    animation: e2 6s infinite
+    animation-timing-function: linear
+.layer,.start-sc2
+    animation: e3 3s infinite
+    animation-timing-function: linear
+@keyframes e3
+    0%
+        transform: scale(0.6)
+        opacity: 0
+    10%
+        opacity: 1
+    50%
+        transform: scale(1)
+        opacity: 1
+    90%
+        opacity: 1
+    100%
+        transform: scale(0.6)
+        opacity: 0
+.ig
+    animation: bounce2 3s ease-in-out infinite alternate;
+@keyframes bounce2
+  100%
+    transform: rotate(360deg)
+  
+.title-shadow
+    animation: shine 7s linear infinite
+    background-clip: text
+    background: linear-gradient(60deg, transparent 20%, #24448f 35%, transparent 50%, #cfa470 65%, transparent 80%)
+    background-size: 200% auto
+    text-fill-color: transparent
+    -webkit-text-stroke: 1px #24448f
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+@keyframes shine 
+    to 
+        background-position: 200% center
+.butter-sc2
+    z-index: 10
+    animation: e4 3s infinite alternate
+    animation-timing-function: linear
+@keyframes e4
+    0%
+        transform: translate3d(0,0,0) rotate(10deg)
+        
+    50%
+        transform: translate3d(-10px,20px ,40px) rotate(0deg)
+    100%
+        transform: translate3d(0,0,0) rotate(-10deg)
+        
+.block-gray
+    @media screen and ( max-width: 767.82px )
+        height: 100%
+        top: 0
+        right: 0
+.divider-area 
+    .divider-content
+        padding-top: 15px !important;
+        padding: 15px 0
+.section-bottom
+    @media screen and ( max-width: 575.82px )
+        padding: 20px 0!important
+section.instagram
+    @media screen and ( max-width: 575.82px )
+        padding: 20px 0!important
+.product-item 
+    .product-info 
+        .title
+            @media screen and ( max-width: 575.82px )
+                font-size: 13px!important
+        .prices
+            @media screen and ( max-width: 575.82px )
+                font-size: 14px!important
+.category-slider-content 
+    .category-shop-slider-container 
+        .swiper-button-next
+            @media screen and ( max-width: 575.82px )
+                height: 40px
+                width: 40px
+                font-size: 18px
+                right: 0
+.category-area.category-style8-area 
+    .section-title 
+        .title
+            @media screen and ( max-width: 991.82px )
+                font-size: 50px
+            @media screen and ( max-width: 767.82px )
+                font-size: 40px
+            @media screen and ( max-width: 575.82px )
+                font-size: 32px
+    .category-items-style12.item-two
+        @media screen and ( max-width: 767.82px )
+            position: relative
+            top: 0
+            width: 100%
+        .category-item
+            @media screen and ( max-width: 767.82px )
+                margin-right: auto
+                margin: auto
+                margin-top: 20px
+            
+    .category-items-style12.item-one
+        .category-item
+            &:first-child,&:last-child
+                @media screen and ( max-width: 767.82px )
+                    margin-left: auto
+                    margin-right: auto
+                    margin-bottom: 30px
+.our-area
+    @media screen and ( max-width: 991.82px )
+        padding: 0px 0 150px
+    @media screen and ( max-width: 767.82px )
+        padding: 40px 0  
+        min-height: 550px  
+.divider-area.divider-about-area
+    @media screen and ( max-width: 767.82px )
+        padding: 40px 0!important
+        margin-bottom: 0!important
+.parallax-container
+    h3 
+        white-space: nowrap
+        font-weight: normal
+        margin-bottom: 0
+        font-family: 'Monument Extended'
+        line-height: 1
+        padding: 15px 0 12px
+        font-size: 50px
+        @media screen and ( max-width: 991.82px )
+            font-size: 30px
+            
+.bg-1
+    .parallax-container
+        h3 
+            color: #fff
+        .fx-target
+            position: relative
+            left: -30%
+.bg-2
+    .parallax-container
+        h3 
+            color: #306cde
+.loading-container
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-image: url(bg.jpg)
+    background-size: cover
+    z-index: 99999
+    svg 
+        width: 100%
+        height: 100%
+        overflow: unset
+        max-width: 800px
+        padding: 20px
+        opacity: 0
+        .text-ic 
+            path,polygon
+                fill-opacity: 0
+                stroke: #000
+                stroke-width: 1px
+.img-bb
+    transform-origin: center
+    animation: scale1 infinite 1s alternate
+@keyframes scale1
+    0%
+        transform: scaleX(0.1)
+    100%
+        transform: scaleX(1)
+.section-title
+    nav 
+        .nav-tabs
+            display: flex
+            flex-direction: column
+            border: none
+            a 
+                position: relative
+                width: fit-content
+                font-family: 'Raleway', sans-serif
+                font-style: italic
+                transition: all .3s ease
+                font-weight: 400
+                line-height: 40px
+                letter-spacing: 1px
+                color: #306cde
+                font-size: 18px
+                @media screen and ( max-width: 575.82px )
+                    font-size: 16px
+                    line-height: 35px
+                    
+                &.active
+                    color: #000000
+                    font-family: 'Monument Extended'
+                    font-size: 20px
+                    font-style: normal
+                    letter-spacing: 1.6px
+                    @media screen and ( max-width: 575.82px )
+                        font-size: 18px
+                    &::before
+                        width: 100%
+                &:hover 
+                    &::before
+                        width: 100%
+                &::before
+                    content: ''
+                    width: 0%
+                    height: 1px
+                    background-color: #306cde
+                    position: absolute
+                    top: 50%
+                    left: 105%
+                    transition: all .3s ease
+                    transition-delay: 0s
+                    transform-origin: left    
+.header-area
+    &.sticky-header
+        &.sticky 
+            position: fixed
+            background-color: #e8f2fa
+            box-shadow: 0px 5px 20px rgba(#306cde, 0.2)
+            z-index: 9999
+            &.header-style2 
+                .header-navigation-area 
+                    .main-menu 
+                        > li 
+                            &.active 
+                                > a 
+                                    color: #cfa470
+                            &.has-submenu 
+                                &.active 
+                                    > a 
+                                        color: #cfa470
+                                        &::after
+                                            color: #cfa470
+                                &:hover 
+                                    > a 
+                                        color: #306cde
+                                        &::after
+                                            color: #306cde
+                            > a
+                                color: #1b1b1b
+                                &:hover 
+                                    color: #306cde
+
+                    
+                .header-action-area 
+                    .btn-cart,.btn-search,.btn-menu 
+                        color: #306cde
+                        &:hover 
+                            color: #cfa470
+.has-submenu 
+    .submenu-nav
+        background-color: #e8f2fa
+        color: #1b1b1b
+        > li 
+            > a
+                color: #1b1b1b
+                &:hover 
+                    background-color: #cfa470
+                    color: #fff
+                    text-decoration: unset
+.bg-overlay-black2-51
+    padding: 50px 0
+.category-items-style15 
+    .category-item 
+        .thumb 
+            padding-bottom: 120%
+            @media screen and ( max-width: 991.82px )
+                padding-bottom: 80%
+                margin-bottom: 30px
+            img 
+                position: absolute
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .content 
+            .title
+                font-family: 'Monument Extended'
+                font-weight: 500
+                font-size: 40px
+                margin-bottom: 30px
+.product-quick-view-content
+    .thumb 
+        padding-bottom: 120%
+        img 
+            position: absolute
+            width: 100%
+            height: 100%
+            object-fit: contain
+            padding: 25px
+.category-area
+    &.product-collection-area
+        padding-left: 0
+        padding-right: 0
+        @media screen and ( max-width: 575.82px )
+            padding-top: 10px
+            padding-bottom: 10px
+        .items-align
+            @media screen and ( max-width: 991.82px )
+                flex-direction: column 
+            .align-right
+                @media screen and ( max-width: 991.82px ) 
+                    width: 100% 
+                    padding: 0
+            .align-left 
+                @media screen and ( max-width: 991.82px ) 
+                    width: 100%    
+    &.product-collection-area-style1 
+        padding-left: 0
+        padding-right: 0
+        @media screen and ( max-width: 575.82px )
+            padding-top: 30px
+        .items-align
+            @media screen and ( max-width: 991.82px )
+                flex-direction: column 
+            .align-right
+                @media screen and ( max-width: 991.82px ) 
+                    width: 100% 
+                    padding: 0
+                    order: 1
+            .align-left 
+                @media screen and ( max-width: 991.82px ) 
+                    width: 100%      
+                    order: 0
+.page-title-area 
+    .page-title-content
+        @media screen and ( max-width: 991.82px ) 
+            padding: 130px 0 0px 
+        .title
+            font-weight: 500
+            @media only screen and (max-width: 575px)
+                font-size: 24px
+.shop-toolbar-wrap 
+    @media only screen and (max-width: 575px)
+        margin-bottom: 10px
+    .product-sorting-menu
+        select 
+            background-color: transparent
+            border: none
+            padding: 12px 20px 12px 18px
+            color: #444
+            @media only screen and (max-width: 575px)
+                padding: 8px 8px
+            @media only screen and (max-width: 479.98px)
+                padding-left: 0
+                margin-left: -4px
+.detail-product-page
+    margin-top: 150px
+.single-product-info 
+    .title
+        font-weight: 500
+    .product-action-size
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        .title
+            flex: 0 0 80px
+            margin: unset
+        ul
+            margin-bottom: unset
+            li
+                border: none
+                margin-bottom: 8px
+                margin-right: 8px
+                label
+                    cursor: pointer
+                    display: flex
+                    width: 100%
+                    justify-content: center
+                    align-items: center
+                    border: 1px solid #306cde
+                    padding: 5px
+                    // width: 40px
+                    height: 40px
+                input
+                    display: none
+                    &:checked
+                        + label
+                            border: 1px solid #306cde
+                            background-color: #306cde
+                            color: #fff
+
+                a
+                    &:hover,
+                    &:focus
+                        background-color: #306cde
+                        color: #fff 
+    .quick-product-action
+        .action-top
+            display: flex
+            margin-bottom: 25px
+            .title 
+                flex: 0 0 80px
+                margin: unset
+                color: #444
+                display: block
+                font-size: 16px
+                font-weight: 400
+                line-height: 40px
+            .pro-qty-area 
+                .pro-qty 
+                    input
+                        font-size: 16px
+                        line-height: 40px
+                        width: 120px
+                    .qty-btn
+                        line-height: 40px
+                        width: 40px
+                        &:hover 
+                            background-color: #306cde
+                            color: #fff
+        .action-bottom
+            margin-bottom: 25px
+        .action-btn
+            .btn-theme
+                margin-right: 15px
+    .product-sku
+        border-top: 1px solid  #306cde
+    .prices
+        border-bottom: 1px solid  #306cde
+.single-product-slider 
+    .single-product-nav 
+        .nav-item
+            position: relative
+            padding-bottom: 120%
+            img 
+                position: absolute
+                width: 100%
+                height: 100%
+                object-fit: contain
+    .single-product-thumb 
+        .thumb-item
+            position: relative
+            padding-bottom: 120%
+            img 
+                position: absolute
+                width: 100%
+                height: 100%
+                object-fit: contain
+.product-description-review 
+    .tab-content 
+        .product-size-chart 
+            .table 
+                tbody 
+                    tr 
+                        td
+                            border-color: #306cde
+        .product-review 
+            .product-review-comments 
+                .title 
+                    color: #1b1b1b
+                    span
+                        font-weight: 500
+                        color: #cfa470
+            .product-review-form 
+                .title
+                    font-weight: 500
+    .product-description-tab-menu
+        margin-right: auto
+        margin-left: auto
+        border-color: #306cde
+.bg-overlay-black2-5
+    &::before
+        background-color: rgba(#e8f2fa,0.7)
+        opacity: 1
+.login-form-content 
+    .tab-pane 
+        .login-form 
+            .login-form-wrapper 
+                h5 
+                    margin-top: 24px
+.blog-details-area
+    .content 
+        h2 
+            font-size: 24px;
+            font-family: 'Raleway', sans-serif
+            margin-bottom: 20px
+        h3 
+            font-size: 20px
+            font-family: 'Raleway', sans-serif
+            margin-bottom: 20px
+            color: #1b1b1b
+.mobi-menu
+    -webkit-overflow-scrolling: touch
+    white-space: nowrap
+    overflow-x: auto
+    text-align: center
+    overflow-y: hidden
+    overflow-x: hidden
+    overflow: -moz-scrollbars-none
+    -ms-overflow-style: none
+    margin-top: -30px
+    display: none 
+    @media screen and ( max-width: 1199.82px )
+        display: block
+        
+    ul 
+        display: flex
+        overflow-x: auto
+        table-layout: fixed
+        justify-content: space-between
+        list-style-position: inside
+        margin: 0 -10px
+        margin-bottom: 0
+        &::-webkit-scrollbar 
+            display: none
+        li 
+            margin: 3px 0px
+            padding: 0 10px
+            a 
+                position: relative
+                font-size: 11.5px
+                text-transform: uppercase
+                white-space: nowrap
+                .dot 
+                    position: absolute
+                    background-color: #ff3600
+                    width: 4px
+                    height: 4px
+                    right: -6px
+                    top: -4px
+                    z-index: 1
+                    display: block
+                    border-radius: 50%
+.has-submenu 
+    &:hover 
+        .submenu-nav
+            &.mega-menu-full
+                @media screen and ( min-width: 1200px )
+                    > li
+                        a
+                            opacity: 1
+                            visibility: visible
+                            display: block
+    .submenu-nav
+        &.mega-menu-full
+            @media screen and ( min-width: 1200px )
+                padding: 15px
+                width: 100vw
+                position: fixed
+                left: 0
+                display: flex
+                overflow-x: auto
+                // &::-webkit-scrollbar 
+                //     display: none
+
+                > li 
+                    flex: 0 0 20%
+                    max-width: 20%
+                    text-align: center
+                    padding: 15px
+                    
+                    a 
+                        padding: 0px
+                        opacity: 0
+                        visibility: hidden
+                        transition: all .001s ease
+                        display: none
+                        &:hover 
+                            background-color: transparent
+                            color: #cfa470
+                            text-decoration: underline
+                            img 
+                                transform: scale(1.05)
+                            .thumb-img-menu
+                                &::after
+                                    opacity: 1
+               
+                    
+            .thumb-img-menu 
+                width: 100%
+                position: relative
+                padding-bottom: 120%
+                overflow: hidden
+                margin-bottom: 10px
+                display: none
+                @media screen and ( min-width: 1200px )
+                    display: block
+                &::after
+                    background-color: rgba(255,255,255,0.3)
+                    opacity: 0
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    left: 0
+                    top: 0
+                    transition: all .3s ease
+
+                img 
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    position: absolute
+                    left: 0
+                    transition: all .5s ease
+.brand-logo-area.brand-logo-style1-area ,.team-creative-area,.blog-area.blog-about-area .container
+    .section-title 
+        .title
+            @media screen and ( max-width: 991px )
+                font-size: 30px
+                
