@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Doctor</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/doctor.min.css">
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+  <link rel="stylesheet" href="vendor/fullcalendar-5/main.min.css">
+
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+      <div class="header2 js-header2">
+  <button class="header2__burger js-header2-burger">
+    <svg class="icon icon-burger">
+      <use xlink:href="img/sprite.svg#bars"></use>
+    </svg>
+  </button>
+  <a class="header2__logo" href="doctor_dashboard.html">
+    <img class="header2__pic header2__pic_black" src="img/logo.svg" alt="">
+  </a>
+  
+  <div class="header2__group">
+    <a class="header2__link header2__link_bell active" href="doctor_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+    </a>
+  </div>
+  <a class="header2__profile" href="doctor_dashboard.html"><img class="header2__pic" src="img/ava-square-3.png" alt=""></a>
+  <div class="header2__bg js-header2-bg"></div>
+</div>
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+  <button class="sidebar2__close js-sidebar2-close">
+    <svg class="icon icon-close">
+      <use xlink:href="img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <a class="sidebar2__logo" href="doctor_dashboard.html">
+    <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+  </a>
+</div>
+
+<div class="sidebar2__wrapper">
+  <a class="sidebar2__profile" href="doctor_dashboard.html">
+    <div class="ava"><img class="ava__pic" src="img/ava-square-3.png" alt=""></div>
+    <div class="sidebar2__details">
+      <div class="sidebar2__user">Annie Do</div>
+      <div class="sidebar2__login">@annie_do</div>
+    </div>
+  </a>
+  <div class="sidebar7__category">Main</div>
+  <div class="sidebar2__nav">
+    <a class="sidebar2__item " href="doctor_dashboard.html">
+      <svg class="icon icon-dashboard">
+        <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+      </svg>Dashboard
+    </a>
+    <a class="sidebar2__item " href="doctor_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+      Notifications
+      <div class="sidebar2__counter">2</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_drop-in.html">
+      <svg class="icon icon-library">
+        <use xlink:href="img/sprite.svg#icon-library"></use>
+      </svg>
+      Drop-in
+      <div class="sidebar2__counter">2</div>
+    </a>
+    <a class="sidebar2__item active" href="doctor_schedule.html">
+      <svg class="icon icon-event">
+      <use xlink:href="img/sprite.svg#icon-event"></use>
+      </svg>
+      Schedule
+      <div class="sidebar2__counter">3</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_list-patients.html">
+      <svg class="icon icon-friends">
+        <use xlink:href="img/sprite.svg#icon-friends"></use>
+      </svg>
+      Patients
+    </a>
+    <a class="sidebar2__item " href="doctor_stats.html">
+      <svg class="icon icon-leaderboard">
+        <use xlink:href="img/sprite.svg#icon-leaderboard"></use>
+      </svg>
+      Stats
+    </a>
+    <a class="sidebar2__item " href="doctor_wallet.html">
+      <svg class="icon icon-friends fa-wallet">
+        <use xlink:href="img/sprite.svg#fa-wallet"></use>
+      </svg>
+        My Wallet
+    </a>
+
+
+  </div>
+  <div class="sidebar7__category">Other </div>
+  <div class="sidebar2__nav">
+    <a class="sidebar2__item " href="doctor_messages.html">
+      <svg class="icon icon-messages">
+        <use xlink:href="img/sprite.svg#icon-messages"></use>
+      </svg>Messages
+      <div class="sidebar__counter">3</div>
+    </a>
+    <div class="sidebar7__item has-sub ">
+      <div class="sidebar7__head">
+        <svg class="icon icon-settings">
+          <use xlink:href="img/sprite.svg#icon-settings"></use>
+        </svg>Setting
+      </div>
+      <div class="sidebar7__body">
+        <a class="sidebar7__link " href="doctor_setting-account.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-write"></use>
+          </svg>
+          Change Profile
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-security.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#key"></use>
+            </svg>
+            Change Password
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-notification.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-bell"></use>
+          </svg>
+          Notification
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-language.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#language"></use>
+            </svg>
+            Language
+        </a>
+        
+        <a class="sidebar7__link " href="doctor_setting-billing.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#file-invoice"></use>
+            </svg>
+            Billing
+        </a>
+        
+      </div>
+    </div>
+    <a class="sidebar2__item " href="#">
+        <svg class="icon icon-logout">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+        </svg>Log out
+      </a>
+  </div>
+  
+</div>
+
+        </div>
+        
+        <div class="page2__container">
+            <div class="schedule-container">
+                <div class="box-status-calendar">
+                  <div class="not-available">
+                    <span></span>
+                    Not Available
+                  </div>
+                  <div class="available">
+                    <span></span>
+                    Available
+                  </div>
+                  <div class="new-available">
+                    <span></span>
+                    New Available
+                  </div>
+                </div>
+                <div class="calendar" id="calendar">
+
+                </div>
+                
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/anime.min.js"></script>
+<script src="js/lib/readmore.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/aos.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/common.js"></script>
+<script src="js/lib/charts.js"></script>
+  <script src="vendor/fullcalendar-5/main.min.js"></script>
+  <script src="js/moment.js"></script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      var events = [
+        {
+          idGroup: 'a',
+          title: 'Alex Vu',
+          start: '2021-08-20T16:00:00',
+          url: "doctor_past-medical-history.html",
+          classNames: 'date-available',
+        },
+        {
+          idGroup: 'a',
+          title: 'Cathryn Leftwich',
+          start: '2021-08-23T09:00:00'
+        },
+        {
+          title: 'Anthony Kara',
+          start: '2021-08-12T12:30:00',
+          color: 'green',
+          classNames: 'doc-schedule-done'
+        },
+        {
+          title: 'Jefferey Burrington',
+          start: '2021-08-14T10:30:00',
+          color: 'red',
+          classNames: 'doc-schedule-cancel'
+        }
+      ];
+      
+      var dateAvailable = ['2021-08-12','2021-08-14','2021-08-20','2021-08-23'];
+      var newAvailable = ['2021-08-23']
+      var a = $('.fc-day').attr('data-date')
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth', 
+        events: events, 
+        eventColor: "#441F4B",
+        eventDidMount: function(info,event) {
+          var dateNotAvailable = [];
+          dateNotAvailable.push($('.fc-day').attr("data-date"));
+          console.log($('.fc-day').attr("data-date"))
+          // $("[data-date='" + dataAttr + "']").addClass("hasEvent");
+          // $.each(dateNotAvailable, function(i) {
+          //     $('.fc-day[data-date="'+dateNotAvailable[i]+'"]').css('background', '#e69488');
+          // });
+          $.each(dateAvailable, function(i) {
+              $('.fc-day[data-date="'+dateAvailable[i]+'"]').css('background', '#8bfdc4');
+          });
+          $.each(newAvailable, function(i) {
+              $('.fc-day[data-date="'+newAvailable[i]+'"]').css('background', '#ff9283');
+          });
+
+          
+          
+        }
+      });
+      
+      
+
+      
+
+      calendar.render();
+    });
+  </script>
+</body>
+
+</html>

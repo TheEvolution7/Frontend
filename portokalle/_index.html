@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" media="all" type="text/css" href="css/patient.min.css" />
+  <title>Page Tester</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      padding: 10px;
+    }
+
+    .heading1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="heading1">Homepages</div>
+    <ul>
+      <li><a href="index.html" target="_blank">Home Page</a></li>
+      <li>
+        <a href="doctor_sign-up.html" target="_blank">Doctor Sign-up</a>
+      </li>
+      <li>
+        <a href="doctor_sign-up-step-2.html" target="_blank">Doctor Sign-up Step 2</a>
+      </li>
+      <li></li>
+    </ul>
+  </div>
+  <div>
+    <div class="heading1">User pages</div>
+    <ul>
+      <li>
+        <a href="user_build-your-health.html" target="_blank">User - Get Health Care</a>
+      </li>
+      <li>
+        <a href="user_change-password.html" target="_blank">User - Change password</a>
+      </li>
+      <li>
+        <a href="user_step-patient.html" target="_blank">User - Step: Patient</a>
+      </li>
+      <li><a href="user_add-patient-profile.html" target="_blank" rel="noopener noreferrer">Add Patient Profile</a></li>
+      <li><a href="user_add-medical-record.html" target="_blank" rel="noopener noreferrer">ADD: Medical Records</a></li>
+      <li>
+        <a href="user_step-detail.html" target="_blank">Step: Detail</a>
+      </li>
+      <li>
+        <a href="user_step-package.html" target="_blank">Step: Package</a>
+      </li>
+      <li>
+        <a href="user_step-doctor-pairing.html" target="_blank">Step: Doctor Pairing</a>
+      </li>
+      <li>
+        <a href="user_step-find-doctor.html" target="_blank">Step: Find Doctor/ Select Provider</a>
+      </li>
+      <li>
+        <a href="user_step-prescription.html" target="_blank">Step: Prescription</a>
+      </li>
+      <li>
+        <a href="user_step-summary.html" target="_blank">Step: Summary</a>
+      </li>
+      <li>
+        <a href="user_step-payment.html" target="_blank">Step: PAYMENT</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="heading1">Doctor's pages</div>
+    <ul>
+      <li>
+        <a href="doctor_dashboard.html" target="_blank">Doctor Dashboard</a>
+      </li>
+      <li>
+        <a href="doctor_stats.html" target="_blank">Doctor - Trang thống kê doanh thu & các chỉ số</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="heading1">Button Sizes</div>
+    <div class="flex" style="gap: 10px; align-items: center">
+      <button class="button button_primary">Button Normal</button>
+      <button class="button button_small button_primary">Button Small</button>
+    </div>
+    <div class="heading1">Button Styles</div>
+    <div class="flex" style="gap: 10px; align-items: center">
+      <button class="button button_primary">Button Primary</button>
+      <button class="button button_alternate">
+        Button Alternate
+        <svg class="icon icon-task">
+          <use xlink:href="img/sprite.svg#icon-task"></use>
+        </svg>
+      </button>
+      <button class="button button_outlined">
+        Button Outlined
+        <svg class="icon icon-saved">
+          <use xlink:href="img/sprite.svg#icon-saved"></use>
+        </svg>
+      </button>
+      <button class="button button_cancel">Button Cancel</button>
+    </div>
+    <div class="heading1">Anchor Buttons</div>
+    <div class="flex" style="gap: 10px; align-items: center">
+      <a href="#" class="btn-a">Anchor Button</a>
+      <a href="#" class="btn-a btn-a-sublink">Sublink</a>
+    </div>
+  </div>
+
+  <div class="master-grid">
+    <div class="master-head">
+      <div class="heading1">SVG Overview</div>
+    </div>
+    <div class="master-body">
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-activity">
+            <use xlink:href="img/sprite.svg#icon-activity"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-activity</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-messages">
+            <use xlink:href="img/sprite.svg#icon-messages"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-message</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-add">
+            <use xlink:href="img/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-add</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-archive">
+            <use xlink:href="img/sprite.svg#icon-archive"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-archive</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-arrow-down">
+            <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-arrow-down</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-arrow-right">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-arrow-right</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-arrow-up">
+            <use xlink:href="img/sprite.svg#icon-arrow-up"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-arrow-up</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-arrow-bottom">
+            <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-arrow-bottom</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-arrow-circle">
+            <use xlink:href="img/sprite.svg#icon-arrow-circle"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-arrow-circle</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-arrow-next">
+            <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-arrow-next</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-arrow-prev">
+            <use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-arrow-prev</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-arrows">
+            <use xlink:href="img/sprite.svg#icon-arrows"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-arrows</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-attachment">
+            <use xlink:href="img/sprite.svg#icon-attachment"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-attachment</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-attachment-thin">
+            <use xlink:href="img/sprite.svg#icon-attachment-thin"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-attachment-thin</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-audio">
+            <use xlink:href="img/sprite.svg#icon-audio"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-audio</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-bell">
+            <use xlink:href="img/sprite.svg#icon-bell  "></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-bell</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-dashboard">
+            <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-dashboard</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-block">
+            <use xlink:href="img/sprite.svg#icon-block"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-block</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-book">
+            <use xlink:href="img/sprite.svg#icon-book"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-book</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-briefcase-1">
+            <use xlink:href="img/sprite.svg#icon-briefcase-1"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-briefcase-1</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-briefcase">
+            <use xlink:href="img/sprite.svg#icon-briefcase"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-briefcase</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-burger">
+            <use xlink:href="img/sprite.svg#bars"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-burger</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-calendar">
+            <use xlink:href="img/sprite.svg#icon-calendar"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-calendar</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-calendar-1">
+            <use xlink:href="img/sprite.svg#icon-calendar-1"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-calendar-1</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-chart">
+            <use xlink:href="img/sprite.svg#icon-chart"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-chart</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-chart-1">
+            <use xlink:href="img/sprite.svg#icon-chart-1"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-chart-1</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-chat">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-chat</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-check-circle">
+            <use xlink:href="img/sprite.svg#icon-check-circle"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-check-circle</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-check-sm-thick">
+            <use xlink:href="img/sprite.svg#icon-check-sm-thick"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-check-sm-thick</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-check-sm">
+            <use xlink:href="img/sprite.svg#icon-check-sm"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-check-sm</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-check-square">
+            <use xlink:href="img/sprite.svg#icon-check-square"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-check-square</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-logout">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-logout</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-settings">
+            <use xlink:href="img/sprite.svg#icon-settings"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-settings</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-emoticon">
+            <use xlink:href="img/sprite.svg#icon-emoticon"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-emoticon</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-eye">
+            <use xlink:href="img/sprite.svg#icon-eye"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-eye</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-event">
+            <use xlink:href="img/sprite.svg#icon-event"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-event</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-file">
+            <use xlink:href="img/sprite.svg#icon-file"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-file</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-filter">
+            <use xlink:href="img/sprite.svg#icon-filter"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-filter</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-favorite">
+            <use xlink:href="img/sprite.svg#icon-favorite"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-favorite</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-filters">
+            <use xlink:href="img/sprite.svg#icon-filters"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-filters</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-forward">
+            <use xlink:href="img/sprite.svg#icon-forward"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-forward</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-friends">
+            <use xlink:href="img/sprite.svg#icon-friends"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-friends</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-friends-request">
+            <use xlink:href="img/sprite.svg#icon-friends-request"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-friends-request</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-full-screen">
+            <use xlink:href="img/sprite.svg#icon-full-screen"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-full-screen</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-get-location">
+            <use xlink:href="img/sprite.svg#icon-get-location"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-get-location</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-gif">
+            <use xlink:href="img/sprite.svg#icon-gif"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-gif</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-gift">
+            <use xlink:href="img/sprite.svg#icon-gift"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-gift</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-google-drive">
+            <use xlink:href="img/sprite.svg#icon-google-drive"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-google-drive</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-goal">
+            <use xlink:href="img/sprite.svg#icon-goal"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-goal</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-home">
+            <use xlink:href="img/sprite.svg#icon-home"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-home</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-image">
+            <use xlink:href="img/sprite.svg#icon-image"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-image</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-inbox">
+            <use xlink:href="img/sprite.svg#icon-inbox"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-inbox</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-info">
+            <use xlink:href="img/sprite.svg#icon-info"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-info</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-leaderboard">
+            <use xlink:href="img/sprite.svg#icon-leaderboard"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-leaderboard</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-library">
+            <use xlink:href="img/sprite.svg#icon-library"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-library</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-like-thumb">
+            <use xlink:href="img/sprite.svg#icon-like-thumb"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-like-thumb</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-like">
+            <use xlink:href="img/sprite.svg#icon-like"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-like</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-messages">
+            <use xlink:href="img/sprite.svg#icon-messages"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-messages</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-moon">
+            <use xlink:href="img/sprite.svg#icon-moon"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-moon</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-minimize">
+            <use xlink:href="img/sprite.svg#icon-minimize"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-minimize</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-minus">
+            <use xlink:href="img/sprite.svg#icon-minus"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-minus</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-next">
+            <use xlink:href="img/sprite.svg#icon-next"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-next</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-phone-call">
+            <use xlink:href="img/sprite.svg#icon-phone-call"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-phone-call</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-photo">
+            <use xlink:href="img/sprite.svg#icon-photo"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-photo</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-place">
+            <use xlink:href="img/sprite.svg#icon-place"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-place</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-plus">
+            <use xlink:href="img/sprite.svg#icon-plus"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-plus</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-profile">
+            <use xlink:href="img/sprite.svg#icon-profile"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-profile</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-project">
+            <use xlink:href="img/sprite.svg#icon-project"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-project</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-refresh">
+            <use xlink:href="img/sprite.svg#icon-refresh"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-refresh</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-play">
+            <use xlink:href="img/sprite.svg#icon-play"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-play</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-place">
+            <use xlink:href="img/sprite.svg#icon-place"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-place</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-relationship">
+            <use xlink:href="img/sprite.svg#icon-relationship"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-relationship</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-repeat">
+            <use xlink:href="img/sprite.svg#icon-repeat"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-repeat</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-reply-big">
+            <use xlink:href="img/sprite.svg#icon-reply-big"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-reply-big</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-reply">
+            <use xlink:href="img/sprite.svg#icon-reply"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-reply</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-salary">
+            <use xlink:href="img/sprite.svg#icon-salary"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-salary</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sale">
+            <use xlink:href="img/sprite.svg#icon-sale"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sale</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-saved">
+            <use xlink:href="img/sprite.svg#icon-saved"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-saved</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-schedule">
+            <use xlink:href="img/sprite.svg#icon-schedule"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-schedule</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-search">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-search</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sent">
+            <use xlink:href="img/sprite.svg#icon-sent"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sent</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-settings-player">
+            <use xlink:href="img/sprite.svg#icon-settings-player"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-settings-player</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-settings">
+            <use xlink:href="img/sprite.svg#icon-settings"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-settings</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-share">
+            <use xlink:href="img/sprite.svg#icon-share"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-share</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sort-1">
+            <use xlink:href="img/sprite.svg#icon-sort-1"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sort-1</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sort-2">
+            <use xlink:href="img/sprite.svg#icon-sort-2"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sort-2</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sorting-1">
+            <use xlink:href="img/sprite.svg#icon-sorting-1"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sorting-1</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sorting-2">
+            <use xlink:href="img/sprite.svg#icon-sorting-2"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sorting-2</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sorting-3">
+            <use xlink:href="img/sprite.svg#icon-sorting-3"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sorting-3</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sorting-4">
+            <use xlink:href="img/sprite.svg#icon-sorting-4"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sorting-4</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-spam-1">
+            <use xlink:href="img/sprite.svg#icon-spam-1"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-spam-1</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-spam">
+            <use xlink:href="img/sprite.svg#icon-spam"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-spam</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-star">
+            <use xlink:href="img/sprite.svg#icon-star"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-star</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-student">
+            <use xlink:href="img/sprite.svg#icon-student"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-student</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-sun">
+            <use xlink:href="img/sprite.svg#icon-sun"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-sun</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-table">
+            <use xlink:href="img/sprite.svg#icon-table"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-table</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-task">
+            <use xlink:href="img/sprite.svg#icon-task"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-task</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-text">
+            <use xlink:href="img/sprite.svg#icon-text"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-text</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-trash">
+            <use xlink:href="img/sprite.svg#icon-trash"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-trash</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-triangle-down">
+            <use xlink:href="img/sprite.svg#icon-triangle-down"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-triangle-down</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-video">
+            <use xlink:href="img/sprite.svg#icon-video"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-video</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-view-border">
+            <use xlink:href="img/sprite.svg#icon-view-border"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-view-border</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-view">
+            <use xlink:href="img/sprite.svg#icon-view"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-view</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-world">
+            <use xlink:href="img/sprite.svg#icon-world"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-world</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-write"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-write</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon icon-zoom">
+            <use xlink:href="img/sprite.svg#icon-zoom"></use>
+          </svg>
+        </div>
+        <div class="svg-name">icon-zoom</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon fa-credit-card">
+            <use xlink:href="img/sprite.svg#fa-credit-card"></use>
+          </svg>
+        </div>
+        <div class="svg-name">fa-credit-card</div>
+      </div>
+      <div class="svg-wrapper">
+        <div class="svg-content">
+          <svg class="icon fa-sort-down-solid">
+            <use xlink:href="img/icons/sort-down-solid.svg#fa-sort-down-solid"></use>
+          </svg>
+        </div>
+        <div class="svg-name">fa-sort-down-solid</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

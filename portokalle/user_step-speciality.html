@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Patient Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/patient.min.css">
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+	<link rel="stylesheet" href="css/custom.min.css">
+	<link rel="stylesheet" href="css/custom.min.css">
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content =
+          "width=375, minimum-scale=" +
+          newScale +
+          ", maximum-scale=1.0, user-scalable=no, initial-scale=" +
+          newScale +
+          "";
+      } else {
+        viewportmeta.content =
+          "width=device-width, maximum-scale=1.0, initial-scale=1.0";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+      <div class="header2 js-header2">
+        <button class="header2__burger js-header2-burger">
+          <svg class="icon icon-burger">
+            <use xlink:href="img/sprite.svg#bars"></use>
+          </svg>
+        </button>
+        <a class="header2__logo" href="user_dashboard.html">
+          <img class="header2__pic header2__pic_black" src="./img/logo.svg" alt="">
+        </a>
+        <!--  <div class="header2__search">
+          <button class="header2__open">
+            <svg class="icon icon-search">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input class="header2__input" type="text" placeholder="Search">
+        </div> -->
+        <div class="header2__group">
+          <a class="header2__link header2__link_bell active" href="user_notifications.html">
+            <svg class="icon icon-bell">
+              <use xlink:href="img/sprite.svg#icon-bell"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="header2__profile" href="user_dashboard.html"><img class="header2__pic" src="img/ava-square-3.png" alt=""></a>
+        <div class="header2__bg js-header2-bg"></div>
+      </div>
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+            <button class="sidebar2__close js-sidebar2-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="sidebar2__logo" href="user_dashboard.html">
+              <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="sidebar2__wrapper">
+	<a class="sidebar2__profile" href="user_dashboard.html">
+		<div class="ava">
+			<img class="ava__pic" src="img/ava-square-3.png" alt="">
+		</div>
+		<div class="sidebar2__details">
+			<div class="sidebar2__user">Annie Do</div>
+			<div class="sidebar2__login">@annie_do</div>
+		</div>
+	</a>
+	<div class="sidebar7__category">Main</div>
+	<div class="sidebar2__nav">
+		<a class="sidebar2__item " href="user_dashboard.html">
+			<svg class="icon icon-dashboard">
+				<use xlink:href="img/sprite.svg#icon-dashboard"></use>
+			</svg>
+			Dashboard
+		</a>
+		<a class="sidebar2__item " href="user_medical-records.html">
+			<svg class="icon icon-library">
+				<use xlink:href="img/sprite.svg#icon-library"></use>
+			</svg>
+			Medical Records
+		</a>
+		<a class="sidebar2__item active" href="user_patient-profiles.html">
+			<svg class="icon icon-profile">
+				<use xlink:href="img/sprite.svg#icon-profile"></use>
+			</svg>
+			Patient Profiles
+		</a>
+		<a class="sidebar2__item" href="user_notifications.html">
+			<svg class="icon icon-bell">
+				<use xlink:href="img/sprite.svg#icon-bell"></use>
+			</svg>
+			Notifications
+		</a>
+		<a class="sidebar2__item" href="user_build-your-health.html">
+			<svg class="icon icon-activity">
+				<use xlink:href="img/sprite.svg#icon-activity"></use>
+			</svg>
+			Your history
+		</a>
+		<a href="user_step-patient.html" class="header__btn btn btn_blue __purple btn__ssm">Get Health Care</a>
+	</div>
+	<!-- <div class="sidebar7__category">Other </div> -->
+	<div class="sidebar2__nav">
+		<a class="sidebar2__item" href="user_rewards.html">
+			<svg class="icon icon-star">
+				<use xlink:href="img/sprite.svg#icon-star"></use>
+			</svg>Rewards
+		</a>
+		<a class="sidebar2__item" href="user_credits.html">
+			<svg class="icon icon-spam-1">
+				<use xlink:href="img/sprite.svg#icon-spam-1"></use>
+			</svg>Credits
+		</a>
+		<a class="sidebar2__item" href="user_egiftCards.html">
+			<svg class="icon icon-gift">
+				<use xlink:href="img/sprite.svg#icon-gift"></use>
+			</svg>eGift Cards
+		</a>
+		<a class="sidebar2__item" href="user_membership.html">
+			<svg class="icon icon-salary">
+				<use xlink:href="img/sprite.svg#icon-salary"></use>
+			</svg>Billings
+		</a>
+		<a class="sidebar2__item" href="user_settings.html">
+			<svg class="icon icon-settings">
+				<use xlink:href="img/sprite.svg#icon-settings"></use>
+			</svg>Settings
+		</a>
+		<a class="sidebar2__item" href="logout.html">
+			<svg class="icon icon-logout">
+				<use xlink:href="img/sprite.svg#icon-logout"></use>
+			</svg>Sign Out
+		</a>
+	</div>
+</div>
+        </div>
+
+        <div class="page2__container">
+          <div class="page2__row">
+            <div class="page2__col">
+              <div class="page6__wrapper">
+                <div class="membership-container">
+                  <div class="membership-row">
+                    <div class="form-build">
+                      <ul class="list-unstyled multi-steps">
+                        <li>Patient</li>
+                        <li class="is-active">Speciality</li>
+                        <li>Detail</li>
+                        <li>Doctor pairing</li>
+                        <li>Prescription</li>
+                        <li>Consultation summary</li>
+                      </ul>
+                      <div class="user-step-status">
+                        <!-- Approximate time to see the provider: 10 minutes -->
+                        <div class="box-spec">
+                            <span id="box-text-spec"></span>
+                        </div>
+                      </div>
+                      <form action="">
+                        <div class="form-container">
+                          <div class="field">
+                            <h3 class="field__title ta-left">
+                                What type of provider would you like to see?
+                            </h3>
+                            <!-- <div class="field__label">Who is this visit for ?</div> -->
+                            <div class="package-container speciality-container">
+                                <div class="col-pack">
+                                    <input type="radio" id="package-1" class="hidden" name="choose-package" value="General doctor">
+                                    <label for="package-1" class="history__card">
+                                        <div class="history__logo">
+                                            <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                            <div class="check-box-custom"></div>
+                                        </div>
+                                        <div class="history__title">General doctor</div>
+                                        <div class="history__details">
+                                            <span class="history__company">See a Family doctor, ER doctor, or NP, any
+                                                time 24/7.</span>
+                                        </div>
+                                        <div class="history__line">
+                                            <!-- <div class="history__time">CA$99</div> -->
+                                            <div class="history__status">
+                                                <div class="tooltip icon" title="Our doctors can diagnose and prescribe medications for many common medical conditions, as well as provide physical examinations, right here on portakalle. You can  speak to doctor instantly or schedule an appointment by video call or text from your mobile device. All Doctors on our platform are licensed in Albanian, and else where, and practice in family or emergency medicine in local offices, clinics and hospitals. Check here to connect with a general doctor today! ">
+                                                    <svg class="icon icon-dots">
+                                                        <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-pack">
+                                    <input type="radio" id="package-2" class="hidden" name="choose-package" value="Pediatric">
+                                    <label for="package-2" class="history__card">
+                                        <div class="history__logo">
+                                            <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                            <div class="check-box-custom"></div>
+                                        </div>
+                                        <div class="history__title">
+                                            Pediatric 
+                                        </div>
+                                        <div class="history__details">
+                                            <span class="history__company">Book an online appointment with a caregiver coach.</span>
+                                        </div>
+                                        <div class="history__line">
+                                            <!-- <div class="history__time">$79</div> -->
+                                            <div class="history__status">
+                                                <div class="tooltip icon" title="Our pediatric doctors can diagnose and prescribe medications for many common medical conditions that are our seen in our infants, adolescents, teen and young adults populations, right here on portakalle. You can  speak to Pediatrician instantly or schedule an appointment by video call or text from your mobile device. All Pediatricians on our platform are licensed in Albanian, and else where, and practice in Pediatric medicine in local offices, clinics and hospitals. Check here to connect with a Pediatric doctor today! ">
+                                                    <svg class="icon icon-dots">
+                                                        <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-pack">
+                                    <input type="radio" id="package-3" class="hidden" name="choose-package" value="Neurology">
+                                    <label for="package-3" class="history__card">
+                                        <div class="history__logo">
+                                            <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                            <div class="check-box-custom"></div>
+                                        </div>
+                                        <div class="history__title">
+                                            Neurology
+                                        </div>
+                                        <div class="history__details">
+                                            <span class="history__company">
+                                                Book an online appointment with a life coach.
+                                            </span>
+                                        </div>
+                                        <div class="history__line">
+                                            <!-- <div class="history__time">$99</div> -->
+                                            <div class="history__status">
+                                                <div class="tooltip icon" title="Our Neurologist can diagnose, prescribe medications, or provide consultations for patients looking to be treated for diseases in the brain or spinal cord, nerves, or muscles, right here on portakalle. You can speak to a Neurologists instantly or schedule an appointment by video call or text from your mobile device. All Neurologist on our platform are licensed in Albanian , and else where, and practice in neuropathic medicine in local offices, clinics and hospitals. Check here to connect with a Neurologist today! ">
+                                                    <svg class="icon icon-dots">
+                                                        <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-pack">
+                                    <input type="radio" id="package-4" class="hidden" name="choose-package" value="Pscyhiatric">
+                                    <label for="package-4" class="history__card">
+                                        <div class="history__logo">
+                                            <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                            <div class="check-box-custom"></div>
+                                        </div>
+                                        <div class="history__title">
+                                           Pscyhiatric
+                                        </div>
+                                        <div class="history__details">
+                                            <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                        </div>
+                                        <div class="history__line">
+                                            <!-- <div class="history__time"></div> -->
+                                            <div class="history__status">
+                                                <div class="tooltip icon" title="Our Psychiatrists can diagnose, prescribe medications, or provide consultations for patients with mental health disorders, right here on portakalle. You can speak to a Psychiatrist instantly or schedule an appointment by video call or text from your mobile device. All Psychiatrist on our platform are licensed in Albanian, and else where, and practice in psychiatric  medicine in local offices, clinics and hospitals. Check here to connect with a Psychiatric doctor today! ">
+                                                    <svg class="icon icon-dots">
+                                                        <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-pack">
+                                    <input type="radio" id="package-5" class="hidden" name="choose-package" value="Dermatology">
+                                    <label for="package-5" class="history__card">
+                                        <div class="history__logo">
+                                            <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                            <div class="check-box-custom"></div>
+                                        </div>
+                                        <div class="history__title">
+                                          Dermatology 
+                                        </div>
+                                        <div class="history__details">
+                                            <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                        </div>
+                                        <div class="history__line">
+                                            <!-- <div class="history__time">CA$120</div> -->
+                                            <div class="history__status">
+                                                <div class="tooltip icon" title="Our Dermatologist can diagnose, prescribe medications, or provide consultations for patients with conditions involving the skin, hair, and nails, right here on portakalle. You can speak to a Dermatologist instantly or schedule an appointment by video call or text from your mobile device. All Dermatologist on our platform are licensed in Albanian, and else where, and practice in dermatological medicine in local offices, clinics and hospitals. Check here to connect with a Dermatologist today!">
+                                                    <svg class="icon icon-dots">
+                                                        <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-pack">
+                                  <input type="radio" id="package-5" class="hidden" name="choose-package" value="Cardiology">
+                                  <label for="package-5" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        Cardiology
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Cardiologist can diagnose, prescribe medications, or provide consultations for patients who experience complications with their heart or blood vessels, right here on portakalle. You can speak to a Cardiologist instantly or schedule an appointment by video call or text from your mobile device. All Cardiologist on our platform are licensed in Albanian, and else where, and practice in cardiovascular treatment plans in local offices, clinics and hospitals. Check here to connect with a Cardiologist today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-6" class="hidden" name="choose-package" value="Pediatric cardiologists ">
+                                  <label for="package-6" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        Pediatric cardiologists 
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Pediatric Cardiologist can diagnose, prescribe medications, or provide consultations for our infant, adolescent, teen or young adult patients who experience complications with their heart or blood vessels, right here on portakalle. You can speak to a Pediatric Cardiologist instantly or schedule an appointment by video call or text from your mobile device. All Cardiologist on our platform are licensed in Albanian, and else where, and practice in cardiovascular treatment for plans for children in local offices, clinics and hospitals. Check here to connect with a Pediatric Cardiologist today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-7" class="hidden" name="choose-package" value="Pulmonary">
+                                  <label for="package-7" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        Pulmonary 
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Pulmonologist can diagnose, prescribe medications, or provide consultations for our patients who experience complications within the lungs, right here on portakalle. You can speak to a Pulmonologist instantly or schedule an appointment by video call or text from your mobile device. All Pulmonologist on our platform are licensed in Albanian, and else where, and practice in pulmonary treatment for plans in local offices, clinics and hospitals. Check here to connect with a Pulmonologist today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-8" class="hidden" name="choose-package" value="Surgery">
+                                  <label for="package-8" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        Surgery
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Surgeons can provide consultations for our patients who experience complications within the lungs, right here on portakalle. You can speak to your surgeon instantly or schedule an appointment by video call or text from your mobile device. All Surgeons on our platform are licensed in Albanian, and else where, and practice in local offices, clinics and hospitals. Check here to connect with a Surgeon today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-9" class="hidden" name="choose-package" value="Neuropediatrics">
+                                  <label for="package-9" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        Neuropediatrics
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Nrueopediaticians can diagnose, prescribe medications, or provide consultations for our infant, adolescent, teen or young adult patients looking to be treated for diseases in the brain or spinal cord, nerves, or muscles, right here on portakalle. You can speak to a Nrueopediaticians instantly or schedule an appointment by video call or text from your mobile device. All Nrueopediaticians on our platform are licensed in Albanian, and else where, and practice in  neuropathic medicine for children in local offices, clinics and hospitals. Check here to connect with a Nrueopediaticians today! ">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-10" class="hidden" name="choose-package" value="GI">
+                                  <label for="package-10" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        GI
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Gastroenterologist can diagnose, prescribe medications, or provide consultations for our patients with disease in their GI or digestive tract, right here on portakalle. You can speak to a Gastroenterologist instantly or schedule an appointment by video call or text from your mobile device. All Gastroenterologist on our platform are licensed in Albanian , and else where, and practice in GI treatment for plans in local offices, clinics and hospitals. Check here to connect with a Gastroenterologist today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-11" class="hidden" name="choose-package" value="Rheumatology">
+                                  <label for="package-11" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        Rheumatology 
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Rheumatologist can diagnose, prescribe medications, or provide consultations for our patients who experience pain or disorders of the joints, muscles, tendons or bones, right here on portakalle. You can speak to a Rheumatologist instantly or schedule an appointment by video call or text from your mobile device. All Rheumatologist on our platform are licensed in Albanian, and else where, and practice in rheumatic medicine in local offices, clinics and hospitals. Check here to connect with a Rheumatologist today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-12" class="hidden" name="choose-package" value="Allergist">
+                                  <label for="package-12" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        Allergist
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Allergist can diagnose, prescribe medications, or provide consultations for our patients with asthma or other allergic diseases, right here on portakalle. You can speak to a Allergist instantly or schedule an appointment by video call or text from your mobile device. All Allergist on our platform are licensed in Albanian, and else where, and practice in treatment for plans for allergic triggers, in local offices, clinics and hospitals. Check here to connect with a Allergist today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-13" class="hidden" name="choose-package" value="Endocrinology">
+                                  <label for="package-13" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        Endocrinology
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our Endocrinologist can diagnose, prescribe medications, or provide consultations for our patients with diabetes, thyroid disease, growth issues, some cancers, issues with hormones, and issues with bones, right here on portakalle. You can speak to a Endocrinologist instantly or schedule an appointment by video call or text from your mobile device. All Endocrinologist on our platform are licensed in Albanian, and else where, and practice in endocrine therapies, in local offices, clinics and hospitals. Check here to connect with a Endocrinologist today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                                <div class="col-pack">
+                                  <input type="radio" id="package-14" class="hidden" name="choose-package" value="OB/GYN">
+                                  <label for="package-14" class="history__card">
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/user/5.jpeg" alt="">
+                                          <div class="check-box-custom"></div>
+                                      </div>
+                                      <div class="history__title">
+                                        OB/GYN
+                                      </div>
+                                      <div class="history__details">
+                                          <span class="history__company">Book an online consultation with a health and wellness coach.</span>
+                                      </div>
+                                      <div class="history__line">
+                                          <!-- <div class="history__time">CA$120</div> -->
+                                          <div class="history__status">
+                                              <div class="tooltip icon" title="Our OB/GYN can diagnose, prescribe medications, or provide consultations for our patients seeking family planning advice, labor and delivery services, or women’s reproductive health, right here on portakalle. You can speak to a OB/GYN instantly or schedule an appointment by video call or text from your mobile device. All OB/GYN on our platform are licensed in Albanian, and else where, and practice in reproductive medicine in local offices, clinics and hospitals. Check here to connect with a OB/GYN today!">
+                                                  <svg class="icon icon-dots">
+                                                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </label>
+                                </div>
+
+                            </div>
+                          </div>
+                          <div class="flex justify-center btn-step">
+                            <a href="user_step-patient.html" class="btn btn_blue __back"><svg class="icon icon-arrow-prev">
+                              <use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+                          </svg>Back</a>
+                          </div>
+                          
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-choose-ap" class="mfp-hide white-popup-block">
+    <div class="box-content edit-form choose-form">
+      <a class="popup-modal-dismiss" href="javascript:;">
+        <svg class="icon icon-close">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </a>
+      <p>Online consultations available by appointment.</p>
+      <h2>When do you want to see a General Practitioner?</h2>
+      <div class="box-option-modal">
+        <div class="col-auto">
+            <a href="user_step-detail.html" class="box-ap">
+                <img src="img/user/6.png" alt="">
+                <div class="content">
+                    As soon as possible
+                </div>
+            </a>
+        </div>
+        <div class="col-auto">
+            <a href="user_step-find-doctor-2.html" class="box-ap">
+                <img src="img/user/7.png" alt="">
+                <div class="content">
+                    Book appointment
+                </div>
+            </a>
+        </div>
+      </div>
+    
+      <button type="button" class="btn btn_blue close-popup __back">Cancel</button>
+    </div>
+    
+  </div>
+
+  <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/anime.min.js"></script>
+<script src="js/lib/readmore.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/aos.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/common.js"></script>
+<script src="js/lib/charts.js"></script>
+  <script src="https://kit.fontawesome.com/edbabe790c.js" crossorigin="anonymous"></script>
+  <script>
+    $('.speciality-container .history__card').on('click', function() {
+      console.log('aaa')
+      $.magnificPopup.open({
+			items: {
+				src: '#modal-choose-ap',
+				type:'inline'
+			},
+			modal: true,
+      callbacks: {
+        open: function() {
+            jQuery('body').addClass('noscroll');
+        },
+        close: function() {
+            jQuery('body').removeClass('noscroll');
+        }
+    }
+		});
+    })
+  </script>
+  <script>
+    $('#box-text-spec').hide()
+    $('.speciality-container input').on('change', function(){
+      if ($(this).is(':checked')) {
+        var a = $(this).val()
+        $('#box-text-spec').show()
+        $('#box-text-spec').html(a)
+      }
+    })
+  </script>
+</body>
+
+</html>

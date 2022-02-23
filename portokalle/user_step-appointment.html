@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" media="all" href="css/app.min.css">
+<link rel="stylesheet" media="all" href="css/patient.min.css">
+
+	<link rel="stylesheet" href="css/custom.min.css">
+<script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+        if (screen.width < 375) {
+            var newScale = screen.width / 375;
+            viewportmeta.content =
+                "width=375, minimum-scale=" +
+                newScale +
+                ", maximum-scale=1.0, user-scalable=no, initial-scale=" +
+                newScale +
+                "";
+        } else {
+            viewportmeta.content =
+                "width=device-width, maximum-scale=1.0, initial-scale=1.0";
+        }
+    }
+</script>
+</head>
+
+<body>
+    <div class="out">
+        <div class="page6 js-page6">
+            <div class="header2 js-header2"><button class="header2__burger js-header2-burger"><svg
+                        class="icon icon-burger">
+                        <use xlink:href="img/sprite.svg#bars"></use>
+                    </svg></button><a class="header2__logo" href="#"><img class="header2__pic header2__pic_black"
+                        src="./img/logo.svg" alt=""></a>
+                <div class="header2__search"><button class="header2__open"><svg class="icon icon-search">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg></button><input class="header2__input" type="text" placeholder="Search"></div>
+                <div class="header2__group"><a class="header2__link header2__link_bell active"
+                        href="user_notifications.html"><svg class="icon icon-bell">
+                            <use xlink:href="img/sprite.svg#icon-bell"></use>
+                        </svg></a></div><a class="header2__profile" href="user_dashboard.html"><img class="header2__pic"
+                        src="img/ava-square-3.png" alt=""></a>
+                <div class="header2__bg js-header2-bg"></div>
+            </div>
+
+            <div class="page2__wrapper">
+                <div class="sidebar2 js-sidebar2">
+                    <div class="sidebar2__top">
+                        <button class="sidebar2__close js-sidebar2-close">
+                            <svg class="icon icon-close">
+                                <use xlink:href="img/sprite.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <a class="sidebar2__logo" href="#">
+                            <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="sidebar2__wrapper">
+                        <a class="sidebar2__profile" href="user_dashboard.html">
+                            <div class="ava">
+                                <img class="ava__pic" src="img/ava-square-3.png" alt="">
+                            </div>
+                            <div class="sidebar2__details">
+                                <div class="sidebar2__user">Annie Do</div>
+                                <div class="sidebar2__login">@annie_do</div>
+                            </div>
+                        </a>
+                        <div class="sidebar7__category">Main</div>
+                        <div class="sidebar2__nav">
+                            <a class="sidebar2__item " href="user_dashboard.html">
+                                <svg class="icon icon-dashboard">
+                                    <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+                                </svg>
+                                Dashboard
+                            </a>
+                            <a class="sidebar2__item " href="user_medical-records.html">
+                                <svg class="icon icon-library">
+                                    <use xlink:href="img/sprite.svg#icon-library"></use>
+                                </svg>
+                                Medical Records
+                            </a>
+                            <a class="sidebar2__item active" href="user_patient-profiles.html">
+                                <svg class="icon icon-profile">
+                                    <use xlink:href="img/sprite.svg#icon-profile"></use>
+                                </svg>
+                                Patient Profiles
+                            </a>
+                            <a class="sidebar2__item" href="user_notifications.html">
+								<svg class="icon icon-bell">
+								  <use xlink:href="img/sprite.svg#icon-bell"></use>
+								</svg>
+								Notifications
+							</a>
+                            <a class="sidebar2__item" href="user_build-your-health.html">
+                                <svg class="icon icon-activity">
+                                    <use xlink:href="img/sprite.svg#icon-activity"></use>
+                                </svg>
+                                Your history
+                            </a>
+                            <a href="user_step-patient.html" class="header__btn btn btn_blue __purple btn__ssm">Get Health Care</a>
+                        </div>
+                        <!-- <div class="sidebar7__category">Other </div> -->
+                        <div class="sidebar2__nav">
+                            <a class="sidebar2__item" href="user_rewards.html">
+                                <svg class="icon icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>Rewards
+                            </a>
+                            <a class="sidebar2__item" href="user_credits.html">
+                                <svg class="icon icon-spam-1">
+                                    <use xlink:href="img/sprite.svg#icon-spam-1"></use>
+                                </svg>Credits
+                            </a>
+                            <a class="sidebar2__item" href="user_egiftCards.html">
+                                <svg class="icon icon-gift">
+                                    <use xlink:href="img/sprite.svg#icon-gift"></use>
+                                </svg>eGift Cards
+                            </a>
+                            <a class="sidebar2__item" href="user_membership.html">
+                                <svg class="icon icon-salary">
+                                    <use xlink:href="img/sprite.svg#icon-salary"></use>
+                                </svg>Billings
+                            </a>
+                            <a class="sidebar2__item" href="user_settings.html">
+                                <svg class="icon icon-settings">
+                                    <use xlink:href="img/sprite.svg#icon-settings"></use>
+                                </svg>Settings
+                            </a>
+                            <a class="sidebar2__item" href="logout.html">
+                                <svg class="icon icon-logout">
+                                    <use xlink:href="img/sprite.svg#icon-logout"></use>
+                                </svg>Sign Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="builder-container">
+                    <div class="builder-row">
+                        <div class="form-build">
+                            <ul class="list-unstyled multi-steps">
+                                <li>Patient</li>
+                                <li>Speciality</li>
+                                <li class="is-active">Detail</li>
+                                <li>Confimation of Details</li>
+                            </ul>
+                            <form action="">
+                                <div class="form-container">
+                                    <div class="box-checkout">
+                                        <div class="pack-col">
+                                            <div class="field">
+                                                <h3 class="field__title">Do you need a note or prescription?</h3>
+                                                <p style="margin-bottom: 20px;">Included with the consultation, if required</p>
+                                                <div class="field__wrapper grid grid-col-2 sm:grid-col-2 flex-grow item-start">
+															<div class="form-checkbox flex item-center mr-6">
+																<input type="checkbox" class="form-checkbox">
+																<label for="">I need a note</label>
+															</div>
+                                                            <div class="item-center mr-6" style="width: 100%;">
+																<div class="form-checkbox flex">
+																	<input type="checkbox" class="form-checkbox check-input-hidden" id="need-2">
+																	<label for="need-2">I need a prescription renewal.</label>
+																</div>
+																
+																<div class="field__wrap flex-auto" id="input-hidden" style="display: none;">
+																	<input type="text" class="field__input __2" placeholder="Name of medication(optional)">
+																</div>
+															</div>
+															
+														</div>
+                                                        <h3 class="field__title" style="margin-top: 20px;">
+															Tell us more
+														</h3>
+                                                <div class="field__wrap flex-auto">
+                                                    <textarea class="field__textarea" placeholder="Leave your note to doctors" name="" id="" cols="30" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="total-col">
+                                            <h3 class="field__title">Appointment details</h3>
+                                            <div class="box-content edit-form">
+                                                <div class="box-appoint">
+                                                   
+                                                            <h5>Service</h5>
+                                                            <p>General Practitioner<br>
+
+                                                        
+                                                            <h5>Provider</h5>
+                                                            <p>Dr. Braam Swanepoel</p>
+                                                       
+                                                            <h5>When</h5>
+                                                            <p>August 17th, 2021 at 8:45 PM</p>
+                                                       
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="flex justify-center btn-step">
+                                <a href="user_step-pick-datetime.html" class="btn btn_blue __back">
+                                    <svg class="icon icon-arrow-prev">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+                                    </svg>
+                                    Back
+                                </a>
+                                <a href="user_step-review.html" class="btn btn_blue __next">Next</a>
+                            </div>
+                        </div>
+
+                       
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-checkout-1" class=" mfp-hide white-popup-block">
+        <div class="box-content edit-form">
+            <a class="popup-modal-dismiss" href="javascript:;">
+                <svg class="icon icon-close">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </a>
+            <h2>Your payment details</h2>
+            <table class="detail-payment">
+                <tbody>
+                    <tr>
+                        <th scope="row">Overnight consultation</th>
+                        <td>CA$99.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tax:</th>
+                        <td>CA$0.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-total">Total:</th>
+                        <td class="total-price">CA$99.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Your credit card will be charged for the amount above.</p>
+            <div class="form-group">
+                <div class="input-col text-area-input">
+                    <div class="field">
+                        <div class="strip-element-box" id="stripe-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="strip-text">
+                <div class="icon">
+                    <svg class="icon fa-credit-card">
+                        <use xlink:href="img/sprite.svg#fa-credit-card"></use>
+                    </svg>
+                </div>
+                <p>Payments are handled with <a href="#"> Stripe</a>.</p>
+
+            </div>
+
+            <button type="submit" class="btn btn_blue __purple">Add Credit Card</button>
+        </div>
+
+    </div>
+
+
+    <script src="js/lib/jquery.min.js"></script>
+
+    <script src="js/lib/anime.min.js"></script>
+    <script src="js/lib/readmore.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lib/common.js"></script>
+    <script src="js/lib/charts.js"></script>
+    <script src="https://kit.fontawesome.com/edbabe790c.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh', {
+  locale: 'en'
+});
+        var elements = stripe.elements();
+        var card = elements.create('card', {
+            hidePostalCode: true,
+            style: {
+                base: {
+                    iconColor: '#666EE8',
+                    color: '#333',
+                    lineHeight: '40px',
+                    fontWeight: 300,
+                    fontFamily: 'Helvetica Neue',
+                    fontSize: '15px',
+
+                    '::placeholder': {
+                        color: '#777777',
+                    },
+                },
+            }
+        });
+        card.mount('.strip-element-box');
+
+        $('.modal-doctor').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#username',
+            modal: true,
+            mainClass: 'mfp-fade',
+            callbacks: {
+                open: function () {
+                    jQuery('body').addClass('noscroll');
+                },
+                close: function () {
+                    jQuery('body').removeClass('noscroll');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Portokalle - Patient Dashboard</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" media="all" href="css/app.min.css">
+	<link rel="stylesheet" media="all" href="css/patient.min.css">
+    <link rel="stylesheet" href="css/chat.min.css">
+	
+	<link rel="stylesheet" href="css/custom.min.css">
+	<script>
+		var viewportmeta = document.querySelector('meta[name="viewport"]');
+		if (viewportmeta) {
+			if (screen.width < 375) {
+				var newScale = screen.width / 375;
+				viewportmeta.content =
+					"width=375, minimum-scale=" +
+					newScale +
+					", maximum-scale=1.0, user-scalable=no, initial-scale=" +
+					newScale +
+					"";
+			} else {
+				viewportmeta.content =
+					"width=device-width, maximum-scale=1.0, initial-scale=1.0";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="out">
+		<div class="page2 js-page2">
+			<div class="header2 js-header2">
+				<button class="header2__burger js-header2-burger">
+					<svg class="icon icon-burger">
+						<use xlink:href="img/sprite.svg#bars"></use>
+					</svg>
+				</button>
+				<a class="header2__logo" href="user_dashboard.html">
+					<img class="header2__pic header2__pic_black" src="./img/logo.svg" alt="">
+				</a>
+				<div class="header2__search">
+					<button class="header2__open">
+						<svg class="icon icon-search">
+							<use xlink:href="img/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
+					<input class="header2__input" type="text" placeholder="Search">
+				</div>
+				<div class="header2__group">
+					<a class="header2__link header2__link_bell active" href="user_notifications.html">
+						<svg class="icon icon-bell">
+							<use xlink:href="img/sprite.svg#icon-bell"></use>
+						</svg>
+					</a>
+				</div>
+				<a class="header2__profile" href="user_dashboard.html"><img class="header2__pic" src="img/ava-square-3.png"
+						alt=""></a>
+				<div class="header2__bg js-header2-bg"></div>
+			</div>
+			<div class="page2__wrapper">
+				<div class="sidebar2 js-sidebar2">
+					<div class="sidebar2__top">
+						<button class="sidebar2__close js-sidebar2-close">
+							<svg class="icon icon-close">
+								<use xlink:href="img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+						<a class="sidebar2__logo" href="#">
+							<img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="sidebar2__wrapper">
+						<a class="sidebar2__profile" href="user_dashboard.html">
+							<div class="ava">
+								<img class="ava__pic" src="img/ava-square-3.png" alt="">
+							</div>
+							<div class="sidebar2__details">
+								<div class="sidebar2__user">Annie Do</div>
+								<div class="sidebar2__login">@annie_do</div>
+							</div>
+						</a>
+						<div class="sidebar7__category">Main</div>
+						<div class="sidebar2__nav">
+							<a class="sidebar2__item " href="user_dashboard.html">
+								<svg class="icon icon-dashboard">
+									<use xlink:href="img/sprite.svg#icon-dashboard"></use>
+								</svg>
+								Dashboard
+							</a>
+							<a class="sidebar2__item " href="user_medical-records.html">
+								<svg class="icon icon-library">
+									<use xlink:href="img/sprite.svg#icon-library"></use>
+								</svg>
+								Medical Records
+							</a>
+							<a class="sidebar2__item active" href="user_patient-profiles.html">
+								<svg class="icon icon-profile">
+									<use xlink:href="img/sprite.svg#icon-profile"></use>
+								</svg>
+								Patient Profiles
+							</a>
+							<a class="sidebar2__item" href="user_notifications.html">
+								<svg class="icon icon-bell">
+								  <use xlink:href="img/sprite.svg#icon-bell"></use>
+								</svg>
+								Notifications
+							  </a>
+							<a class="sidebar2__item" href="user_build-your-health.html">
+								<svg class="icon icon-activity">
+									<use xlink:href="img/sprite.svg#icon-activity"></use>
+								</svg>
+								Your history
+							</a>
+							<a href="user_step-patient.html" class="header__btn btn btn_blue __purple btn__ssm">Get Health Care</a>
+						</div>
+						<!-- <div class="sidebar7__category">Other </div> -->
+						<div class="sidebar2__nav">
+							<a class="sidebar2__item" href="user_rewards.html">
+								<svg class="icon icon-star">
+									<use xlink:href="img/sprite.svg#icon-star"></use>
+								</svg>Rewards
+							</a>
+							<a class="sidebar2__item" href="user_credits.html">
+								<svg class="icon icon-spam-1">
+									<use xlink:href="img/sprite.svg#icon-spam-1"></use>
+								</svg>Credits
+							</a>
+							<a class="sidebar2__item" href="user_egiftCards.html">
+								<svg class="icon icon-gift">
+									<use xlink:href="img/sprite.svg#icon-gift"></use>
+								</svg>eGift Cards
+							</a>
+							<a class="sidebar2__item" href="user_membership.html">
+								<svg class="icon icon-salary">
+									<use xlink:href="img/sprite.svg#icon-salary"></use>
+								</svg>Billings
+							</a>
+							<a class="sidebar2__item" href="user_settings.html">
+								<svg class="icon icon-settings">
+									<use xlink:href="img/sprite.svg#icon-settings"></use>
+								</svg>Settings
+							</a>
+							<a class="sidebar2__item" href="logout.html">
+								<svg class="icon icon-logout">
+									<use xlink:href="img/sprite.svg#icon-logout"></use>
+								</svg>Sign Out
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="page2__container">
+					<div class="page2__row">
+						<div class="form-build" style="padding-bottom: 0;">
+							<form action="">
+								<div class="form-container">
+									<div class="app">
+										<div class="wrapper">
+										 <div class="chat-area">
+											 
+										  <div class="chat-area-main">
+										   <div class="chat-msg">
+											<div class="chat-msg-profile">
+											 <img class="chat-msg-img" src="img/ava-1.png" alt="" />
+											 <div class="chat-msg-date">Message seen 1.22pm</div>
+											</div>
+											<div class="chat-msg-content">
+											 <div class="chat-msg-text">Luctus et ultrices posuere cubilia curae.</div>
+											 
+											 <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Pretium lectus quam id leo.</div>
+											</div>
+										   </div>
+										   <div class="chat-msg owner">
+											<div class="chat-msg-profile">
+											 <img class="chat-msg-img" src="img/ava-10.png" alt="" />
+											 <div class="chat-msg-date">Message seen 1.22pm</div>
+											</div>
+											<div class="chat-msg-content">
+											 <div class="chat-msg-text">Sit amet risus nullam eget felis eget. Dolor sed viverra ipsum😂😂😂</div>
+											 <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+											</div>
+										   </div>
+										   <div class="chat-msg">
+											<div class="chat-msg-profile">
+											 <img class="chat-msg-img" src="img/ava-1.png" alt="">
+											 <div class="chat-msg-date">Message seen 2.45pm</div>
+											</div>
+											<div class="chat-msg-content">
+											 <div class="chat-msg-text">Aenean tristique maximus tortor non tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae😊</div>
+											 <div class="chat-msg-text">Ut faucibus pulvinar elementum integer enim neque volutpat.</div>
+											</div>
+										   </div>
+										   <div class="chat-msg owner">
+											<div class="chat-msg-profile">
+											 <img class="chat-msg-img" src="img/ava-10.png" alt="" />
+											 <div class="chat-msg-date">Message seen 2.50pm</div>
+											</div>
+											<div class="chat-msg-content">
+											 <div class="chat-msg-text">posuere eget augue sodales, aliquet posuere eros.</div>
+											 <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+											</div>
+										   </div>
+										   <div class="chat-msg">
+											<div class="chat-msg-profile">
+											 <img class="chat-msg-img" src="img/ava-1.png" alt="" />
+											 <div class="chat-msg-date">Message seen 3.16pm</div>
+											</div>
+											<div class="chat-msg-content">
+											 <div class="chat-msg-text">Egestas tellus rutrum tellus pellentesque</div>
+											</div>
+										   </div>
+										   <div class="chat-msg">
+											<div class="chat-msg-profile">
+											 <img class="chat-msg-img" src="img/ava-1.png" alt="" class="account-profile" alt="">
+											 <div class="chat-msg-date">Message seen 3.16pm</div>
+											</div>
+											<div class="chat-msg-content">
+											 <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et.</div>
+											</div>
+										   </div>
+										   <div class="chat-msg owner">
+											<div class="chat-msg-profile">
+											 <img class="chat-msg-img" src="img/ava-10.png" alt="" />
+											 <div class="chat-msg-date">Message seen 2.50pm</div>
+											</div>
+											<div class="chat-msg-content">
+											 <div class="chat-msg-text">Tincidunt arcu non sodales😂</div>
+											</div>
+										   </div>
+										   <div class="chat-msg">
+											<div class="chat-msg-profile">
+											 <img class="chat-msg-img" src="img/ava-1.png" alt="">
+											 <div class="chat-msg-date">Message seen 3.16pm</div>
+											</div>
+											<div class="chat-msg-content">
+											 <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et🥰</div>
+											</div>
+										   </div>
+										  </div>
+										  <div class="chat-area-footer">
+										   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video">
+											<path d="M23 7l-7 5 7 5V7z" />
+											<rect x="1" y="5" width="15" height="14" rx="2" ry="2" /></svg>
+										   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image">
+											<rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+											<circle cx="8.5" cy="8.5" r="1.5" />
+											<path d="M21 15l-5-5L5 21" /></svg>
+										   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle">
+											<circle cx="12" cy="12" r="10" />
+											<path d="M12 8v8M8 12h8" /></svg>
+										   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip">
+											<path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" /></svg>
+										   <input type="text" placeholder="Type something here..." />
+										   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smile">
+											<circle cx="12" cy="12" r="10" />
+											<path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" /></svg>
+										   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
+											<path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3" /></svg>
+										  </div>
+										 </div>
+										 <div class="detail-area">
+										  <div class="detail-area-header">
+										   <div class="msg-profile group">
+											<img src="img/ava-1.png" alt="">
+										   </div>
+										   <div class="detail-title">Dr. Alex</div>
+										   
+										   <div class="flex justify-between">
+											<a href="user_step-prescription.html" class="btn btn__small btn_blue __back">
+												End Call
+											</a>
+											<button class="btn btn__small btn_blue __accept">
+											 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video">
+											  <path d="M23 7l-7 5 7 5V7z" />
+											  <rect x="1" y="5" width="15" height="14" rx="2" ry="2" /></svg>
+											 Video Chat
+											</button>
+										   </div>
+										  </div>
+										  <div class="tab-wrapper">
+											<ul class="tab">
+												<li>
+													<a href="#tab-1">Consulation</a>
+												</li>
+												<li>
+													<a href="#tab-2">Medical Records</a>
+												</li>
+												<li>
+													<a href="#tab-3">Upload</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-item" id="tab-1">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis asperiores iure modi quo nam eveniet dolorem! Consequatur quia amet eveniet, commodi dignissimos, officia labore, tempore consequuntur vitae inventore iusto!
+												</div>
+												<div class="tab-item" id="tab-2">
+													<a href="#modal-creat" class="box-creat modal-doctor">
+														<i class="fas fa-plus"></i>
+														Creat a medical record for Alex
+													</a>
+												</div>
+												<div class="tab-item" id="tab-3">
+													<div class="profiles-form-input text-left">
+														<label for="file">Upload photos, videos or files(Optional)</label>
+														<input type="file">
+													</div>
+													<div class="profiles-form-input text-left">
+														<label for="file-2">Add medical records (Optional)</label>
+														<input type="file">
+													</div>
+												</div>
+											</div>
+										</div>
+										 </div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-creat" class=" mfp-hide white-popup-block">
+    
+		<div class="box-content edit-patient">
+		  <form action="#">
+			<div class="content-modal">
+			  <a class="popup-modal-dismiss" href="javascript:;">
+				<svg class="icon icon-close">
+				  <use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			  </a>
+			  <h2>Creat record for Alex:</h2>
+			  <div class="profiles-row">
+				<div class="profiles-body">
+				  
+					<div class="profiles-form __2">
+					 
+					  <label for="">DATE OF BIRTH</label>
+					  <div class="profiles-form-group __2">
+						
+						<div class="profiles-form-input">
+						  <label for="gender">Category</label>
+						  <select name="gender">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						  </select>
+						</div>
+						<div class="profiles-form-input">
+							<label for="gender">Title</label>
+							<input type="text" placeholder="">
+						  </div>
+						  <div class="profiles-form-input">
+						  
+							<div class="medical_form_group flex ">
+							  
+							  <div class="medical-form__subgroup flex gap-2 date-form">
+								<div class="subgroup-item flex-1 flex flex-col">
+								  
+								  <div class="profiles-form-input" style="padding: 0;">
+									<div class="medical_form_subgroup__title"><label for="month_dor">Month</label></div>
+									<select name="month_dor" id="month_dor">
+									  <option value="1" selected="">January</option>
+									</select>
+								  </div>
+								  
+								</div>
+								<div class="subgroup-item flex-1 flex flex-col">
+								  <div class="profiles-form-input" style="padding: 0;">
+									<div class="medical_form_subgroup__title"><label for="day_dor">Day</label></div>
+								  <select name="day_dor" id="day_dor">
+									<option value="1" selected="">01</option>
+								  </select>
+								  </div>
+								  
+								</div>
+								<div class="subgroup-item flex-1 flex flex-col">
+								  <div class="profiles-form-input" style="padding: 0;">
+									<div class="medical_form_subgroup__title"><label for="year_dor">Year</label></div>
+									<select name="year_dor" id="year_dor">
+									  <option value="2021" selected="">2021</option>
+									</select>
+								  </div>
+								  
+								</div>
+							  </div>
+							</div>
+						  </div>
+						<div class="profiles-form-input">
+						  <label for="healthCard">Description (optional)</label>
+						  <input type="text" placeholder="">
+						</div>
+						
+					  </div>
+		
+					  
+					</div>
+		
+					
+				  
+				</div>
+		
+			  </div>
+			</div>
+		  
+		  <div class="btn-group-edit">
+			<div class="btn__left">
+			  <!-- <button type="button" class="button button_primary button_hw">Delete this patient</button> -->
+			</div>
+			<div class="btn__right">
+			  <button type="button" class="button button_primary button_hw close-popup">Cancel</button>
+			  <button type="submit" class="button button_primary button_hw">Save changes</button>
+			</div>
+		  </div>
+		</form>
+		</div>
+		
+	  
+	  </div>
+
+	<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/anime.min.js"></script>
+	<script src="js/lib/readmore.min.js"></script>
+	<script src="js/lib/slick.min.js"></script>
+	<script src="js/lib/aos.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/lib/common.js"></script>
+	<script src="js/lib/charts.js"></script>
+	<script src="https://kit.fontawesome.com/edbabe790c.js" crossorigin="anonymous"></script>
+
+	<script src="js/custom.js"></script>
+	
+
+</body>
+
+</html>

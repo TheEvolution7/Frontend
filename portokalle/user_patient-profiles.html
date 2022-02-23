@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Patient Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+<link rel="stylesheet" media="all" href="css/patient.min.css">
+
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+
+      <div class="header2 js-header2">
+  
+  <button class="header2__burger js-header2-burger">
+    <svg class="icon icon-burger">
+      <use xlink:href="img/sprite.svg#bars"></use>
+    </svg>
+  </button>
+
+  <a class="header2__logo" href="user_dashboard.html">">
+    <img class="header2__pic header2__pic_black" src="img/logo.svg" alt="">
+  </a>
+  
+  
+  
+  <div class="header2__group">
+    <a class="header2__link header2__link_bell active" href="user_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+    </a>
+  </div>
+  
+  <a class="header2__profile" href="user_dashboard.html"><img class="header2__pic" src="img/ava-square-3.png" alt=""></a>
+  
+  <div class="header2__bg js-header2-bg"></div>
+</div>
+
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+            <button class="sidebar2__close js-sidebar2-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="sidebar2__logo" href="user_dashboard.html">
+              <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="sidebar2__wrapper">
+	<a class="sidebar2__profile" href="user_dashboard.html">
+		<div class="ava">
+			<img class="ava__pic" src="img/ava-square-3.png" alt="">
+		</div>
+		<div class="sidebar2__details">
+			<div class="sidebar2__user">Annie Do</div>
+			<div class="sidebar2__login">@annie_do</div>
+		</div>
+	</a>
+	<div class="sidebar7__category">Main</div>
+	<div class="sidebar2__nav">
+		<a class="sidebar2__item " href="user_dashboard.html">
+			<svg class="icon icon-dashboard">
+				<use xlink:href="img/sprite.svg#icon-dashboard"></use>
+			</svg>
+			Dashboard
+		</a>
+		<a class="sidebar2__item " href="user_medical-records.html">
+			<svg class="icon icon-library">
+				<use xlink:href="img/sprite.svg#icon-library"></use>
+			</svg>
+			Medical Records
+		</a>
+		<a class="sidebar2__item active" href="user_patient-profiles.html">
+			<svg class="icon icon-profile">
+				<use xlink:href="img/sprite.svg#icon-profile"></use>
+			</svg>
+			Patient Profiles
+		</a>
+		<a class="sidebar2__item" href="user_notifications.html">
+			<svg class="icon icon-bell">
+				<use xlink:href="img/sprite.svg#icon-bell"></use>
+			</svg>
+			Notifications
+		</a>
+		<a class="sidebar2__item" href="user_build-your-health.html">
+			<svg class="icon icon-activity">
+				<use xlink:href="img/sprite.svg#icon-activity"></use>
+			</svg>
+			Your history
+		</a>
+		<a href="user_step-patient.html" class="header__btn btn btn_blue __purple btn__ssm">Get Health Care</a>
+	</div>
+	<!-- <div class="sidebar7__category">Other </div> -->
+	<div class="sidebar2__nav">
+		<a class="sidebar2__item" href="user_rewards.html">
+			<svg class="icon icon-star">
+				<use xlink:href="img/sprite.svg#icon-star"></use>
+			</svg>Rewards
+		</a>
+		<a class="sidebar2__item" href="user_credits.html">
+			<svg class="icon icon-spam-1">
+				<use xlink:href="img/sprite.svg#icon-spam-1"></use>
+			</svg>Credits
+		</a>
+		<a class="sidebar2__item" href="user_egiftCards.html">
+			<svg class="icon icon-gift">
+				<use xlink:href="img/sprite.svg#icon-gift"></use>
+			</svg>eGift Cards
+		</a>
+		<a class="sidebar2__item" href="user_membership.html">
+			<svg class="icon icon-salary">
+				<use xlink:href="img/sprite.svg#icon-salary"></use>
+			</svg>Billings
+		</a>
+		<a class="sidebar2__item" href="user_settings.html">
+			<svg class="icon icon-settings">
+				<use xlink:href="img/sprite.svg#icon-settings"></use>
+			</svg>Settings
+		</a>
+		<a class="sidebar2__item" href="logout.html">
+			<svg class="icon icon-logout">
+				<use xlink:href="img/sprite.svg#icon-logout"></use>
+			</svg>Sign Out
+		</a>
+	</div>
+</div>
+        </div>
+
+
+        <div class="profiles-container">
+          <div class="profiles-row">
+            <div class="profiles-header flex justify-between align-items-center">
+              <div class="profiles-title">Patient Profiles</div>
+              <div class="buider-header-controls">
+                <a class="button button_primary button_small modal-doctor" href="#modal-add-patient">New Patient <svg class="icon icon-friends-request">
+                    <use xlink:href="img/sprite.svg#icon-friends-request"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="profiles-body patient-list">
+              <a href="#modal-edit-user-1" class="profile-wrapper modal-doctor">
+                <div class="profile-image">
+                  <img src="img/ava-square-3.png" alt="patient profile annie do">
+                </div>
+                <div class="profile-name">Annie Do</div>
+                <div class="profile-age-gender">18 years old, female</div>
+                <div class="profile-relationship">You</div>
+              </a>
+              <a href="#modal-edit-user-2" class="profile-wrapper modal-doctor">
+                <div class="profile-image">
+                  <div class="no-img">Zhang</div>
+                  <!-- <img src="img/ava-big.jpg" alt="patient profile annie do"> -->
+                </div>
+                <div class="profile-name">Robert Zhang</div>
+                <div class="profile-age-gender">22 years old, male</div>
+                <div class="profile-relationship">Spouse</div>
+              </a>
+              <a  href="#modal-edit-user-2" class="profile-wrapper modal-doctor">
+                <div class="profile-image">
+                  <img src="img/ava-big.jpg" alt="patient profile annie do">
+                </div>
+                <div class="profile-name">Robert Zhang</div>
+                <div class="profile-age-gender">22 years old, male</div>
+                <div class="profile-relationship">Spouse</div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="modal-edit" class=" mfp-hide white-popup-block">
+    <div class="box-content edit-form">
+      <a class="popup-modal-dismiss" href="javascript:;">
+        <svg class="icon icon-close">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </a>
+      <h2>Edit your infomations:</h2>
+      <div class="field">
+        <h3 class="field__title">Your Name</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <input type="text" class="field__input" required="">
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Major</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <input type="text" class="field__input" required="">
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Email</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <input type="email" class="field__input" required="">
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Phone</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <input type="tel" class="field__input" required="">
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Info</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <textarea class="field__textarea" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn_blue">Submit</button>
+    </div>
+
+  </div>
+  <div id="modal-add-patient" class=" mfp-hide white-popup-block">
+    
+    <div class="box-content edit-patient">
+      <form action="#">
+        <div class="content-modal">
+          <a class="popup-modal-dismiss" href="javascript:;">
+            <svg class="icon icon-close">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </a>
+          <h2>Who would you like to add?</h2>
+          <div class="profiles-row">
+            <div class="profiles-body">
+              
+                <div class="profiles-form">
+                  <div class="profiles-form-group">
+                    <div class="profiles-form-input">
+                      <label for="firstName">First name</label>
+                      <input type="text" placeholder="Enter first name">
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="lastName">Last name</label>
+                      <input type="text" placeholder="Enter last name">
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="relationship">Relationship to you</label>
+                      <select name="relationship">
+                        <option value="1">Spouse</option>
+                        <option value="2">Child</option>
+                        <option value="3">Siblings</option>
+                        <option value="4">Parent</option>
+                        <option value="5">Grandparent</option>
+                        <option value="6">Other</option>
+                      </select>
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="gender">Gender</label>
+                      <select name="gender">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Intersex</option>
+                      </select>
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="healthCard">Health card (optional)</label>
+                      <input type="text" placeholder="Enter health card number">
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="gender">Health Card Province (optional)</label>
+                      <select name="gender">
+                        <option value="1">United States</option>
+                        <option value="2">Outside of United States</option>
+                        <option value="3">Europe</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="medical_form_group flex ">
+                    <label for="">DATE OF BIRTH</label>
+                    <div class="medical-form__subgroup flex gap-2 date-form">
+                      <div class="subgroup-item flex-1 flex flex-col">
+                        
+                        <div class="profiles-form-input" style="padding: 0;">
+                          <div class="medical_form_subgroup__title"><label for="month_dor">Month</label></div>
+                          <select name="month_dor" id="month_dor">
+                            <option value="1" selected="">January</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                      <div class="subgroup-item flex-1 flex flex-col">
+                        <div class="profiles-form-input" style="padding: 0;">
+                          <div class="medical_form_subgroup__title"><label for="day_dor">Day</label></div>
+                        <select name="day_dor" id="day_dor">
+                          <option value="1" selected="">01</option>
+                        </select>
+                        </div>
+                        
+                      </div>
+                      <div class="subgroup-item flex-1 flex flex-col">
+                        <div class="profiles-form-input" style="padding: 0;">
+                          <div class="medical_form_subgroup__title"><label for="year_dor">Year</label></div>
+                          <select name="year_dor" id="year_dor">
+                            <option value="2021" selected="">2021</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profiles-form-agreement">
+                    <input type="checkbox" name="agreement" id="agreement" checked="">
+                    <p>By checking this box, I certify that I am the legal guardian, power of attorney, representative
+                      of the custodian, or have another form of legal authority for medical decisions for this patient.
+                    </p>
+                  </div>
+                  <div class="profiles-form-agreement">
+                    <p>This includes the authority to view health records for this patient and help them access
+                      healthcare. Legal authority is implied for a spouse or children under 18.</p>
+                  </div>
+    
+                  
+                </div>
+    
+                
+              
+            </div>
+    
+          </div>
+        </div>
+      
+      <div class="btn-group-edit">
+        <div class="btn__left">
+          <!-- <button type="button" class="button button_primary button_hw">Delete this patient</button> -->
+        </div>
+        <div class="btn__right">
+          <button type="button" class="button button_primary button_hw close-popup">Cancel</button>
+          <button type="submit" class="button button_primary button_hw">Add Patient</button>
+        </div>
+      </div>
+    </form>
+    </div>
+    
+  
+  </div>
+  <div id="modal-edit-user-1" class=" mfp-hide white-popup-block">
+    
+    <div class="box-content edit-patient">
+      <form action="#">
+        <div class="content-modal">
+          <a class="popup-modal-dismiss" href="javascript:;">
+            <svg class="icon icon-close">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </a>
+          <h2>Edit patient profile:</h2>
+          <div class="profiles-row">
+            <div class="profiles-body">
+              
+                <div class="profiles-form __2">
+                  <div class="form-avatar">
+                    <div class="avatar">
+                      <img src="./img/ava-square-3.png" alt="Avatar">
+                    </div>
+                    <div class="username">
+                      Annie Do
+                    </div>
+                  </div>
+                  <div class="avatar-control">
+                    <button class="button-simple-icon"><i class="fas fa-image" aria-hidden="true"></i></button>
+                    <button class="button-simple-icon"><i class="fas fa-camera" aria-hidden="true"></i></button>
+                  </div>
+                  <p class="text-modal">If you want to update your patient name please visit your <a href="#"><span>account settings page</span></a>.</p>
+                  <label for="">DATE OF BIRTH</label>
+                  <div class="profiles-form-group __2">
+                    <div class="profiles-form-input">
+                      
+                      <div class="medical_form_group flex ">
+                        
+                        <div class="medical-form__subgroup flex gap-2 date-form">
+                          <div class="subgroup-item flex-1 flex flex-col">
+                            
+                            <div class="profiles-form-input" style="padding: 0;">
+                              <div class="medical_form_subgroup__title"><label for="month_dor">Month</label></div>
+                              <select name="month_dor" id="month_dor">
+                                <option value="1" selected="">January</option>
+                              </select>
+                            </div>
+                            
+                          </div>
+                          <div class="subgroup-item flex-1 flex flex-col">
+                            <div class="profiles-form-input" style="padding: 0;">
+                              <div class="medical_form_subgroup__title"><label for="day_dor">Day</label></div>
+                            <select name="day_dor" id="day_dor">
+                              <option value="1" selected="">01</option>
+                            </select>
+                            </div>
+                            
+                          </div>
+                          <div class="subgroup-item flex-1 flex flex-col">
+                            <div class="profiles-form-input" style="padding: 0;">
+                              <div class="medical_form_subgroup__title"><label for="year_dor">Year</label></div>
+                              <select name="year_dor" id="year_dor">
+                                <option value="2021" selected="">2021</option>
+                              </select>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="gender">Gender</label>
+                      <select name="gender">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Intersex</option>
+                      </select>
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="healthCard">Health card (optional)</label>
+                      <input type="text" placeholder="Enter health card number">
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="gender">Health Card Province (optional)</label>
+                      <select name="gender">
+                        <option value="1">United States</option>
+                        <option value="2">Outside of United States</option>
+                        <option value="3">Europe</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="medical-records__body">
+                    <div class="body-title flex justify-between item-center">
+                      <span class="body-title__text">Record attachments</span>
+                      <div class="body-title__controls">
+                        <a href="#" class="btn-a size-lg icon">
+                          <svg class="icon icon-add">
+                            <use xlink:href="img/sprite.svg#icon-add"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="btn-a size-lg icon">
+                          <i class="fas fa-camera" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="body-wrapper grid grid-col-5">
+
+                      <div class="wrapper-item flex flex-col align-center">
+                        <div class="wrapper-item__icon relative">
+                          <img src="img/ava-3.png" alt="">
+                          <a href="#" class="btn-stick-delete">
+                            <svg class="icon icon-minus">
+                              <use xlink:href="img/sprite.svg#icon-plus"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <span class="wrapper-item__filename">medical_record.jpg</span>
+                      </div>
+
+                      <div class="wrapper-item flex flex-col align-center">
+                        <div class="wrapper-item__icon relative">
+                          <img src="img/ava-4.png" alt="">
+                          <a href="#" class="btn-stick-delete">
+                            <svg class="icon icon-minus">
+                              <use xlink:href="img/sprite.svg#icon-plus"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <span class="wrapper-item__filename">medical_record2.jpg</span>
+                      </div>
+
+                    </div>
+                  </div>
+    
+                  
+                </div>
+    
+                
+              
+            </div>
+    
+          </div>
+        </div>
+      
+      <div class="btn-group-edit">
+        <div class="btn__left">
+          <!-- <button type="button" class="button button_primary button_hw">Delete this patient</button> -->
+        </div>
+        <div class="btn__right">
+          <button type="button" class="button button_primary button_hw close-popup">Cancel</button>
+          <button type="submit" class="button button_primary button_hw">Save changes</button>
+        </div>
+      </div>
+    </form>
+    </div>
+    
+  
+  </div>
+  <div id="modal-edit-user-2" class=" mfp-hide white-popup-block">
+    
+    <div class="box-content edit-patient">
+      <form action="#">
+        <div class="content-modal">
+          <a class="popup-modal-dismiss" href="javascript:;">
+            <svg class="icon icon-close">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </a>
+          <h2>Edit patient profile:</h2>
+          <div class="profiles-row">
+            <div class="profiles-body">
+              
+                <div class="profiles-form">
+                  <div class="form-avatar">
+                    <div class="avatar">
+                      <img src="./img/ava-square-3.png" alt="Avatar">
+                    </div>
+                    <div class="username">
+                      Annie Do
+                    </div>
+                  </div>
+                  <div class="avatar-control">
+                    <button class="button-simple-icon"><i class="fas fa-image" aria-hidden="true"></i></button>
+                    <button class="button-simple-icon"><i class="fas fa-camera" aria-hidden="true"></i></button>
+                  </div>
+                  <div class="profiles-form-group">
+                    <div class="profiles-form-input">
+                      <label for="firstName">First name</label>
+                      <input type="text" placeholder="Enter first name">
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="lastName">Last name</label>
+                      <input type="text" placeholder="Enter last name">
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="relationship">Relationship to you</label>
+                      <select name="relationship">
+                        <option value="1">Spouse</option>
+                        <option value="2">Child</option>
+                        <option value="3">Siblings</option>
+                        <option value="4">Parent</option>
+                        <option value="5">Grandparent</option>
+                        <option value="6">Other</option>
+                      </select>
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="gender">Gender</label>
+                      <select name="gender">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Intersex</option>
+                      </select>
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="healthCard">Health card (optional)</label>
+                      <input type="text" placeholder="Enter health card number">
+                    </div>
+                    <div class="profiles-form-input">
+                      <label for="gender">Health Card Province (optional)</label>
+                      <select name="gender">
+                        <option value="1">United States</option>
+                        <option value="2">Outside of United States</option>
+                        <option value="3">Europe</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="medical_form_group flex ">
+                    <label for="">DATE OF BIRTH</label>
+                    <div class="medical-form__subgroup flex gap-2 date-form">
+                      <div class="subgroup-item flex-1 flex flex-col">
+                        
+                        <div class="profiles-form-input" style="padding: 0;">
+                          <div class="medical_form_subgroup__title"><label for="month_dor">Month</label></div>
+                          <select name="month_dor" id="month_dor">
+                            <option value="1" selected="">January</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                      <div class="subgroup-item flex-1 flex flex-col">
+                        <div class="profiles-form-input" style="padding: 0;">
+                          <div class="medical_form_subgroup__title"><label for="day_dor">Day</label></div>
+                        <select name="day_dor" id="day_dor">
+                          <option value="1" selected="">01</option>
+                        </select>
+                        </div>
+                        
+                      </div>
+                      <div class="subgroup-item flex-1 flex flex-col">
+                        <div class="profiles-form-input" style="padding: 0;">
+                          <div class="medical_form_subgroup__title"><label for="year_dor">Year</label></div>
+                          <select name="year_dor" id="year_dor">
+                            <option value="2021" selected="">2021</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profiles-form-agreement">
+                    <input type="checkbox" name="agreement" id="agreement" checked="">
+                    <p>By checking this box, I certify that I am the legal guardian, power of attorney, representative
+                      of the custodian, or have another form of legal authority for medical decisions for this patient.
+                    </p>
+                  </div>
+                  <div class="profiles-form-agreement">
+                    <p>This includes the authority to view health records for this patient and help them access
+                      healthcare. Legal authority is implied for a spouse or children under 18.</p>
+                  </div>
+                  <div class="medical-records__body">
+                    <div class="body-title flex justify-between item-center">
+                      <span class="body-title__text">Record attachments</span>
+                      <div class="body-title__controls">
+                        <a href="#" class="btn-a size-lg icon">
+                          <svg class="icon icon-add">
+                            <use xlink:href="img/sprite.svg#icon-add"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="btn-a size-lg icon">
+                          <i class="fas fa-camera" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="body-wrapper grid grid-col-5">
+
+                      <div class="wrapper-item flex flex-col align-center">
+                        <div class="wrapper-item__icon relative">
+                          <img src="img/ava-3.png" alt="">
+                          <a href="#" class="btn-stick-delete">
+                            <svg class="icon icon-minus">
+                              <use xlink:href="img/sprite.svg#icon-plus"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <span class="wrapper-item__filename">medical_record.jpg</span>
+                      </div>
+
+                      <div class="wrapper-item flex flex-col align-center">
+                        <div class="wrapper-item__icon relative">
+                          <img src="img/ava-4.png" alt="">
+                          <a href="#" class="btn-stick-delete">
+                            <svg class="icon icon-minus">
+                              <use xlink:href="img/sprite.svg#icon-plus"></use>
+                            </svg>
+                          </a>
+                        </div>
+                        <span class="wrapper-item__filename">medical_record2.jpg</span>
+                      </div>
+
+                    </div>
+                  </div>
+    
+                  
+                </div>
+    
+                
+              
+            </div>
+    
+          </div>
+        </div>
+      
+      <div class="btn-group-edit">
+        <div class="btn__left">
+          <button type="button" class="button button_primary button_hw">Delete this patient</button>
+        </div>
+        <div class="btn__right">
+          <button type="button" class="button button_primary button_hw close-popup">Cancel</button>
+          <button type="submit" class="button button_primary button_hw">Save changes</button>
+        </div>
+      </div>
+    </form>
+    </div>
+    
+  
+  </div>
+  <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/anime.min.js"></script>
+<script src="js/lib/readmore.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/aos.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/common.js"></script>
+<script src="js/lib/charts.js"></script>
+  <script src="https://kit.fontawesome.com/edbabe790c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

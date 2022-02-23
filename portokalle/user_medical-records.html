@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Patient Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/patient.min.css">
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+
+  <style>
+    .patient_sidecard .__container {
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .patient_sidecard .__container:hover,
+    .patient_sidecard .__container.active {
+      background-color: lightgray;
+      transition: all 150ms ease-in-out;
+    }
+
+    .patient-tab-content {
+      display: none;
+    }
+
+    .patient-tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+      <div class="header2 js-header2"><button class="header2__burger js-header2-burger"><svg class="icon icon-burger">
+            <use xlink:href="img/sprite.svg#bars"></use>
+          </svg></button><a class="header2__logo" href="user_dashboard.html"><img class="header2__pic header2__pic_black"
+            src="./img/logo.svg" alt=""></a>
+        <!-- <div class="header2__search"><button class="header2__open"><svg class="icon icon-search">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg></button><input class="header2__input" type="text" placeholder="Search"></div> -->
+        <div class="header2__group"><a class="header2__link header2__link_bell active" href="user_notifications.html"><svg
+              class="icon icon-bell">
+              <use xlink:href="img/sprite.svg#icon-bell"></use>
+            </svg></a></div><a class="header2__profile" href="user_dashboard.html"><img class="header2__pic"
+            src="img/ava-square-3.png" alt=""></a>
+        <div class="header2__bg js-header2-bg"></div>
+      </div>
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+            <button class="sidebar2__close js-sidebar2-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="sidebar2__logo" href="user_dashboard.html">
+              <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="sidebar2__wrapper">
+            <a class="sidebar2__profile" href="user_dashboard.html">
+              <div class="ava">
+                <img class="ava__pic" src="img/ava-square-3.png" alt="">
+              </div>
+              <div class="sidebar2__details">
+                <div class="sidebar2__user">Annie Do</div>
+                <div class="sidebar2__login">@annie_do</div>
+              </div>
+            </a>
+            <div class="sidebar7__category">Main</div>
+            <div class="sidebar2__nav">
+              <a class="sidebar2__item " href="user_dashboard.html">
+                <svg class="icon icon-dashboard">
+                  <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+                </svg>
+                Dashboard
+              </a>
+              <a class="sidebar2__item active" href="user_medical-records.html">
+                <svg class="icon icon-library">
+                  <use xlink:href="img/sprite.svg#icon-library"></use>
+                </svg>
+                Medical Records
+              </a>
+              <a class="sidebar2__item " href="user_patient-profiles.html">
+                <svg class="icon icon-profile">
+                  <use xlink:href="img/sprite.svg#icon-profile"></use>
+                </svg>
+                Patient Profiles
+              </a>
+              <a class="sidebar2__item" href="user_notifications.html">
+                <svg class="icon icon-bell">
+                  <use xlink:href="img/sprite.svg#icon-bell"></use>
+                </svg>
+                Notifications
+              </a>
+              <a class="sidebar2__item" href="user_build-your-health.html">
+                <svg class="icon icon-activity">
+                  <use xlink:href="img/sprite.svg#icon-activity"></use>
+                </svg>
+                Your history
+              </a>
+              <a href="user_step-patient.html" class="header__btn btn btn_blue __purple btn__ssm">Get Health Care</a>
+            </div>
+            <!-- <div class="sidebar7__category">Other </div> -->
+            <div class="sidebar2__nav">
+              <a class="sidebar2__item" href="user_rewards.html">
+                <svg class="icon icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>Rewards
+              </a>
+              <a class="sidebar2__item" href="user_credits.html">
+                <svg class="icon icon-spam-1">
+                  <use xlink:href="img/sprite.svg#icon-spam-1"></use>
+                </svg>Credits
+              </a>
+              <a class="sidebar2__item" href="user_egiftCards.html">
+                <svg class="icon icon-gift">
+                  <use xlink:href="img/sprite.svg#icon-gift"></use>
+                </svg>eGift Cards
+              </a>
+              <a class="sidebar2__item" href="user_membership.html">
+                <svg class="icon icon-salary">
+                  <use xlink:href="img/sprite.svg#icon-salary"></use>
+                </svg>Billings
+              </a>
+              <a class="sidebar2__item" href="user_settings.html">
+                <svg class="icon icon-settings">
+                  <use xlink:href="img/sprite.svg#icon-settings"></use>
+                </svg>Settings
+              </a>
+              <a class="sidebar2__item" href="logout.html">
+                <svg class="icon icon-logout">
+                  <use xlink:href="img/sprite.svg#icon-logout"></use>
+                </svg>Sign Out
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="page2__container">
+
+          <div class="page2__row">
+            <div class="page2__col page2__col_w65">
+              <div class="sorting js-sorting">
+                <h1 class="sorting__title title">Medical Records</h1>
+              </div>
+
+              <div class="patient-tab-content active" id="patient-tab-1-content">
+                <div class="section">
+                  <div class="__head">
+                    <div class="__title">
+                      Connected Records
+                    </div>
+                  </div>
+
+                  <div class="card1">
+                    <div class="card1__body">
+                      <div class="medical_new">
+                        <div class="medical_new__no-record">
+                          <p>There is no records in your profile.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Section: MEDICAL CONDITIONS -->
+                <div class="section">
+                  <div class="__head">
+                    <div class="__title">
+                      Medical Conditions
+                    </div>
+                  </div>
+                  <div class="card1">
+                    <div class="card1__body">
+
+                      <div class="medical_new">
+                        <div class="medical_new__container records-group" id="records-group">
+                          <div class="__title __title_button flex justify-between item-center records-head"
+                            id="records-head">
+                            <span>High blood-pressure</span>
+                            <svg class="icon icon-arrow-down">
+                              <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                            </svg>
+                          </div>
+
+                          <div class="medical_form__container">
+                            <div class="medical-records records-tags" id="records-tags" style="display: none;">
+                              <div class="medical-records__head">
+                                <div class="head-row">
+                                  <div class="head-row__key">Description:</div>
+                                  <div class="head-row__value">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Temporibus, sapiente?</div>
+                                </div>
+                                <div class="head-row">
+                                  <div class="head-row__key">Date of record:</div>
+                                  <div class="head-row__value">February 1st, 2021</div>
+                                </div>
+                              </div>
+                              <div class="medical-records__body">
+                                <div class="body-title flex item-center">
+                                  <span class="body-title__text">Record attachments </span>
+                                  <div class="body-title__controls" style="padding-left: 20px;">
+                                    <input class="hidden" type="file" name="add-record-file" id="add-record-file">
+                                    <label for="add-record-file" class="btn-a size-lg icon" style="cursor: pointer;">
+                                      <svg class="icon icon-add">
+                                        <use xlink:href="img/sprite.svg#icon-add"></use>
+                                      </svg>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="body-wrapper grid grid-col-5">
+
+                                  <div class="wrapper-item flex flex-col align-center">
+                                    <div class="wrapper-item__icon relative">
+                                      <img src="img/ava-3.png" alt="">
+                                      <a href="#" class="btn-stick-delete">
+                                        <svg class="icon icon-minus">
+                                          <use xlink:href="img/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                      </a>
+                                    </div>
+                                    <span class="wrapper-item__filename">medical_record.jpg</span>
+                                  </div>
+
+                                  <div class="wrapper-item flex flex-col align-center">
+                                    <div class="wrapper-item__icon relative">
+                                      <img src="img/ava-4.png" alt="">
+                                      <a href="#" class="btn-stick-delete">
+                                        <svg class="icon icon-minus">
+                                          <use xlink:href="img/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                      </a>
+                                    </div>
+                                    <span class="wrapper-item__filename">medical_record2.jpg</span>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="medical-records__footer">
+                                <div class="footer-row">
+                                  <div class="footer-row__status">
+                                    <svg class="icon icon-eye">
+                                      <use xlink:href="img/sprite.svg#icon-eye"></use>
+                                    </svg>
+                                    <span>This record is visible to providers. <a href="#"
+                                        class="btn-a btn-a-sublink">Hide Record</a></span>
+                                  </div>
+                                  <div class="footer-row__controls flex justify-between">
+                                    <button class="button button-outlined button-sm">Edit Record <svg
+                                        class="icon icon-write">
+                                        <use xlink:href="img/sprite.svg#icon-write"></use>
+                                      </svg></button>
+                                    <button class="button button-primary button-sm">Delete this record</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <!-- END: Section MEDICAL CONDITIONS -->
+              </div>
+
+              <div class="patient-tab-content" id="patient-tab-2-content">
+                <div class="card1">
+                  <div class="card1__body">
+
+                    <div class="medical_new">
+                      <div class="js-activity-group medical_new__container">
+                        <div class="js-activity-head __title __title_button flex justify-between item-center">
+                          <span>Create new medical record for Bonzena Majnusz</span>
+                          <svg class="icon icon-arrow-down">
+                            <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                          </svg>
+                        </div>
+
+                        <div class="medical_form__container">
+                          <form action="#" class="js-activity-tags grid grid-col-2 sm:grid-col-1"
+                            style="display: none;">
+                            <div class="medical_form_group flex flex-col">
+                              <div class="medical_form_group__title">
+                                <label class="field-label" for="category">Category</label>
+                              </div>
+                              <select id="category" class="field__input">
+                                <option value="1" selected="">Medical Option 1</option>
+                              </select>
+
+                            </div>
+
+                            <div class="medical_form_group">
+                              <div class="medical_form_group__title"><label for="title">Title</label></div>
+                              <input class="field__input" type="text" id="title" placeholder="Medical Title">
+                            </div>
+                            <div class="medical_form_group flex ">
+                              <div class="medical_form_group__title">Date of Record (Optional)</div>
+                              <div class="medical-form__subgroup flex gap-2 date-form">
+                                <div class="subgroup-item flex-1 flex flex-col">
+                                  <div class="medical_form_subgroup__title"><label for="month_dor">Month</label></div>
+                                  <select class="field__input" name="month_dor" id="month_dor">
+                                    <option value="1" selected="">January</option>
+                                  </select>
+                                </div>
+                                <div class="subgroup-item flex-1 flex flex-col">
+                                  <div class="medical_form_subgroup__title"><label for="day_dor">Day</label></div>
+                                  <select class="field__input" name="day_dor" id="day_dor">
+                                    <option value="1" selected="">01</option>
+                                  </select>
+                                </div>
+                                <div class="subgroup-item flex-1 flex flex-col">
+                                  <div class="medical_form_subgroup__title"><label for="year_dor">Year</label></div>
+                                  <select class="field__input" name="year_dor" id="year_dor">
+                                    <option value="2021" selected="">2021</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="medical_form_group">
+                              <div class="medical_form_group__title">Description (optional)</div>
+                              <textarea class="form__group__fullwidth field__textarea"></textarea>
+                            </div>
+
+                            <div class="group-controls flex-row flex justify-start item-center">
+                              <button class="button button_primary">Submit</button>
+                              <!-- <a href="#" class="btn-a size-sm cancel">cancel</a> -->
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="section">
+                  <div class="__head">
+                    <div class="__title">
+                      Connected Records
+                    </div>
+                  </div>
+
+                  <div class="card1">
+                    <div class="card1__body">
+                      <div class="medical_new">
+                        <div class="medical_new__no-record">
+                          <p>There is no records in your profile.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Section: MEDICAL CONDITIONS -->
+                <div class="section">
+                  <div class="__head">
+                    <div class="__title">
+                      Medical Conditions
+                    </div>
+                  </div>
+            
+
+                </div>
+                <!-- END: Section MEDICAL CONDITIONS -->
+              </div>
+
+              <div class="section_emboss mg_top20 medical_record_footer">
+                <div class="__head">
+                  <div class="__title"></div>
+                </div>
+                <div class="__body">
+                  <p>Start building a health history so our providers can provide the most effective care.</p>
+                  <p></p>
+                  <ul>
+                    <li>Medical Conditions</li>
+                    <li>Allergies</li>
+                    <li>Surgeries</li>
+                    <li>Immunizations</li>
+                    <li>Medications</li>
+                    <li>Others</li>
+                  </ul>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="page2__col page2__col_w35">
+
+              <div class="section">
+                <div class="__head">
+                  <div class="__title"></div>
+                </div>
+
+                <div class="__body">
+                  <div class="patient_sidecard">
+                    <div class="__container active" id="patient-tab-1">
+                      <div class="image">
+                        <img src="./img/ava-square-3.png" alt="Patient Avatar">
+                      </div>
+                      <div class="patient_name">
+                        Annie Do
+                      </div>
+                    </div>
+                    <div class="__container" id="patient-tab-2">
+                      <div class="image">
+                        <div class="no-img">
+                            Maj
+                        </div>
+                        <!-- <img src="./img/ava-2.png" alt="Patient Avatar"> -->
+                      </div>
+                      <div class="patient_name">
+                        Bonzena Majnusz
+                      </div>
+                    </div>
+                    <div class="__footer">
+                      <div class="__control">
+                        <a href="user_add-medical-record.html" class="button button_outlined button_small">Add patient</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="modal-edit" class=" mfp-hide white-popup-block">
+    <div class="box-content edit-form">
+      <a class="popup-modal-dismiss" href="javascript:;">
+        <svg class="icon icon-close">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </a>
+      <h2>Edit your infomations:</h2>
+      <div class="field">
+        <h3 class="field__title">Your Name</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <input type="text" class="field__input" required="">
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Major</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <input type="text" class="field__input" required="">
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Email</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <input type="email" class="field__input" required="">
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Phone</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <input type="tel" class="field__input" required="">
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Info</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+          <textarea class="field__textarea" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn_blue">Submit</button>
+    </div>
+
+  </div>
+
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/anime.min.js"></script>
+  <script src="js/lib/readmore.min.js"></script>
+  <script src="js/lib/slick.min.js"></script>
+  <script src="js/lib/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/lib/common.js"></script>
+  <script src="js/lib/charts.js"></script>
+  <script>
+    $(".records-head").each(function (index) {
+      $(this).click(function (event) {
+        $(this).parent().toggleClass('active');
+        const recordsTags = $(this).parent().children().find('.records-tags');
+        recordsTags.toggleClass('active');
+        recordsTags.slideToggle();
+      })
+    });
+
+    var activeTab = '#patient-tab-1';
+    const toggleActive = (jItem) => {
+      $(jItem).toggleClass('active');
+      $(jItem + '-content').toggleClass('active');
+    }
+
+    // const showTabContent = (selector)
+    $('[id^=patient-tab]').each((index, elem) => {
+      if (!elem.id.endsWith('content')) {
+        $('#' + elem.id).click((event) => {
+          toggleActive(activeTab);
+          activeTab = '#' + event.currentTarget.id;
+          toggleActive(activeTab);
+        })
+      }
+    })
+
+  </script>
+</body>
+
+</html>

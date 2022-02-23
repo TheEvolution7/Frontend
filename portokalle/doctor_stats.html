@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Doctor</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/patient.min.css">
+<link rel="stylesheet" media="all" href="css/doctor.min.css">
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+      <div class="header2 js-header2">
+  <button class="header2__burger js-header2-burger">
+    <svg class="icon icon-burger">
+      <use xlink:href="img/sprite.svg#bars"></use>
+    </svg>
+  </button>
+  <a class="header2__logo" href="doctor_dashboard.html">
+    <img class="header2__pic header2__pic_black" src="img/logo.svg" alt="">
+  </a>
+  
+  <div class="header2__group">
+    <a class="header2__link header2__link_bell active" href="doctor_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+    </a>
+  </div>
+  <a class="header2__profile" href="doctor_dashboard.html"><img class="header2__pic" src="img/ava-square-3.png" alt=""></a>
+  <div class="header2__bg js-header2-bg"></div>
+</div>
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+  <button class="sidebar2__close js-sidebar2-close">
+    <svg class="icon icon-close">
+      <use xlink:href="img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <a class="sidebar2__logo" href="doctor_dashboard.html">
+    <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+  </a>
+</div>
+
+<div class="sidebar2__wrapper">
+  <a class="sidebar2__profile" href="doctor_dashboard.html">
+    <div class="ava"><img class="ava__pic" src="img/ava-square-3.png" alt=""></div>
+    <div class="sidebar2__details">
+      <div class="sidebar2__user">Annie Do</div>
+      <div class="sidebar2__login">@annie_do</div>
+    </div>
+  </a>
+  <div class="sidebar7__category">Main</div>
+  <div class="sidebar2__nav">
+    <a class="sidebar2__item " href="doctor_dashboard.html">
+      <svg class="icon icon-dashboard">
+        <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+      </svg>Dashboard
+    </a>
+    <a class="sidebar2__item " href="doctor_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+      Notifications
+      <div class="sidebar2__counter">2</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_drop-in.html">
+      <svg class="icon icon-library">
+        <use xlink:href="img/sprite.svg#icon-library"></use>
+      </svg>
+      Drop-in
+      <div class="sidebar2__counter">2</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_schedule.html">
+      <svg class="icon icon-event">
+      <use xlink:href="img/sprite.svg#icon-event"></use>
+      </svg>
+      Schedule
+      <div class="sidebar2__counter">3</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_list-patients.html">
+      <svg class="icon icon-friends">
+        <use xlink:href="img/sprite.svg#icon-friends"></use>
+      </svg>
+      Patients
+    </a>
+    <a class="sidebar2__item active" href="doctor_stats.html">
+      <svg class="icon icon-leaderboard">
+        <use xlink:href="img/sprite.svg#icon-leaderboard"></use>
+      </svg>
+      Stats
+    </a>
+    <a class="sidebar2__item " href="doctor_wallet.html">
+      <svg class="icon icon-friends fa-wallet">
+        <use xlink:href="img/sprite.svg#fa-wallet"></use>
+      </svg>
+        My Wallet
+    </a>
+
+
+  </div>
+  <div class="sidebar7__category">Other </div>
+  <div class="sidebar2__nav">
+    <a class="sidebar2__item " href="doctor_messages.html">
+      <svg class="icon icon-messages">
+        <use xlink:href="img/sprite.svg#icon-messages"></use>
+      </svg>Messages
+      <div class="sidebar__counter">3</div>
+    </a>
+    <div class="sidebar7__item has-sub ">
+      <div class="sidebar7__head">
+        <svg class="icon icon-settings">
+          <use xlink:href="img/sprite.svg#icon-settings"></use>
+        </svg>Setting
+      </div>
+      <div class="sidebar7__body">
+        <a class="sidebar7__link " href="doctor_setting-account.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-write"></use>
+          </svg>
+          Change Profile
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-security.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#key"></use>
+            </svg>
+            Change Password
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-notification.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-bell"></use>
+          </svg>
+          Notification
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-language.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#language"></use>
+            </svg>
+            Language
+        </a>
+        
+        <a class="sidebar7__link " href="doctor_setting-billing.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#file-invoice"></use>
+            </svg>
+            Billing
+        </a>
+        
+      </div>
+    </div>
+    <a class="sidebar2__item " href="#">
+        <svg class="icon icon-logout">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+        </svg>Log out
+      </a>
+  </div>
+  
+</div>
+        </div>
+        
+        <div class="page2__container">
+            <div class="schedule-container">
+              <div class="applicant__title title">
+                <div class="header_select">
+                  <label for="period">Stats</label>
+                  <select name="period" id="period">
+                    <option>Today</option>
+                    <option>Yesterday</option>
+                    <option>This Week</option>
+                    <option>Last 30 Days</option>
+                    <option value="4" selected="">This Year</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="doc-das-earning">
+                <div class="sec-h1">
+                  <div class="sec-h1-title">
+                    <div class="sec-h1-title-text">Earnings</div>
+                    <div class="sec-h1-title-subtitle">
+                      Earning increased <span class="grow-up-inline">15%</span> compared to previous period.
+                    </div>
+                  </div>
+                </div>
+                <div class="sec-body">
+                  <div class="sec-body-row earningChart" id="earningChart"></div>
+                </div>
+              </div>
+
+              <div class="doc-das-earning">
+                <div class="sec-h1">
+                  <div class="sec-h1-title">
+                    <div class="sec-h1-title-text">Patients</div>
+                    <div class="sec-h1-title-subtitle">
+                      Patient decreased <span class="grow-down-inline">5%</span> compared to previous period.
+                    </div>
+                  </div>
+                </div>
+                <div class="sec-body">
+                  <div class="sec-body-row patientChart chart" id="patientChart"></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/anime.min.js"></script>
+<script src="js/lib/readmore.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/aos.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/common.js"></script>
+<script src="js/lib/charts.js"></script>
+
+  <script>
+    const earningChartObj = document.getElementById('earningChart');
+    const earningChartOptions = {
+      chart: {
+        type: 'line',
+        height: '400px',
+        foreColor: "#441F4B",
+        toolbar: {
+          show: false
+        },
+      },
+      colors: ["#441F4B", "#e76650"],
+      // fill: {
+      //   colors: ["#441F4B"],
+      //   opacity: 0.8
+      // },
+      stroke: {
+        width: [0, 2]
+      },
+      series: [
+        {
+          name: 'Earning',
+          type: 'column',
+          data: [4501.2, 3001.9, 1644.6, 2132.1, 1304.7, 1606.4, 2693.6],
+          stroke: {
+            show: false
+          }
+        }
+      ],
+      xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
+      },
+      
+      plotOptions: {
+        bar: {
+          columnWidth: '50%'
+        }
+      }
+    }
+    var earningChart = new ApexCharts(earningChartObj, earningChartOptions);
+    earningChart.render();
+
+    const patientChartObj = document.getElementById('patientChart');
+    const patientChartOptions = {
+      chart: {
+        type: 'line',
+        height: '400px',
+        foreColor: "#441F4B",
+        toolbar: {
+          show: false
+        },
+      },
+      xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
+      },
+      series: [
+        {
+          name: 'New Patients',
+          type: 'line',
+          data: [23, 17, 10, 15, 8, 16, 20]
+        }
+      ],
+      colors: ["#e76650"]
+    }
+    var patientChart = new ApexCharts(patientChartObj, patientChartOptions);
+    patientChart.render();
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>selected check</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="300" height="380" rx="8"></rect>
+        <filter x="-4.7%" y="-2.6%" width="109.3%" height="107.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Appscreens-/-1-–-Request-–-symptoms" transform="translate(-46.000000, -313.000000)">
+            <g>
+                <rect id="Frame-–-for-position/scale" x="0" y="0" width="552" height="552"></rect>
+                <g id="Symptoms-UI" transform="translate(31.000000, 125.000000)">
+                    <g id="bg-with-shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="row-3-–-selected" transform="translate(0.000000, 176.000000)">
+                        <rect id="bg-–-White" fill="#FFFFFF" x="0" y="0" width="300" height="44"></rect>
+                        <g id="selected-check" transform="translate(15.000000, 12.000000)">
+                            <circle id="check-fill" stroke="#E76650" fill="#E76650" cx="11" cy="11" r="10.5"></circle>
+                            <polyline id="check" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="6 11.40312 9.329 14.73212 17.061 7.00012"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

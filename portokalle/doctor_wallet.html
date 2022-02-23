@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Doctor</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/doctor.min.css">
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+      <div class="header2 js-header2">
+  <button class="header2__burger js-header2-burger">
+    <svg class="icon icon-burger">
+      <use xlink:href="img/sprite.svg#bars"></use>
+    </svg>
+  </button>
+  <a class="header2__logo" href="doctor_dashboard.html">
+    <img class="header2__pic header2__pic_black" src="img/logo.svg" alt="">
+  </a>
+  
+  <div class="header2__group">
+    <a class="header2__link header2__link_bell active" href="doctor_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+    </a>
+  </div>
+  <a class="header2__profile" href="doctor_dashboard.html"><img class="header2__pic" src="img/ava-square-3.png" alt=""></a>
+  <div class="header2__bg js-header2-bg"></div>
+</div>
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+  <button class="sidebar2__close js-sidebar2-close">
+    <svg class="icon icon-close">
+      <use xlink:href="img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <a class="sidebar2__logo" href="doctor_dashboard.html">
+    <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+  </a>
+</div>
+
+<div class="sidebar2__wrapper">
+  <a class="sidebar2__profile" href="doctor_dashboard.html">
+    <div class="ava"><img class="ava__pic" src="img/ava-square-3.png" alt=""></div>
+    <div class="sidebar2__details">
+      <div class="sidebar2__user">Annie Do</div>
+      <div class="sidebar2__login">@annie_do</div>
+    </div>
+  </a>
+  <div class="sidebar7__category">Main</div>
+  <div class="sidebar2__nav">
+    <a class="sidebar2__item " href="doctor_dashboard.html">
+      <svg class="icon icon-dashboard">
+        <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+      </svg>Dashboard
+    </a>
+    <a class="sidebar2__item " href="doctor_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+      Notifications
+      <div class="sidebar2__counter">2</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_drop-in.html">
+      <svg class="icon icon-library">
+        <use xlink:href="img/sprite.svg#icon-library"></use>
+      </svg>
+      Drop-in
+      <div class="sidebar2__counter">2</div>
+    </a>
+    <a class="sidebar2__item" href="doctor_schedule.html">
+      <svg class="icon icon-event">
+      <use xlink:href="img/sprite.svg#icon-event"></use>
+      </svg>
+      Schedule
+      <div class="sidebar2__counter">3</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_list-patients.html">
+      <svg class="icon icon-friends">
+        <use xlink:href="img/sprite.svg#icon-friends"></use>
+      </svg>
+      Patients
+    </a>
+    <a class="sidebar2__item " href="doctor_stats.html">
+      <svg class="icon icon-leaderboard">
+        <use xlink:href="img/sprite.svg#icon-leaderboard"></use>
+      </svg>
+      Stats
+    </a>
+    <a class="sidebar2__item active" href="doctor_wallet.html">
+      <svg class="icon icon-friends fa-wallet">
+        <use xlink:href="img/sprite.svg#fa-wallet"></use>
+      </svg>
+        My Wallet
+    </a>
+
+
+  </div>
+  <div class="sidebar7__category">Other </div>
+  <div class="sidebar2__nav">
+    <a class="sidebar2__item " href="doctor_messages.html">
+      <svg class="icon icon-messages">
+        <use xlink:href="img/sprite.svg#icon-messages"></use>
+      </svg>Messages
+      <div class="sidebar__counter">3</div>
+    </a>
+    <div class="sidebar7__item has-sub ">
+      <div class="sidebar7__head">
+        <svg class="icon icon-settings">
+          <use xlink:href="img/sprite.svg#icon-settings"></use>
+        </svg>Setting
+      </div>
+      <div class="sidebar7__body">
+        <a class="sidebar7__link " href="doctor_setting-account.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-write"></use>
+          </svg>
+          Change Profile
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-security.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#key"></use>
+            </svg>
+            Change Password
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-notification.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-bell"></use>
+          </svg>
+          Notification
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-language.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#language"></use>
+            </svg>
+            Language
+        </a>
+        
+        <a class="sidebar7__link " href="doctor_setting-billing.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#file-invoice"></use>
+            </svg>
+            Billing
+        </a>
+        
+      </div>
+    </div>
+    <a class="sidebar2__item " href="#">
+        <svg class="icon icon-logout">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+        </svg>Log out
+      </a>
+  </div>
+  
+</div>
+        </div>
+        
+        <div class="page2__container">
+          <div class="sorting1">
+            <div class="sorting1__row">
+              <h1 class="sorting1__title title">Overview</h1>
+              <div class="sorting1__variants">
+                <div class="sorting1__text">Show:</div><select class="sorting1__select">
+                  <option selected>This Year</option>
+                  <option>This Month</option>
+                </select>
+              </div>
+              <div class="sorting1__options"><button class="sorting1__btn btn btn_blue __purple"><svg class="icon icon-download-doc">
+                    <use xlink:href="img/sprite.svg#icon-download-doc"></use>
+                  </svg><span class="btn__text">Generate Report</span></button></div>
+            </div>
+          </div>
+          <div class="overview __doctor-wallet">
+            <div class="overview__list">
+              <div class="overview__card">
+                <div class="overview__main">
+                  <div class="overview__title">Day</div>
+                  <div class="overview__status overview__status_up">+2.5%<svg class="icon icon-arrow-top">
+                      <use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+                    </svg></div>
+                </div>
+                <div class="overview__flex">
+                  <div class="overview__number">$27632</div>
+                  <div class="overview__status overview__status_up">+2.5%<svg class="icon icon-arrow-top">
+                      <use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+                    </svg></div>
+                </div>
+                <div class="overview__info">Compared to ($21340 last day)</div>
+              </div>
+              <div class="overview__card">
+                <div class="overview__main">
+                  <div class="overview__title">Month</div>
+                  <div class="overview__status overview__status_up">+0.5%<svg class="icon icon-arrow-top">
+                      <use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+                    </svg></div>
+                </div>
+                <div class="overview__flex">
+                  <div class="overview__number">$20199</div>
+                  <div class="overview__status overview__status_up">+0.5%<svg class="icon icon-arrow-top">
+                      <use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+                    </svg></div>
+                </div>
+                <div class="overview__info">Compared to ($19000 last month)</div>
+              </div>
+              <div class="overview__card">
+                <div class="overview__main">
+                  <div class="overview__title">Year</div>
+                  <div class="overview__status overview__status_down">-1.5%<svg class="icon icon-arrow-bottom">
+                      <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+                    </svg></div>
+                </div>
+                <div class="overview__flex">
+                  <div class="overview__number">$110</div>
+                  <div class="overview__status overview__status_down">-1.5%<svg class="icon icon-arrow-bottom">
+                      <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+                    </svg></div>
+                </div>
+                <div class="overview__info">Compared to ($165 last year)</div>
+              </div>
+              <div class="overview__card">
+                <div class="overview__main">
+                  <div class="overview__title">Total</div>
+                  <div class="overview__status overview__status_up">+2.5%<svg class="icon icon-arrow-top">
+                      <use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+                    </svg></div>
+                </div>
+                <div class="overview__flex">
+                  <div class="overview__number">$12632</div>
+                  <div class="overview__status overview__status_up">+2.5%<svg class="icon icon-arrow-top">
+                      <use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+                    </svg></div>
+                </div>
+                <div class="overview__info">Compared to ($10500 last total)</div>
+              </div>
+            </div>
+            <div class="card-doctor-container">
+              <div class="statistics__title">My card</div>
+              <div class="package-container">
+                <div class="col-pack">
+                  <input type="radio" id="credit-1" class="hidden" name="choose-credit" checked>
+                  <label for="credit-1" class="history__card">
+                    <div class="history__logo">
+                      <img class="history__pic" src="img/logo/visa.png" alt="">
+                      <div class="check-box-custom"></div>
+                    </div>
+                    <div class="history__title">4220 xxxx xxxx 8762</div>
+                    <div class="history__line">
+                      <div class="history__time">Expired</div>
+                      <div class="history__status">12/22</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-pack">
+                  <input type="radio" id="credit-2" class="hidden" name="choose-credit">
+                  <label for="credit-2" class="history__card">
+                    <div class="history__logo">
+                      <img class="history__pic" src="img/logo/visa.png" alt="">
+                      <div class="check-box-custom"></div>
+                    </div>
+                    <div class="history__title">
+                      4220 xxxx xxxx 8762
+                    </div>
+                    <div class="history__line">
+                      <div class="history__time">Expired</div>
+                      <div class="history__status">12/22</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-pack">
+                  <input type="radio" id="credit-3" class="hidden" name="choose-credit">
+                  <label for="credit-3" class="history__card">
+                    <div class="history__logo">
+                      <img class="history__pic" src="img/logo/visa.png" alt="">
+                      <div class="check-box-custom"></div>
+                    </div>
+                    <div class="history__title">4220 xxxx xxxx 8762</div>
+                    <div class="history__line">
+                      <div class="history__time">Expired</div>
+                      <div class="history__status">12/22</div>
+                    </div>
+                  </label>
+                </div>
+                
+              </div>
+              <a href="#modal-add-card" class="modal-doctor button button_primary button_small">Add Credit Card <svg class="icon fa-credit-card">
+                <use xlink:href="img/sprite.svg#fa-credit-card"></use>
+              </svg></a>
+            </div>
+            
+            <div class="overview__row overview__row_tablet-album">
+             
+              <div class="overview__col overview__col_w100" style="flex:0 0 100%">
+                <div class="overview__card overview__card_p0">
+                  <div class="statistics">
+                    <div class="statistics__body">
+                      <div class="statistics__top statistics__top_mb22">
+                        <div class="statistics__title">Transaction History</div>
+                        <div class="options2 js-options"><button class="options2__btn js-options-btn"><svg class="icon icon-dots">
+                              <use xlink:href="img/sprite.svg#icon-dots"></use>
+                            </svg></button>
+                          <div class="options2__dropdown js-options-dropdown"><a class="options2__link" href="circle-overview.html#">Remove Notifications</a><a class="options2__link" href="circle-overview.html#">Turn Off Notifications from Janeta</a></div>
+                        </div>
+                      </div>
+                      <div class="statistics__inner">
+                        <div class="statistics__table">
+                          <div class="statistics__row statistics__row_head">
+                            <div class="statistics__cell">Transform Number</div>
+                            <div class="statistics__cell">Date & time</div>
+                            <div class="statistics__cell">amount</div>
+                            <div class="statistics__cell">Status</div>
+                          </div>
+                          <div class="statistics__row">
+                            <div class="statistics__cell">
+                              <div class="statistics__line">
+                                <div class="statistics__icon bg-green"><svg class="icon icon-check">
+                                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                                  </svg></div>
+                                <div class="statistics__text">Transform from #10321</div>
+                              </div>
+                            </div>
+                            <div class="statistics__cell">Mar 21, 2021, 3:30pm</div>
+                            <div class="statistics__cell">+ $250.00</div>
+                            <div class="statistics__cell">
+                              <div class="statistics__status statistics__status_completed">Completed</div>
+                            </div>
+                          </div>
+                          <div class="statistics__row">
+                            <div class="statistics__cell">
+                              <div class="statistics__line">
+                                <div class="statistics__icon bg-green"><svg class="icon icon-check">
+                                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                                  </svg></div>
+                                <div class="statistics__text">Transform from #10321</div>
+                              </div>
+                            </div>
+                            <div class="statistics__cell">Mar 21, 2021, 3:30pm</div>
+                            <div class="statistics__cell">+ $250.00</div>
+                            <div class="statistics__cell">
+                              <div class="statistics__status statistics__status_completed">Completed</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-add-card" class=" mfp-hide white-popup-block">
+    <div class="box-content edit-form">
+      <a class="popup-modal-dismiss" href="javascript:;">
+        <svg class="icon icon-close">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </a>
+      <h2>Add new card:</h2>
+      <div class="form-group">
+        <div class="input-col text-area-input">
+          <div class="field">
+            <div id="strip-element"></div>
+          </div>
+        </div>
+      </div>
+    
+      <button type="submit" class="btn btn_blue">Submit</button>
+    </div>
+    
+  </div>
+  <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/anime.min.js"></script>
+<script src="js/lib/readmore.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/aos.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/common.js"></script>
+<script src="js/lib/charts.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+  <script>
+    var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh', {
+  locale: 'en'
+});
+    var elements = stripe.elements();
+    var card = elements.create('card', {
+    hidePostalCode: true,
+    style: {
+        base: {
+        iconColor: '#666EE8',
+        color: '#333',
+        lineHeight: '40px',
+        fontWeight: 300,
+        fontFamily: 'Helvetica Neue',
+        fontSize: '15px',
+
+        '::placeholder': {
+            color: '#777777',
+        },
+        },
+    }
+    });
+    card.mount('#strip-element');
+
+    
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Doctor</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/patient.min.css">
+<link rel="stylesheet" media="all" href="css/doctor.min.css">
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+      <div class="header2 js-header2">
+  <button class="header2__burger js-header2-burger">
+    <svg class="icon icon-burger">
+      <use xlink:href="img/sprite.svg#bars"></use>
+    </svg>
+  </button>
+  <a class="header2__logo" href="doctor_dashboard.html">
+    <img class="header2__pic header2__pic_black" src="img/logo.svg" alt="">
+  </a>
+  
+  <div class="header2__group">
+    <a class="header2__link header2__link_bell active" href="doctor_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+    </a>
+  </div>
+  <a class="header2__profile" href="doctor_dashboard.html"><img class="header2__pic" src="img/ava-square-3.png" alt=""></a>
+  <div class="header2__bg js-header2-bg"></div>
+</div>
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+  <button class="sidebar2__close js-sidebar2-close">
+    <svg class="icon icon-close">
+      <use xlink:href="img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <a class="sidebar2__logo" href="doctor_dashboard.html">
+    <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+  </a>
+</div>
+
+<div class="sidebar2__wrapper">
+  <a class="sidebar2__profile" href="doctor_dashboard.html">
+    <div class="ava"><img class="ava__pic" src="img/ava-square-3.png" alt=""></div>
+    <div class="sidebar2__details">
+      <div class="sidebar2__user">Annie Do</div>
+      <div class="sidebar2__login">@annie_do</div>
+    </div>
+  </a>
+  <div class="sidebar7__category">Main</div>
+  <div class="sidebar2__nav">
+    <a class="sidebar2__item " href="doctor_dashboard.html">
+      <svg class="icon icon-dashboard">
+        <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+      </svg>Dashboard
+    </a>
+    <a class="sidebar2__item " href="doctor_notifications.html">
+      <svg class="icon icon-bell">
+        <use xlink:href="img/sprite.svg#icon-bell"></use>
+      </svg>
+      Notifications
+      <div class="sidebar2__counter">2</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_drop-in.html">
+      <svg class="icon icon-library">
+        <use xlink:href="img/sprite.svg#icon-library"></use>
+      </svg>
+      Drop-in
+      <div class="sidebar2__counter">2</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_schedule.html">
+      <svg class="icon icon-event">
+      <use xlink:href="img/sprite.svg#icon-event"></use>
+      </svg>
+      Schedule
+      <div class="sidebar2__counter">3</div>
+    </a>
+    <a class="sidebar2__item " href="doctor_list-patients.html">
+      <svg class="icon icon-friends">
+        <use xlink:href="img/sprite.svg#icon-friends"></use>
+      </svg>
+      Patients
+    </a>
+    <a class="sidebar2__item " href="doctor_stats.html">
+      <svg class="icon icon-leaderboard">
+        <use xlink:href="img/sprite.svg#icon-leaderboard"></use>
+      </svg>
+      Stats
+    </a>
+    <a class="sidebar2__item " href="doctor_wallet.html">
+      <svg class="icon icon-friends fa-wallet">
+        <use xlink:href="img/sprite.svg#fa-wallet"></use>
+      </svg>
+        My Wallet
+    </a>
+
+
+  </div>
+  <div class="sidebar7__category">Other </div>
+  <div class="sidebar2__nav">
+    <a class="sidebar2__item " href="doctor_messages.html">
+      <svg class="icon icon-messages">
+        <use xlink:href="img/sprite.svg#icon-messages"></use>
+      </svg>Messages
+      <div class="sidebar__counter">3</div>
+    </a>
+    <div class="sidebar7__item has-sub ">
+      <div class="sidebar7__head">
+        <svg class="icon icon-settings">
+          <use xlink:href="img/sprite.svg#icon-settings"></use>
+        </svg>Setting
+      </div>
+      <div class="sidebar7__body">
+        <a class="sidebar7__link " href="doctor_setting-account.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-write"></use>
+          </svg>
+          Change Profile
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-security.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#key"></use>
+            </svg>
+            Change Password
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-notification.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-bell"></use>
+          </svg>
+          Notification
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-language.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#language"></use>
+            </svg>
+            Language
+        </a>
+        
+        <a class="sidebar7__link " href="doctor_setting-billing.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#file-invoice"></use>
+            </svg>
+            Billing
+        </a>
+        
+      </div>
+    </div>
+    <a class="sidebar2__item " href="#">
+        <svg class="icon icon-logout">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+        </svg>Log out
+      </a>
+  </div>
+  
+</div>
+        </div>
+        
+        <div class="page2__container __page-dropin">
+            <div class="detail-pt-container">
+                <div class="page7__wrapper">
+                    
+                    <div class="page7__center">
+                      <div class="settings">
+                        <div class="settings__col">
+                            <div class="content-detail">
+                              <div class="settings__head">
+                                <div class="settings__title">Clinical conditions</div>
+                              </div>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti assumenda voluptates! Harum repellendus tempora enim dolorum soluta quis magnam voluptatibus nemo, assumenda deserunt similique, minima a voluptate nostrum. Beatae!</p>
+                            </div>
+                            <div class="content-detail">
+                              <div class="settings__head">
+                                <div class="settings__title">Current medication </div>
+                              </div>
+                              <div class="form-build">
+
+                                <div class="form-container">
+
+                                  <div class="field">
+                                    
+                                    <!-- <div class="field__label">Who is this visit for ?</div> -->
+                                    <div class="settings__card settings__card_table">
+                                      <div class="settings__body">
+                                        <div class="settings__table">
+                                          <div class="settings__row settings__row_head">
+                                            <div class="settings__cell">Drug name</div>
+                                            <div class="settings__cell">Price</div>
+                                            <div class="settings__cell">Quantity</div>
+                                            <div class="settings__cell">Total</div>
+                                          </div>
+                                          <div class="settings__row">
+                                            <div class="settings__cell">Drug 1</div>
+                                            <div class="settings__cell"><span class="settings__note">Price:</span>$10
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Quantity:</span>3
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Total:</span>$110
+                                            </div>
+                                          </div>
+                                          <div class="settings__row">
+                                            <div class="settings__cell">Drug 1</div>
+                                            <div class="settings__cell"><span class="settings__note">Price:</span>$10
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Quantity:</span>3
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Total:</span>$110
+                                            </div>
+                                          </div>
+                                          <div class="settings__row">
+                                            <div class="settings__cell">Drug 1</div>
+                                            <div class="settings__cell"><span class="settings__note">Price:</span>$10
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Quantity:</span>3
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Total:</span>$110
+                                            </div>
+                                          </div>
+                                          <div class="settings__row">
+                                            <div class="settings__cell">Drug 1</div>
+                                            <div class="settings__cell"><span class="settings__note">Price:</span>$10
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Quantity:</span>3
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Total:</span>$110
+                                            </div>
+                                          </div>
+                                          <div class="settings__row">
+                                            <div class="settings__cell">Drug 1</div>
+                                            <div class="settings__cell"><span class="settings__note">Price:</span>$10
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Quantity:</span>3
+                                            </div>
+                                            <div class="settings__cell"><span class="settings__note">Total:</span>$110
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+
+
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="content-detail">
+                              <div class="settings__head">
+                                <div class="settings__title">Allergies </div>
+                              </div>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti assumenda voluptates! Harum repellendus tempora enim dolorum soluta quis magnam voluptatibus nemo, assumenda deserunt similique, minima a voluptate nostrum. Beatae!</p>
+                            </div>
+                            <div class="content-detail __phacmacy">
+                              <div class="settings__head">
+                                <div class="settings__title">Pharmacies they go to</div>
+                              </div>
+                              <div class="package-container">
+                                <div class="col-pack">
+                                    
+                                    <div class="history__card">
+                                        
+                                        <div class="history__logo">
+                                            <img class="history__pic" src="img/placeholder.svg" alt="">
+                                            <!-- <div class="check-box-custom"></div> -->
+                                        </div>
+                                        <div class="history__title">Phacmacy 2</div>
+                                        <div class="history__details"><span class="history__company">Open: 7am - 6:30pm (All days)</span></div>
+                                        <div class="history__details"><span class="history__company">Rruga Faik Konica, Tirana, Albania</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-pack">
+                                    
+                                  <div class="history__card">
+                                      
+                                      <div class="history__logo">
+                                          <img class="history__pic" src="img/placeholder.svg" alt="">
+                                          <!-- <div class="check-box-custom"></div> -->
+                                      </div>
+                                      <div class="history__title">Phacmacy 3</div>
+                                      <div class="history__details"><span class="history__company">Open: 7am - 6:30pm (All days)</span></div>
+                                      <div class="history__details"><span class="history__company">Rruga Faik Konica, Tirana, Albania</span></div>
+                                  </div>
+                              </div>
+                              <div class="col-pack">
+                                    
+                                <div class="history__card">
+                                    
+                                    <div class="history__logo">
+                                        <img class="history__pic" src="img/placeholder.svg" alt="">
+                                        <!-- <div class="check-box-custom"></div> -->
+                                    </div>
+                                    <div class="history__title">Phacmacy 1</div>
+                                    <div class="history__details"><span class="history__company">Open: 7am - 6:30pm (All days)</span></div>
+                                    <div class="history__details"><span class="history__company">Rruga Faik Konica, Tirana, Albania</span></div>
+                                </div>
+                            </div>
+                            <div class="col-pack">
+                                    
+                              <div class="history__card">
+                                  
+                                  <div class="history__logo">
+                                      <img class="history__pic" src="img/placeholder.svg" alt="">
+                                      <!-- <div class="check-box-custom"></div> -->
+                                  </div>
+                                  <div class="history__title">Phacmacy 4</div>
+                                  <div class="history__details"><span class="history__company">Open: 7am - 6:30pm (All days)</span></div>
+                                  <div class="history__details"><span class="history__company">Rruga Faik Konica, Tirana, Albania</span></div>
+                              </div>
+                          </div>
+                            </div>
+                            </div>
+                            <div class="content-detail">
+                              <div class="btn-nav-dropin">
+                                <a href="doctor_drop-in.html" class="header__btn btn btn_blue __back btn__ssm">Back to Drop-in</a>
+                                <a href="doctor_patient-symptoms.html" class="header__btn btn btn_blue __purple btn__ssm">View symptoms</a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="settings__col __patient">
+                          <div class="settings__card settings__card_profile">
+                            <div class="settings__top">
+                                
+                              <div class="settings__ava"><img class="settings__pic" src="img/ava-1.png" alt=""></div>
+                              <div class="settings__man">Austin Robertson</div>
+                              <div class="settings__post">Marketing Administrator</div>
+                            </div>
+                            <div class="settings__parameters __profile-patient">
+                              <div class="settings__parameter">
+                                <div class="settings__category">Age</div>18
+                              </div>
+                              <div class="settings__parameter">
+                                <div class="settings__category">Sex</div>Male
+                              </div>
+                              <div class="settings__parameter">
+                                <div class="settings__category">DOB</div>ABC
+                              </div>
+                              <div class="settings__parameter">
+                                <div class="settings__category">Address</div>123/ ABC/ NY
+                              </div>
+                              <div class="settings__parameter">
+                                <div class="settings__category">Phone</div><a class="settings__value" href="tel:123456789">123456789</a>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-dropin">
+              <h5>Would you like to take this patient ?</h5>
+              <div class="group-btn">
+                <a href="#" class="header__btn btn btn_blue __back btn__ssm">No</a>
+                <a href="#" class="header__btn btn btn_blue __next btn__ssm">Yes</a>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/anime.min.js"></script>
+<script src="js/lib/readmore.min.js"></script>
+<script src="js/lib/slick.min.js"></script>
+<script src="js/lib/aos.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/common.js"></script>
+<script src="js/lib/charts.js"></script>
+</body>
+
+</html>

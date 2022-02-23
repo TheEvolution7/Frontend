@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Doctor</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/doctor.min.css">
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+      <div class="header2 js-header2">
+        <button class="header2__burger js-header2-burger">
+          <svg class="icon icon-burger">
+            <use xlink:href="img/sprite.svg#bars"></use>
+          </svg>
+        </button>
+        <a class="header2__logo" href="doctor_dashboard.html">
+    <img class="header2__pic header2__pic_black" src="img/logo.svg" alt="">
+  </a>
+        <!--  <div class="header2__search">
+          <button class="header2__open">
+            <svg class="icon icon-search">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input class="header2__input" type="text" placeholder="Search">
+        </div> -->
+        <div class="header2__group">
+          <a class="header2__link header2__link_bell active" href="doctor_notifications.html">
+            <svg class="icon icon-bell">
+              <use xlink:href="img/sprite.svg#icon-bell"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="header2__profile" href="doctor_dashboard.html">
+          <img class="header2__pic" src="img/ava-square-3.png"
+            alt="">
+            <!-- <div class="no-img">Do</div> -->
+          </a>
+        <div class="header2__bg js-header2-bg"></div>
+      </div>
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+            <button class="sidebar2__close js-sidebar2-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="sidebar2__logo" href="#">
+              <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="">
+            </a>
+          </div>
+
+          <div class="sidebar2__wrapper">
+            <a class="sidebar2__profile" href="doctor_dashboard.html">
+              <div class="ava"><img class="ava__pic" src="img/ava-square-3.png" alt=""></div>
+              <div class="sidebar2__details">
+                <div class="sidebar2__user">Annie Do</div>
+                <div class="sidebar2__login">@annie_do</div>
+              </div>
+            </a>
+            <div class="sidebar7__category">Main</div>
+            <div class="sidebar2__nav">
+              <a class="sidebar2__item active" href="doctor_dashboard.html">
+                <svg class="icon icon-dashboard">
+                  <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+                </svg>Dashboard
+              </a>
+              <a class="sidebar2__item " href="doctor_notifications.html">
+                <svg class="icon icon-bell">
+                  <use xlink:href="img/sprite.svg#icon-bell"></use>
+                </svg>
+                Notifications
+                <div class="sidebar2__counter">2</div>
+              </a>
+              <a class="sidebar2__item " href="doctor_drop-in.html">
+                <svg class="icon icon-library">
+                  <use xlink:href="img/sprite.svg#icon-library"></use>
+                </svg>
+                Drop-in
+                <div class="sidebar2__counter">2</div>
+              </a>
+              <a class="sidebar2__item " href="doctor_schedule.html">
+                <svg class="icon icon-event">
+                  <use xlink:href="img/sprite.svg#icon-event"></use>
+                </svg>
+                Schedule
+                <div class="sidebar2__counter">3</div>
+              </a>
+              <a class="sidebar2__item " href="doctor_list-patients.html">
+                <svg class="icon icon-friends">
+                  <use xlink:href="img/sprite.svg#icon-friends"></use>
+                </svg>
+                Patients
+              </a>
+              <a class="sidebar2__item " href="doctor_stats.html">
+                <svg class="icon icon-leaderboard">
+                  <use xlink:href="img/sprite.svg#icon-leaderboard"></use>
+                </svg>
+                Stats
+              </a>
+              <a class="sidebar2__item " href="doctor_wallet.html">
+                <svg class="icon icon-friends fa-wallet">
+                  <use xlink:href="img/sprite.svg#fa-wallet"></use>
+                </svg>
+                My Wallet
+              </a>
+
+
+            </div>
+            <div class="sidebar7__category">Other </div>
+            <div class="sidebar2__nav">
+              <a class="sidebar2__item " href="doctor_messages.html">
+                <svg class="icon icon-messages">
+                  <use xlink:href="img/sprite.svg#icon-messages"></use>
+                </svg>Messages
+                <div class="sidebar__counter">3</div>
+              </a>
+              <div class="sidebar7__item has-sub ">
+                <div class="sidebar7__head">
+                  <svg class="icon icon-settings">
+                    <use xlink:href="img/sprite.svg#icon-settings"></use>
+                  </svg>Setting
+                </div>
+                <div class="sidebar7__body">
+                  <a class="sidebar7__link " href="doctor_setting-account.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-write"></use>
+          </svg>
+          Change Profile
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-security.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#key"></use>
+            </svg>
+            Change Password
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-notification.html">
+          <svg class="icon icon-write">
+            <use xlink:href="img/sprite.svg#icon-bell"></use>
+          </svg>
+          Notification
+        </a>
+        <a class="sidebar7__link " href="doctor_setting-language.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#language"></use>
+            </svg>
+            Language
+        </a>
+        
+        <a class="sidebar7__link " href="doctor_setting-billing.html">
+            <svg class="icon icon-write">
+              <use xlink:href="img/sprite.svg#file-invoice"></use>
+            </svg>
+            Billing
+        </a>
+        
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="doc-dashboard">
+          <div class="profile profile_user">
+            <div class="profile__bg" style="background-image: url('img/bg-profile.jpg');">
+              <!-- <a class="profile__edit modal-doctor" href="#modal-edit"><svg class="icon icon-edit">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg></a> -->
+            </div>
+            <div class="profile__user">
+              <div class="profile__ava">
+                <label for="update-file" class="btn-update">
+                  <svg class="icon icon-edit">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  </svg>
+                </label>
+                <input type="file" name="update-file" accept="image/* " id="update-file" class="update-img">
+                <img class="profile__pic" src="img/ava-square-3.png" alt="">
+                <!-- <div class="no-img">Do</div> -->
+              </div>
+              <div class="profile__details"><span class="profile__title title">Dr. Annie Do</span><span
+                  class="profile__login">@annie_do</span></div>
+
+            </div>
+          </div>
+          <div class="page2__row">
+            <div class="page2__col page2__col_w35">
+
+              <div class="card1">
+                <div class="card1__head">
+                  <div class="card1__category">About Me</div>
+                  <div class="options2 js-options"><button class="options2__btn js-options-btn"><svg
+                        class="icon icon-dots">
+                        <use xlink:href="img/sprite.svg#icon-dots"></use>
+                      </svg></button>
+                    <div class="options2__dropdown js-options-dropdown">
+                      <a class="options2__item modal-doctor" href="#modal-edit">
+                        <div class="options2__icon">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="img/sprite.svg#icon-edit"></use>
+                          </svg>
+                        </div>
+                        <div class="options2__details">
+                          <div class="options2__info" style="white-space: nowrap;">Edit info</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card1__body">
+                  <div class="card1__note">“Lorem ipsum dolor sit, amet consectetur adipisicing elit.”</div>
+                  <div class="card1__list">
+                    <a class="card1__item" href="#"><svg class="icon icon-place">
+                        <use xlink:href="img/sprite.svg#icon-place"></use>
+                      </svg>Yogyakarta, ID</a>
+                    <a class="card1__item" href="#"><svg class="icon icon-date">
+                        <use xlink:href="img/sprite.svg#icon-date"></use>
+                      </svg>Joined June 2021</a>
+                    <a class="card1__item" href="#"><svg class="icon icon-relationship">
+                        <use xlink:href="img/sprite.svg#icon-relationship"></use>
+                      </svg>Cardiologist</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="page2__col page2__col_w65">
+
+
+              <div class="section">
+                <div class="sec-h1">
+                  <div class="sec-h1-title">
+                    <div class="sec-h1-title-text">
+                      Welcome back, dr. Annie Do
+                    </div>
+                  </div>
+                  <div class="sec-h1-control">
+                    <!-- <button class="button button_outlined button_small">View all</button> -->
+                  </div>
+                </div>
+
+                
+              </div>
+              <div class="tab-wrapper tab-dashboard">
+                <ul class="tab">
+                  <li>
+                    <a href="#tab-1" class="doc-dashboard-item">
+                      <div class="ddi-title">Notifications</div>
+                      <div class="ddi-value">10</div>
+                      
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab-2" class="doc-dashboard-item">
+                      <div class="ddi-title">New Patients</div>
+                      <div class="ddi-value">3</div>
+                      
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab-3" class="doc-dashboard-item">
+                      <div class="ddi-title">Total Patients</div>
+                      <div class="ddi-value-group">
+                        <div class="ddi-value">100</div>
+                      </div>
+                      
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab-4" class="doc-dashboard-item">
+                      <div class="ddi-title">Earning</div>
+                      <div class="ddi-value-group">
+                        <div class="ddi-value">$347.56</div>
+                      </div>
+                      <div class="ddi-controls">
+                        
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-item" id="tab-1">
+                    <div class="notifications__list" style="margin-bottom: 15px;">
+                      <a href="doctor_notification-detail.html" class="notifications__item">
+                        <div class="ava"> 
+                          <div class="no-img">Sul</div>
+                          <!-- <img class="ava__pic" src="img/ava-1.png" alt=""> -->
+                        </div>
+                        <div class="notifications__details">
+                          <div class="notifications__text"><strong>Meeting with Alice Sula @ Wednesday 3pm 09/09/21</strong> </div>
+                          <div class="notifications__time">Request payment and allow access to meeting</div>
+                        </div>
+                      </a>
+                      <a href="doctor_notification-detail.html" class="notifications__item">
+                        <div class="ava"><img class="ava__pic" src="img/ava-1.png" alt=""></div>
+                        <div class="notifications__details">
+                          <div class="notifications__text"><strong>Meeting with Alice Sula @ Wednesday 3pm 09/09/21</strong> </div>
+                          <div class="notifications__status">Start meeting</div>
+                        </div>
+                      </a>
+                      
+                    </div>
+                  </div>
+                  <div class="tab-item" id="tab-2">
+                    <div class="overview__card overview__card_p0">
+                      <div class="statistics">
+                        <div class="statistics__body">
+                          <div class="statistics__top">
+                            <div class="statistics__title">New Patients</div>
+                            <div class="options2 js-options">
+                              <button class="options2__btn js-options-btn">
+                                <svg class="icon icon-dots">
+                                  <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                </svg>
+                              </button>
+                              <div class="options2__dropdown js-options-dropdown">
+                                <a class="options2__link" href="#">Remove Notifications</a>
+                                <a class="options2__link" href="#">Turn Off Notifications from Janeta</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="statistics__group">
+                            <div class="statistics__group_head">
+                              Yesterday
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava"><img class="ava__pic" src="img/ava-10.png" alt=""></a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Isabella Moran</a>
+                                <div class="statistics__id">Patients ID#00222</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava" style="background-color: #FF9AD5;">WC</a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Warren Craig</a>
+                                <div class="statistics__id">Patients ID#00221</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                            <div class="statistics__group_head">
+                              Last 3 days
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava"><img class="ava__pic" src="img/ava-11.png" alt=""></a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Andrew Ellis</a>
+                                <div class="statistics__id">Patients ID#00220</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava"><img class="ava__pic" src="img/ava-9.png" alt=""></a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Sam Conner</a>
+                                <div class="statistics__id">Patients ID#00219</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava" style="background-color: #50B5FF;">SC</a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Sam Conner</a>
+                                <div class="statistics__id">Patients ID#00218</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="statistics__foot"><a class="statistics__view" href="#">View all patients</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-item" id="tab-3">
+                    <div class="overview__card overview__card_p0">
+                      <div class="statistics">
+                        <div class="statistics__body">
+                          <div class="statistics__top">
+                            <div class="statistics__title">All Patients</div>
+                            <div class="options2 js-options">
+                              <button class="options2__btn js-options-btn">
+                                <svg class="icon icon-dots">
+                                  <use xlink:href="img/sprite.svg#icon-dots"></use>
+                                </svg>
+                              </button>
+                              <div class="options2__dropdown js-options-dropdown">
+                                <a class="options2__link" href="#">Remove Notifications</a>
+                                <a class="options2__link" href="#">Turn Off Notifications from Janeta</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="statistics__group">
+                            <div class="statistics__group_head">
+                              Yesterday
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava"><img class="ava__pic" src="img/ava-10.png" alt=""></a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Isabella Moran</a>
+                                <div class="statistics__id">Patients ID#00222</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava" style="background-color: #FF9AD5;">WC</a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Warren Craig</a>
+                                <div class="statistics__id">Patients ID#00221</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                            <div class="statistics__group_head">
+                              Last 3 days
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava"><img class="ava__pic" src="img/ava-11.png" alt=""></a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Andrew Ellis</a>
+                                <div class="statistics__id">Patients ID#00220</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava"><img class="ava__pic" src="img/ava-9.png" alt=""></a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Sam Conner</a>
+                                <div class="statistics__id">Patients ID#00219</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                            <div class="statistics__item">
+                              <a href="doctor_detail-patient.html" class="ava" style="background-color: #50B5FF;">SC</a>
+                              <div class="statistics__details">
+                                <a href="doctor_detail-patient.html" class="statistics__man">Sam Conner</a>
+                                <div class="statistics__id">Patients ID#00218</div>
+                              </div>
+                              <div class="statistics__actions"><button class="statistics__action"><svg
+                                    class="icon icon-email">
+                                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                                  </svg></button><button class="statistics__action"><svg class="icon icon-block">
+                                    <use xlink:href="img/sprite.svg#icon-block"></use>
+                                  </svg></button></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <div class="statistics__foot"><a class="statistics__view" href="#">View all patients</a></div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-item" id="tab-4">
+                    <div class="doc-das-earning">
+                      <div class="sec-h1">
+                        <div class="sec-h1-title">
+                          <div class="sec-h1-title-text">Earnings</div>
+                          <div class="sec-h1-title-subtitle">
+                            Earning increased <span class="grow-up-inline">15%</span> compared to previous period.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sec-body">
+                        <div class="sec-body-row earningChart" id="earningChart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="modal-edit" class=" mfp-hide white-popup-block">
+    <div class="box-content edit-form">
+      <a class="popup-modal-dismiss" href="javascript:;">
+        <svg class="icon icon-close">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </a>
+      <h2>Edit your infomations:</h2>
+      <div class="form-group">
+        <div class="input-col">
+          <div class="field">
+            <h3 class="field__title">Your Name</h3>
+            <!-- <div class="field__label">Who is this visit for ?</div> -->
+            <div class="field__wrap">
+              <input type="text" class="field__input" required="">
+            </div>
+          </div>
+        </div>
+        <div class="input-col">
+          <div class="field">
+            <h3 class="field__title">Major</h3>
+            <!-- <div class="field__label">Who is this visit for ?</div> -->
+            <div class="field__wrap">
+              <input type="text" class="field__input" required="">
+            </div>
+          </div>
+        </div>
+        <div class="input-col">
+          <div class="field">
+            <h3 class="field__title">Email</h3>
+            <!-- <div class="field__label">Who is this visit for ?</div> -->
+            <div class="field__wrap">
+              <input type="email" class="field__input" required="">
+            </div>
+          </div>
+        </div>
+        <div class="input-col">
+          <div class="field">
+            <h3 class="field__title">Phone</h3>
+            <!-- <div class="field__label">Who is this visit for ?</div> -->
+            <div class="field__wrap">
+              <input type="tel" class="field__input" required="">
+            </div>
+          </div>
+        </div>
+        <div class="input-col text-area-input">
+          <div class="field">
+            <h3 class="field__title">Info</h3>
+            <!-- <div class="field__label">Who is this visit for ?</div> -->
+            <div class="field__wrap">
+              <textarea class="field__textarea" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn_blue">Submit</button>
+      <button type="submit" class="btn btn_gray">
+        Upload Avatar</button>
+    </div>
+
+  </div>
+
+
+
+
+
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/anime.min.js"></script>
+  <script src="js/lib/readmore.min.js"></script>
+  <script src="js/lib/slick.min.js"></script>
+  <script src="js/lib/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/lib/common.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/lib/charts.js"></script>
+
+  <script>
+    const earningChartObj = document.getElementById('earningChart');
+    const earningChartOptions = {
+      chart: {
+        type: 'line',
+        height: '400px',
+        foreColor: "#441F4B",
+        toolbar: {
+          show: false
+        },
+      },
+      colors: ["#441F4B", "#e76650"],
+      // fill: {
+      //   colors: ["#441F4B"],
+      //   opacity: 0.8
+      // },
+      stroke: {
+        width: [0, 2]
+      },
+      series: [
+        {
+          name: 'Earning',
+          type: 'column',
+          data: [4501.2, 3001.9, 1644.6, 2132.1, 1304.7, 1606.4, 2693.6],
+          stroke: {
+            show: false
+          }
+        },
+        {
+          name: 'New Patients',
+          type: 'line',
+          data: [23, 17, 10, 15, 8, 16, 20]
+        }
+      ],
+      xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
+      },
+      yaxis: [{
+        axisTicks: {
+          show: true
+        },
+        title: {
+          text: 'Earning',
+        }
+      }, {
+        opposite: true,
+        axisTicks: {
+          show: true,
+        },
+        labels: {
+          style: {
+            colors: "#e76650"
+          }
+        },
+        title: {
+          text: 'New Patients',
+          style: {
+            color: "#e76650"
+          }
+        }
+      }
+      ],
+      plotOptions: {
+        bar: {
+          columnWidth: '50%'
+        }
+      }
+    }
+    var earningChart = new ApexCharts(earningChartObj, earningChartOptions);
+    earningChart.render();
+  </script>
+
+</body>
+
+</html>

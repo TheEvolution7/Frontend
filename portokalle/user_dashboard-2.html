@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portokalle - Patient Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+
+
+  <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/patient.min.css">
+  
+	<link rel="stylesheet" href="css/custom.min.css">
+  <script>
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale +
+          ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="out">
+    <div class="page2 js-page2">
+      <div class="header2 js-header2"><button class="header2__burger js-header2-burger"><svg class="icon icon-burger">
+            <use xlink:href="img/sprite.svg#bars"></use>
+          </svg></button><a class="header2__logo" href="user_dashboard.html"><img
+            class="header2__pic header2__pic_black" src="./img/logo.svg" alt="" /></a>
+        <!-- <div class="header2__search"><button class="header2__open"><svg class="icon icon-search">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg></button><input class="header2__input" type="text" placeholder="Search" /></div> -->
+        <div class="header2__group"><a class="header2__link header2__link_bell active" href="user_notifications.html"><svg
+              class="icon icon-bell">
+              <use xlink:href="img/sprite.svg#icon-bell"></use>
+            </svg></a></div><a class="header2__profile" href="user_dashboard.html"><img class="header2__pic"
+            src="img/ava-square-3.png" alt="" /></a>
+        <div class="header2__bg js-header2-bg"></div>
+      </div>
+      <div class="page2__wrapper">
+        <div class="sidebar2 js-sidebar2">
+          <div class="sidebar2__top">
+            <button class="sidebar2__close js-sidebar2-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="sidebar2__logo" href="#">
+              <img class="sidebar2__pic sidebar2__pic_black" src="img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="sidebar2__wrapper">
+            <a class="sidebar2__profile" href="user_dashboard.html">
+              <div class="ava"><img class="ava__pic" src="img/ava-square-3.png" alt="" /></div>
+              <div class="sidebar2__details">
+                <div class="sidebar2__user">Annie Do</div>
+                <div class="sidebar2__login">@annie_do</div>
+              </div>
+            </a>
+            <div class="sidebar7__category">Main</div>
+            <div class="sidebar2__nav">
+              <a class="sidebar2__item active" href="user_dashboard.html">
+                <svg
+                  class="icon icon-dashboard">
+                  <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+                </svg>Dashboard
+              </a>
+              <a class="sidebar2__item" href="user_medical-records.html">
+                <svg class="icon icon-library">
+                  <use xlink:href="img/sprite.svg#icon-library"></use>
+                </svg>
+                Medical Records
+              </a>
+              <a class="sidebar2__item" href="user_patient-profiles.html">
+                <svg class="icon icon-profile"><use xlink:href="img/sprite.svg#icon-profile"></use></svg>
+                Patient Profiles
+              </a>
+              <a class="sidebar2__item" href="user_notifications.html">
+                <svg class="icon icon-bell">
+                  <use xlink:href="img/sprite.svg#icon-bell"></use>
+                </svg>
+                Notifications
+              </a>
+              <a class="sidebar2__item" href="user_build-your-health.html">
+                <svg class="icon icon-activity"><use xlink:href="img/sprite.svg#icon-activity"></use></svg>
+                Your history
+              </a>
+              <a href="user_step-patient.html" class="header__btn btn btn_blue __purple btn__ssm">Get Health Care</a>
+            </div>
+            <!-- <div class="sidebar7__category">Other </div> -->
+            <div class="sidebar2__nav">
+              <a class="sidebar2__item" href="user_rewards.html">
+                <svg class="icon icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>Rewards
+
+              </a>
+              <a class="sidebar2__item" href="user_credits.html">
+                <svg class="icon icon-spam-1">
+                  <use xlink:href="img/sprite.svg#icon-spam-1"></use>
+                </svg>Credits
+
+              </a>
+              <a class="sidebar2__item" href="user_egiftCards.html">
+                <svg class="icon icon-gift">
+                  <use xlink:href="img/sprite.svg#icon-gift"></use>
+                </svg>eGift Cards
+              </a>
+              <a class="sidebar2__item" href="user_membership.html">
+                <svg class="icon icon-salary">
+                  <use xlink:href="img/sprite.svg#icon-salary"></use>
+                </svg>Billings
+              </a>
+              <a class="sidebar2__item" href="user_settings.html">
+                <svg class="icon icon-settings">
+                  <use xlink:href="img/sprite.svg#icon-settings"></use>
+                </svg>Settings
+
+              </a>
+              <a class="sidebar2__item" href="logout.html">
+                <svg class="icon icon-logout">
+                  <use xlink:href="img/sprite.svg#icon-logout"></use>
+                </svg>Sign Out
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="page2__container">
+            
+          <div class="page2__row">
+            <div class="page2__col page2__col_w65">
+
+              <div class="sorting js-sorting">
+                <h1 class="sorting__title title">Prescriptions & Notes</h1>
+              </div>
+
+
+              <div class="card1 __3">
+                  <div class="card-status">
+                      <img src="img/icons/doctor/6.png" alt="">
+                  </div>
+                <div class="card1__body">
+                  <div class="card1__note">
+                      Prescription for Alice Smith<br>
+                      <span>Ordered for pickup (order #8ED324)</span>
+                    </div>
+                  <div class="card1__box-detail">
+                      <div class="title">
+                        <h5>Hydrocortisone cream</h5>
+                        <p>1% Twice a day as needed for 3 months</p>
+                      </div>
+                      <div class="ct">
+                          <p>
+                              <strong>You accepted this prescription and it was called in for pickup from:</strong><br>
+                              Medi-Place Phamacy <br>
+                              622 College St. Toronto 1(416)588-8780
+                            </p>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  <a href="user_prescriptions.html" class="">Detail</a>
+                </div>
+              </div>
+              <div class="card1 __3">
+                <div class="card-status">
+                    <img src="img/icons/doctor/6.png" alt="">
+                </div>
+                <div class="card1__body">
+                  <div class="card1__note">
+                      Prescription for Alice Smith<br>
+                      <span>Ordered for pickup (order #8ED324)</span>
+                    </div>
+                  <div class="card1__box-detail">
+                      <div class="title">
+                        <h5>Hydrocortisone cream</h5>
+                        <p>1% Twice a day as needed for 3 months</p>
+                      </div>
+                      <div class="ct">
+                          <p>
+                              <strong>You accepted this prescription and it was called in for pickup from:</strong><br>
+                              Medi-Place Phamacy <br>
+                              622 College St. Toronto 1(416)588-8780
+                            </p>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  <a href="user_prescriptions.html" class="">Detail</a>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="page2__col page2__col_w35">
+              
+              <div class="overview__card overview__card_p0">
+                <div class="statistics">
+                  <div class="statistics__body">
+                    <div class="statistics__top">
+                      <div class="statistics__title">Consultations</div>
+                      
+                    </div>
+                    <div class="statistics__group">
+                      <div class="statistics__item __3">
+                        <div class="statistics__details">
+                          <div class="statistics__man">
+                              <div class="ct">
+                                January 26, 2021 with Dr. Alex
+                              </div>
+                              
+                              <div class="box-img">
+                                <div class="no-img">A</div>
+                                  <!-- <img src="img/ava-1.png" alt=""> -->
+                                  <img src="img/ava-13.png" alt="">
+                              </div>
+                            </div>
+                          <div class="consulation-container">
+                            <div class="item">
+                                <span>Status:</span> Complete
+                            </div>
+                            <div class="item">
+                                <span>Patient:</span> Alice Smith
+                            </div>
+                            <div class="item">
+                                <span>Diagnosis:</span> Viral cold
+                            </div>
+                            <div class="item">
+                                <span>Patient:</span> 
+                                <div class="box-tt">
+                                    <div class="it">Hydrocortisone cream</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span>Details:</span> [Prescription renewal request for: Hydrocortisone cream 1%] Hi doctor, I woke up today with a sore throat and fever. I've also run out of my eczema medication.
+                            </div>
+                            <div class="item">
+                                <span>Tags:</span> 
+                                <div class="box-tt">
+                                    <div class="it">Cought/Cold/Flu</div>
+                                    <div class="it">Prescription Renewal</div>
+                                </div>
+                            </div>
+                            <a class="statistics__view" href="user_summary.html">View this conslutation</a>
+                          </div>
+                          
+                        </div>
+                        <div class="statistics__details">
+                            <div class="statistics__man">
+                                <div class="ct">
+                                  January 26, 2021 with Dr. Alex
+                                </div>
+                                
+                                <div class="box-img">
+                                    <img src="img/ava-1.png" alt="">
+                                    <img src="img/ava-13.png" alt="">
+                                </div>
+                              </div>
+                          <div class="consulation-container">
+                            <div class="item">
+                                <span>Status:</span> Complete
+                            </div>
+                            <div class="item">
+                                <span>Patient:</span> Alice Smith
+                            </div>
+                            <div class="item">
+                                <span>Diagnosis:</span> Viral cold
+                            </div>
+                            <div class="item">
+                                <span>Patient:</span> 
+                                <div class="box-tt">
+                                    <div class="it">Hydrocortisone cream</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span>Details:</span> [Prescription renewal request for: Hydrocortisone cream 1%] Hi doctor, I woke up today with a sore throat and fever. I've also run out of my eczema medication.
+                            </div>
+                            <div class="item">
+                                <span>Tags:</span> 
+                                <div class="box-tt">
+                                    <div class="it">Cought/Cold/Flu</div>
+                                    <div class="it">Prescription Renewal</div>
+                                </div>
+                            </div>
+                            <a class="statistics__view" href="user_summary.html">View this conslutation</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="modal-edit" class=" mfp-hide white-popup-block">
+    <div class="box-content edit-form">
+      <a class="popup-modal-dismiss" href="javascript:;">
+        <svg class="icon icon-close">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </a>
+      <h2>Edit your infomations:</h2>
+      <div class="field">
+          <h3 class="field__title">Your Name</h3>
+          <!-- <div class="field__label">Who is this visit for ?</div> -->
+          <div class="field__wrap">
+              <input type="text" class="field__input" required>
+          </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Major</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+            <input type="text" class="field__input" required>
+        </div>
+      </div>
+      <div class="field">
+          <h3 class="field__title">Email</h3>
+          <!-- <div class="field__label">Who is this visit for ?</div> -->
+          <div class="field__wrap">
+              <input type="email" class="field__input" required>
+          </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Phone</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+            <input type="tel" class="field__input" required>
+        </div>
+      </div>
+      <div class="field">
+        <h3 class="field__title">Info</h3>
+        <!-- <div class="field__label">Who is this visit for ?</div> -->
+        <div class="field__wrap">
+            <textarea class="field__textarea" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn_blue">Submit</button>
+    </div>
+    
+  </div>
+
+
+  <script src="./js/lib/jquery.min.js"></script>
+  <script src="./js/lib/anime.min.js"></script>
+  <script src="./js/lib/readmore.min.js"></script>
+  <script src="./js/lib/slick.min.js"></script>
+  <script src="./js/lib/aos.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/lib/common.js"></script>
+  <script src="./js/lib/charts.js"></script>
+</body>
+
+</html>
